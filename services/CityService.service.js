@@ -57,8 +57,6 @@
             return displayCity;
             console.log(displayCity);
         }
-
-
     }
     angular
         .module("vaCaApp")

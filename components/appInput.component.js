@@ -19,15 +19,8 @@
         
             $ctrl.showCityInfo = function(city){
                 CityService.showCityInfo(city);
-
-            
             }
-        
-        
         }
-
-
-      
     };
     angular
         .module("vaCaApp")
