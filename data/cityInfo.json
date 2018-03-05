@@ -1,0 +1,21 @@
+{"Detroit": {
+    "image": "images/Detroit.jpg",
+    "climate": [{"summer": "hot"}, {"winter": "cold"}, {"fall": "cool"}, {"spring": "warm"} ],
+    "sports": [{"football": "Lions"}, {"hockey": "RedWings"}, {"baseball": "Tigers"}, {"baseketball": "Pistons"} ],
+    "cuisine": ["Mexican", "Italian", "Vegan", "Geek"],
+    "entertainment": ["Parks","Comedy Clubs", "Activities", "Night Life"],
+    "description": "Detroit is the most populous city in the U.S. state of Michigan,the largest city on the United States–Canada border, and the seat of Wayne County."
+
+},
+
+"Los Angeles": {
+    "image": "images/LosAngeles.jpg",
+    "climate": [{"summer": "hot"}, {"winter": "cool"}, {"fall": "warm"}, {"spring": "warm"} ],
+    "sports": [{"football": "Lions"}, {"hockey": "RedWings"}, {"baseball": "Tigers"}, {"baseketball": "Pistons"} ],
+    "cuisine": ["Mexican", "Italian", "Vegan", "Geek"],
+    "entertainment": ["Parks","Comedy Clubs", "Activities", "Night Life"],
+    "description": "Detroit is the most populous city in the U.S. state of Michigan,the largest city on the United States–Canada border, and the seat of Wayne County."
+
+}
+
+}
