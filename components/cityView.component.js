@@ -1,6 +1,6 @@
 (function () {
     var cityView = {
-        template: "<p>city view</p>",
+        templateUrl: "partials/cityView.html",
         controller: function (CityService) {
             var $ctrl = this;
         }
