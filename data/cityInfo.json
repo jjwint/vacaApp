@@ -1,21 +1,23 @@
-{"Detroit": {
+[{
+    "name": "Detroit",
     "image": "images/Detroit.jpg",
-    "climate": [{"summer": "hot"}, {"winter": "cold"}, {"fall": "cool"}, {"spring": "warm"} ],
-    "sports": [{"football": "Lions"}, {"hockey": "RedWings"}, {"baseball": "Tigers"}, {"baseketball": "Pistons"} ],
-    "cuisine": ["Mexican", "Italian", "Vegan", "Greek"],
-    "entertainment": ["Parks","Comedy Clubs", "Activities", "Night Life"],
+    "region": "Midwest",
+    "sports": "Hockey",
+    "cuisine": "Mexican",
+    "entertainment": "Historical Site Tours",
+    "counter": 0,
     "description": "Detroit is the most populous city in the U.S. state of Michigan,the largest city on the United States–Canada border, and the seat of Wayne County."
 
-},
-
-"Los Angeles": {
+}, {
+    "name": "Los Angeles",
     "image": "images/LosAngeles.jpg",
-    "climate": [{"summer": "hot"}, {"winter": "cool"}, {"fall": "warm"}, {"spring": "warm"} ],
-    "sports": [{"football": ["Chargers","Rams"]}, {"hockey": "RedWings"}, {"baseball": "Dodgers"}, {"baseketball": ["Lakers", "Clippers"]}],
-    "cuisine": ["Mexican", "Italian", "Vegan", "Greek"],
-    "entertainment": ["Parks","Comedy Clubs", "Activities", "Night Life"],
+    "region": "Coastal",
+    "sports": "Basketball",
+    "cuisine": "Mexican",
+    "entertainment": "Museums",
+    "counter": 0,
     "description": "Los Angeles Spanish for 'The Angels'; Spanish pronunciation: [los ˈaŋxeles]), officially the City of Los Angeles and often known by its initials L.A., is the cultural, financial, and commercial center of Southern California."
 
 }
 
-}
+]

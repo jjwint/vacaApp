@@ -3,10 +3,18 @@
         templateUrl: "partials/appInput.html",
         controller: function (CityService) {
             var $ctrl = this;
-            $ctrl.choices = {};
-           	$ctrl.submit = function() {
-           		console.log($ctrl.choices);
-           	}
+            CityService.getLibrary().then(function(data) {
+                $ctrl.data = data;
+            })
+           	$ctrl.submit = function(region, sport, cuisine, entertainment) {
+                $ctrl.newObj = {};
+                $ctrl.newObj.region = region;
+                $ctrl.newObj.sport = sport;
+                $ctrl.newObj.cuisine = cuisine;
+                $ctrl.newObj.entertainment = entertainment;
+           		CityService.checkLogin($ctrl.newObj, $ctrl.data);
+               }
+               
         }
     };
     angular

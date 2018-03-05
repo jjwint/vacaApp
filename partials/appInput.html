@@ -1,27 +1,27 @@
-<form id="inputButtons" ng-submit="$ctrl.submit();">
+<form id="inputButtons" ng-submit="$ctrl.submit(region, sport, cuisine, entertainment);">
 	<label>Region</label>
-	<select ng-model="$ctrl.choices.region">
+	<select ng-model="region">
 		<option>Northeast</option>
 		<option>Midwest</option>
 		<option>Mountainous</option>
 		<option>Coastal</option>
 	</select>
 	<label>Sports</label>
-	<select ng-model="$ctrl.choices.sports">
+	<select ng-model="sport">
 		<option>Football</option>
 		<option>Baseball</option>
 		<option>Basketball</option>
 		<option>Hockey</option>
 	</select>
 	<label>Cuisine</label>
-	<select ng-model="$ctrl.choices.cuisine">
-		<option>Pizza</option>
+	<select ng-model="cuisine">
+		<option>Mexican</option>
 		<option>Italian</option>
-		<option>Chinese</option>
-		<option>Vegetarian/Vegan</option>
+		<option>Asian</option>
+		<option>Vegan</option>
 	</select>
 	<label>Entertainment</label>
-	<select ng-model="$ctrl.choices.entertainment">
+	<select ng-model="entertainment">
 		<option>Museums</option>
 		<option>Outdoor Recreation</option>
 		<option>Zoos/Nature Preserves</option>
