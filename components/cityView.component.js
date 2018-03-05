@@ -1,6 +1,6 @@
 (function () {
     var cityView = {
-        template: "<p>city view</p>",
+        template: "<p>city view!!!!</p>",
         controller: function (CityService) {
             var $ctrl = this;
         }
