@@ -4,8 +4,12 @@
         controller: function (CityService) {
             var $ctrl = this;
 
+
             $ctrl.displayCity = CityService.getDisplayCity();
             console.log($ctrl.displayCity);
+
+
+
 
 
             // $ctrl.initMap() = function () {
