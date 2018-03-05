@@ -1,8 +1,9 @@
 (function () {
     var appInput = {
-        template: "<p>app input</p>",
+        templateUrl: "partials/appInput.html",
         controller: function (CityService) {
             var $ctrl = this;
+            
         }
     };
     angular
