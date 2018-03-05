@@ -3,7 +3,8 @@
     var possibleCities = [];
         return {
             checkLogin: checkLogin,
-            getLibrary: getLibrary
+            getLibrary: getLibrary,
+            getCities: getCities
         }
         
         
@@ -30,8 +31,6 @@
 
             console.log(data, possibleCities);
             
-            
-            
         }
         function getLibrary() {
             return $http.get("data/cityInfo.json")
@@ -39,6 +38,11 @@
                         return response.data;
                     });
         }
+
+        function getCities() {
+            return possibleCities;
+        }
+
     }
     angular
         .module("vaCaApp")

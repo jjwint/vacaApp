@@ -14,7 +14,8 @@
                 $ctrl.newObj.entertainment = entertainment;
            		CityService.checkLogin($ctrl.newObj, $ctrl.data);
                }
-               
+            $ctrl.cities = CityService.getCities() 
+            console.log($ctrl.cities);
         }
     };
     angular
