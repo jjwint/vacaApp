@@ -14,11 +14,13 @@
                 $ctrl.newObj.entertainment = entertainment;
            		CityService.checkLogin($ctrl.newObj, $ctrl.data);
                }
-            $ctrl.cities = CityService.getCities() 
-            console.log($ctrl.cities);
+            $ctrl.cities = CityService.getCities();
+            
         
             $ctrl.showCityInfo = function(city){
                 CityService.showCityInfo(city);
+                CityService.getDisplayCity();
+                
 
             
             }

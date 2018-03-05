@@ -1,7 +1,7 @@
 (function () {
-   var CityService = function ($http) {
-    var possibleCities = [];
-    var displayCity = "";
+    var CityService = function ($http) {
+        var possibleCities = [];
+        var displayCity = "";
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
@@ -9,37 +9,38 @@
             showCityInfo: showCityInfo,
             getDisplayCity: getDisplayCity
         }
-        
-        
-        
+
+
+
         function checkLogin(newObj, data) {
-            
+
             for (i = 0; i < 2; i++) {
                 if (newObj.region === data[i].region) {
-                    data[i].counter ++;
+                    data[i].counter++;
                 }
                 if (newObj.sports === data[i].sports) {
-                    data[i].counter ++;
+                    data[i].counter++;
                 }
                 if (newObj.cuisine === data[i].cuisine) {
-                    data[i].counter ++;
+                    data[i].counter++;
                 }
                 if (newObj.entertainment === data[i].entertainment) {
-                    data[i].counter ++;
+                    data[i].counter++;
                 }
                 if (data[i].counter > 1) {
                     possibleCities.push(data[i]);
                 }
             }
 
-            console.log(data, possibleCities);
-            
+
+
         }
+
         function getLibrary() {
             return $http.get("data/cityInfo.json")
-                    .then(function(response) {
-                        return response.data;
-                    });
+                .then(function (response) {
+                    return response.data;
+                });
         }
 
         function getCities() {
@@ -48,14 +49,22 @@
 
         function showCityInfo(city) {
 
-            document.getElementById("cityView").style.display="block";
+            document.getElementById("cityView").style.display = "block";
+            console.log(city)
             displayCity = city;
-          
+
+
+
+
         }
 
         function getDisplayCity() {
-            return displayCity;
-            console.log(displayCity);
+            if (displayCity !== "") {
+                console.log(displayCity)
+                return displayCity;
+            }
+
+
         }
 
 
