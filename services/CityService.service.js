@@ -6,7 +6,8 @@
             checkLogin: checkLogin,
             getLibrary: getLibrary,
             getCities: getCities,
-            showCityInfo: showCityInfo
+            showCityInfo: showCityInfo,
+            getDisplayCity: getDisplayCity
         }
         
         
@@ -27,7 +28,7 @@
                     data[i].counter ++;
                 }
                 if (data[i].counter > 1) {
-                    possibleCities.push(data[i].name);
+                    possibleCities.push(data[i]);
                 }
             }
 
@@ -49,8 +50,14 @@
 
             document.getElementById("cityView").style.display="block";
             displayCity = city;
+          
+        }
+
+        function getDisplayCity() {
+            return displayCity;
             console.log(displayCity);
         }
+
 
     }
     angular
