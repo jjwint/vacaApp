@@ -31,5 +31,5 @@
 </form>
 
 <div id="userChoices">
-	<div ng-repeat="city in $ctrl.cities">{{ city }}</div>
+	<button ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities">{{ city }}</button>
 </div>

@@ -16,7 +16,18 @@
                }
             $ctrl.cities = CityService.getCities() 
             console.log($ctrl.cities);
+        
+            $ctrl.showCityInfo = function(city){
+                CityService.showCityInfo(city);
+
+            
+            }
+        
+        
         }
+
+
+      
     };
     angular
         .module("vaCaApp")

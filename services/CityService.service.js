@@ -1,10 +1,12 @@
 (function () {
    var CityService = function ($http) {
     var possibleCities = [];
+    var displayCity = "";
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
-            getCities: getCities
+            getCities: getCities,
+            showCityInfo: showCityInfo
         }
         
         
@@ -41,6 +43,13 @@
 
         function getCities() {
             return possibleCities;
+        }
+
+        function showCityInfo(city) {
+
+            document.getElementById("cityView").style.display="block";
+            displayCity = city;
+            console.log(displayCity);
         }
 
     }
