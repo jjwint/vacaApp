@@ -20,7 +20,6 @@
             $ctrl.showCityInfo = function(city){
                 CityService.showCityInfo(city);
 
-            
             }
         
         

@@ -50,7 +50,7 @@
 
             document.getElementById("cityView").style.display="block";
             displayCity = city;
-          
+           
         }
 
         function getDisplayCity() {
