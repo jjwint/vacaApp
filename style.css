@@ -1,3 +1,7 @@
+#vacaHeader {
+	text-align: center;
+}
+
 #inputButtons {
 	display: flex;
 	flex-direction: column;

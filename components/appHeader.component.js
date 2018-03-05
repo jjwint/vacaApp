@@ -1,6 +1,6 @@
 (function () {
     var appHeader = {
-        template: "<p>app header</p>",
+        templateUrl: "partials/appHeader.html",
         controller: function (CityService) {
             var $ctrl = this;
         }
