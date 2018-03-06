@@ -1,7 +1,7 @@
 (function () {
     var appInput = {
         bindings: {
-            onChangeObj: '&',
+            onChangeCity: '&',
         },
         templateUrl: "partials/appInput.html",
         controller: function (CityService) {
@@ -23,13 +23,13 @@
 
             $ctrl.showCityInfo = function (city) {
                 $ctrl.thisCity = city;
-                document.getElementById("cityView").style.display = "block";
-                $ctrl.onChangeObj({
+                $ctrl.onChangeCity({
                     $event: {
                         thisCity: $ctrl.thisCity
+                        
                     }
                 });
-
+                
 
 
             }
