@@ -49,11 +49,6 @@
             return possibleCities;
         }
 
-<<<<<<< HEAD
-        
-
-
-=======
         function showCityInfo(city) {
 
             document.getElementById("cityView").style.display = "block";
@@ -66,10 +61,7 @@
                 console.log(displayCity)
                 return displayCity;
             }
-
-
         }
->>>>>>> 12aa78261671a98b679e652f15a033f00ce75132
     }
     angular
         .module("vaCaApp")
