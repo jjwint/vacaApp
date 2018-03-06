@@ -2,6 +2,11 @@
     <div>
         <h1>Welcome {{ $ctrl.thisCity.name }} </h1>
         <p>{{$ctrl.thisCity.description}}</p>
+
     </div>
-    <div id="map"></div>
+    <img ng-src="{{$ctrl.thisCity.image}}" />
+
+    <div>
+        <div id="map"></div>
+    </div>
 </div>
