@@ -1,35 +1,35 @@
-<form id="inputButtons" ng-submit="$ctrl.submit(region, sport, cuisine, entertainment);">
-	<label>Region</label>
-	<select ng-model="region" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
-		<option>Northeast</option>
-		<option>Midwest</option>
-		<option>Mountainous</option>
-		<option>Coastal</option>
-	</select>
-	<label>Sports</label>
-	<select ng-model="sport" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
-		<option>Football</option>
-		<option>Baseball</option>
-		<option>Basketball</option>
-		<option>Hockey</option>
-	</select>
-	<label>Cuisine</label>
-	<select ng-model="cuisine" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
-		<option>Mexican</option>
-		<option>Italian</option>
-		<option>Asian</option>
-		<option>Vegan</option>
-	</select>
-	<label>Entertainment</label>
-	<select ng-model="entertainment" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
-		<option>Museums</option>
-		<option>Outdoor Recreation</option>
-		<option>Zoos/Nature Preserves</option>
-		<option>Historical Site Tours</option>
-	</select>
-	<button type="submit">SUBMIT</button>
-</form>
-
-<div id="userChoices">
-	<button ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index">{{ city.name }}</button>
+<div id="appInput">
+	<div id="inputButtons" ng-submit="$ctrl.submit(region, sport, cuisine, entertainment);">
+		<label>Region</label>
+		<select ng-model="region" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
+			<option>Northeast</option>
+			<option>Midwest</option>
+			<option>Mountainous</option>
+			<option>Coastal</option>
+		</select>
+		<label>Sports</label>
+		<select ng-model="sport" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
+			<option>Football</option>
+			<option>Baseball</option>
+			<option>Basketball</option>
+			<option>Hockey</option>
+		</select>
+		<label>Cuisine</label>
+		<select ng-model="cuisine" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
+			<option>Mexican</option>
+			<option>Italian</option>
+			<option>Asian</option>
+			<option>Vegan</option>
+		</select>
+		<label>Entertainment</label>
+		<select ng-model="entertainment" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
+			<option>Museums</option>
+			<option>Outdoor Recreation</option>
+			<option>Zoos/Nature Preserves</option>
+			<option>Historical Site Tours</option>
+		</select>
+	</div>
+	<div id="userChoices">
+		<button ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index">{{ city.name }}</button>
+	</div>
 </div>
