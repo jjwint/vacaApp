@@ -11,3 +11,6 @@
 #vacaHeader {
 	border: 2px solid purple;
 }
+#map {
+	height: 50%;
+}

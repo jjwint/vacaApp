@@ -10,7 +10,7 @@
 
         function checkLogin(newObj, data) {
                 
-            for (i = 0; i < 2; i++) {
+            for (i = 0; i < 7; i++) {
                 
                 
                 if (newObj.region === data[i].region) {
