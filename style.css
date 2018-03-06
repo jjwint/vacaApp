@@ -9,9 +9,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	justify-content: space-around;
 	
-	padding-left: 20px;
-	padding-right: 20%;
+	/* padding-left: 20px; */
+	padding-right: 10%;
 	border-right: 3px solid black;
 
 }
@@ -29,7 +30,7 @@
 #userChoices {
 	display: flex;
 	flex-direction: column;
-	margin-left: 80px;
+	
 
 }
 
@@ -47,7 +48,13 @@ margin-bottom: 15px;
 }
 #map {
 	width: 300px;
-	height: 300px
+	height: 300px;
+	margin: 0 auto;
+}
+
+img{
+	width: 300px;
+	height: 300px;
 }
 
 
