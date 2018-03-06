@@ -1,3 +1,6 @@
+/* ---------------------------------------- mobile view */
+
+
 #vacaHeader {
 	text-align: center;
 }
@@ -7,7 +10,9 @@
 	flex-direction: column;
 	align-items: flex-start;
 	padding-left: 20px;
+	padding-right: 20%;
 	border-right: 3px solid black;
+
 }
 
 #vacaHeader {
@@ -16,6 +21,8 @@
 
 #cityView {
 	border: 2px solid black;
+	text-align: center;
+	margin-top: 90px;
 }
 
 #userChoices {
@@ -28,3 +35,8 @@
 	display: flex;
 	flex-direction: row;
 }
+
+
+
+
+/* ---------------------------------------- desktop view */
