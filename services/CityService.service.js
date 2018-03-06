@@ -6,7 +6,6 @@
             checkLogin: checkLogin,
             getLibrary: getLibrary,
             getCities: getCities,
-            
         }
 
         function checkLogin(newObj, data) {
@@ -22,7 +21,6 @@
                    
                     data[i].counter++;
                 }
-
                
                 if (data[i].cuisine.includes(newObj.cuisine) === true) {
                    
@@ -50,7 +48,6 @@
         }
 
         function showCityInfo(city) {
-
             document.getElementById("cityView").style.display = "block";
             console.log(city)
             displayCity = city;
