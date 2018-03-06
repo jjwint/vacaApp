@@ -6,7 +6,7 @@
     "cuisine": ["Mexican"],
     "entertainment": ["Historical Site Tours"],
     "counter": 0,
-    "description": "Detroit is the most populous city in the U.S. state of Michigan,the largest city on the United States–Canada border, and the seat of Wayne County.",
+    "description": "Detroit is the largest city in the midwestern state of Michigan. Near Downtown, the neoclassical Detroit Institute of Arts is famed for the Detroit Industry Murals painted by Diego Rivera, and inspired by the city’s ties to the auto industry, giving it the nickname 'Motor City.' Detroit is also the birthplace of Motown Records, whose chart-topping history is on display at their original headquarters, Hitsville U.S.A.",
     "latitude": 42.331427,
     "longitude": -83.045754
 }, {
@@ -17,7 +17,7 @@
     "cuisine": ["Mexican"],
     "entertainment": ["Museums"],
     "counter": 0,
-    "description": "Los Angeles Spanish for 'The Angels'; Spanish pronunciation: [los ˈaŋxeles]), officially the City of Los Angeles and often known by its initials L.A., is the cultural, financial, and commercial center of Southern California.",
+    "description": "Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.",
     "latitude": 34.052234,
     "longitude": -118.243685
 }, {
@@ -28,7 +28,7 @@
     "cuisine": ["Italian"],
     "entertainment": ["Museums"],
     "counter": 0,
-    "description": "The City of New York, often called New York City or simply New York, is the most populous city in the United States.",
+    "description": "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.",
     "latitude": 40.712775,
     "longitude": -74.005973
 }, {
@@ -39,7 +39,7 @@
     "cuisine": ["Vegan"],
     "entertainment": ["Museums"],
     "counter": 0,
-    "description": "Chicago, officially the City of Chicago, is the third-most populous city in the United States. With over 2.7 million residents, it is also the most populous city in both the state of Illinois and the Midwestern United States.",
+    "description": "Chicago, on Lake Michigan in Illinois, is among the largest cities in the U.S. Famed for its bold architecture, it has a skyline punctuated by skyscrapers such as the iconic John Hancock Center, 1,451-ft. Willis Tower (formerly the Sears Tower) and the neo-Gothic Tribune Tower. The city is also renowned for its museums, including the Art Institute of Chicago with its noted Impressionist and Post-Impressionist works.",
     "latitude": 41.878114,
     "longitude": -87.629798
 }, {
