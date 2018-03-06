@@ -3,7 +3,11 @@
         templateUrl: "partials/appMain.html",
         controller: function (CityService) {
             var $ctrl = this;
-            console.log($ctrl.thisCity);
+            $ctrl.$onInit = function() {
+                $ctrl.thisCity = null;
+            }
+            
+            
         }
     };
     angular

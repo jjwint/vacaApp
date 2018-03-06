@@ -1,5 +1,5 @@
 <div>
     <app-header></app-header>
-    <app-input on-change-obj="$ctrl.thisCity = $event.thisCity"></app-input>
-    <city-view thisCity="$ctrl.thisCity"></city-view>
+    <app-input on-change-city="$ctrl.thisCity = $event.thisCity"></app-input>
+    <city-view ng-if="$ctrl.thisCity" this-city="$ctrl.thisCity"></city-view>
 </div>
