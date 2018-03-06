@@ -30,7 +30,7 @@
                    
                     data[i].counter++;
                 }
-                if (data[i].counter > 1) {
+                if (data[i].counter > 1 && (possibleCities.includes(data[i]) === false)) {
                     possibleCities.push(data[i]);
                 }
             }

@@ -7,16 +7,24 @@
         controller: function (CityService) {
             var $ctrl = this;
             $ctrl.$onInit = function() {
-            console.log($ctrl.thisCity);
+            
+            
             }
             
-            $ctrl.initMap = (function () {
+            
+            // $ctrl.initMap = (function () {
                  
                  $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                     center: {lat: 42.3359240, lng: -83.0497190},
                     zoom: 15
                 });
-            })();
+                // $ctrl.marker = $ctrl.thisCity.map(function(location, i) {
+                //     return new google.maps.Marker ({
+                //         title: $ctrl.thisCity.name,
+                    
+                //     })
+                // })
+            // })();
 
         }
     };
