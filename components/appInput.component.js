@@ -22,6 +22,7 @@
 
 
             $ctrl.showCityInfo = function (city) {
+                console.log(city.latitude, city.longitude)
                 $ctrl.thisCity = city;
                 $ctrl.onChangeCity({
                     $event: {
