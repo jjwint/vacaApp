@@ -6,25 +6,32 @@
             checkLogin: checkLogin,
             getLibrary: getLibrary,
             getCities: getCities,
-            showCityInfo: showCityInfo,
-            getDisplayCity: getDisplayCity
+            
         }
 
 
 
         function checkLogin(newObj, data) {
-
+                
             for (i = 0; i < 2; i++) {
+                
+                
                 if (newObj.region === data[i].region) {
                     data[i].counter++;
                 }
-                if (newObj.sports === data[i].sports) {
+                
+                if (data[i].sports.includes(newObj.sport) === true) {
+                   
                     data[i].counter++;
                 }
-                if (newObj.cuisine === data[i].cuisine) {
+
+               
+                if (data[i].cuisine.includes(newObj.cuisine) === true) {
+                   
                     data[i].counter++;
                 }
-                if (newObj.entertainment === data[i].entertainment) {
+                if (data[i].entertainment.includes(newObj.entertainment) === true) {
+                   
                     data[i].counter++;
                 }
                 if (data[i].counter > 1) {
@@ -47,25 +54,7 @@
             return possibleCities;
         }
 
-        function showCityInfo(city) {
-
-            document.getElementById("cityView").style.display = "block";
-            console.log(city)
-            displayCity = city;
-
-
-
-
-        }
-
-        function getDisplayCity() {
-            if (displayCity !== "") {
-                console.log(displayCity)
-                return displayCity;
-            }
-
-
-        }
+        
 
 
     }

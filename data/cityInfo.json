@@ -2,9 +2,9 @@
     "name": "Detroit",
     "image": "images/Detroit.jpg",
     "region": "Midwest",
-    "sports": "Hockey",
-    "cuisine": "Mexican",
-    "entertainment": "Historical Site Tours",
+    "sports": ["Hockey", "Basketball"],
+    "cuisine": ["Mexican"],
+    "entertainment": ["Historical Site Tours"],
     "counter": 0,
     "description": "Detroit is the most populous city in the U.S. state of Michigan,the largest city on the United States–Canada border, and the seat of Wayne County."
 
@@ -12,9 +12,9 @@
     "name": "Los Angeles",
     "image": "images/LosAngeles.jpg",
     "region": "Coastal",
-    "sports": "Basketball",
-    "cuisine": "Mexican",
-    "entertainment": "Museums",
+    "sports": ["Basketball", "Football"],
+    "cuisine": ["Mexican"],
+    "entertainment": ["Museums"],
     "counter": 0,
     "description": "Los Angeles Spanish for 'The Angels'; Spanish pronunciation: [los ˈaŋxeles]), officially the City of Los Angeles and often known by its initials L.A., is the cultural, financial, and commercial center of Southern California."
 
