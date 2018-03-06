@@ -8,6 +8,10 @@
 	align-items: flex-start;
 }
 
-#cityView{
+#cityView {
 	display: none;
+}
+
+#vacaHeader {
+	border: 2px solid purple;
 }
