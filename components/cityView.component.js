@@ -9,10 +9,10 @@
             $ctrl.$onInit = function() {
             console.log($ctrl.thisCity);
             }
-            
+            $ctrl.map;
             $ctrl.initMap = function () {
                 
-                var map = new google.maps.Map(document.getElementById("map"), {
+                 $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                     center: {lat: 42.3359240, lng: -83.0497190},
                     zoom: 15
                 });
