@@ -47,10 +47,7 @@
             document.getElementById("cityView").style.display = "block";
             console.log(city)
             displayCity = city;
-<<<<<<< HEAD
            
-=======
->>>>>>> 12aa78261671a98b679e652f15a033f00ce75132
         }
 
         function getDisplayCity() {
