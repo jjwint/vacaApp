@@ -1,0 +1,17 @@
+#vacaHeader {
+	text-align: center;
+}
+
+#inputButtons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#vacaHeader {
+	border-bottom: 2px solid purple;
+}
+
+#cityView {
+	border: 2px solid black;
+}
