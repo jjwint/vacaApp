@@ -30,11 +30,19 @@
 	display: flex;
 	flex-direction: column;
 	margin-left: 80px;
+
 }
 
 #appInput {
 	display: flex;
 	flex-direction: row;
+	
+}
+
+.citySelect{
+
+margin-bottom: 15px;
+
 }
 
 

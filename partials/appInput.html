@@ -30,6 +30,6 @@
 		</select>
 	</div>
 	<div id="userChoices">
-		<button ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index">{{ city.name }}</button>
+		<button class ="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index">{{ city.name }}</button>
 	</div>
 </div>
