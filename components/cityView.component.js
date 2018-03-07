@@ -9,7 +9,6 @@
 
         controller: function (CityService) {
             var $ctrl = this;
-
             $ctrl.thisCity = CityService.getCityObj();
             $ctrl.$onInit = function () {
                 $ctrl.thisCitySport = CityService.getCitySport();
@@ -17,18 +16,32 @@
                 $ctrl.thisCityEntertainment = CityService.getCityEntertainment();
                 console.log($ctrl.thisCitySport, $ctrl.thisCityCuisine, $ctrl.thisCityEntertainment)
             };
-            
+
             $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
 
             $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                 center: $ctrl.thisCityLoc,
-                zoom: 15
+                zoom: 10
             });
+            $ctrl.service = new google.maps.places.PlacesService($ctrl.map);
+            
             $ctrl.request = {
                 location: $ctrl.thisCityLoc,
                 radius: '50',
+                keyword: $ctrl.thisCityCuisine,
                 type: ['restaurant']
             };
+            $ctrl.callback = function (results, status) {
+                if (status == google.maps.places.PlacesServiceStatus.OK) {
+                    for (var i = 0; i < results.length; i++) {
+                        var place = results[i];
+                        var newMarker = new google.Maps.Marker({position: place, map: $ctrl.map})
+                    }
+                }
+            };
+            
+            $ctrl.markers = $ctrl.service.nearbySearch($ctrl.request, $ctrl.callback);
+            console.log($ctrl.markers)
 
         }
     };

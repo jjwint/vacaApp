@@ -1,12 +1,18 @@
 <div id="cityView">
-    <div>
-        <h1>Welcome {{ $ctrl.thisCity.name }} </h1>
-        <p>{{$ctrl.thisCity.description}}</p>
 
+    <div id="viewHeader">
+        <h3>Visit {{ $ctrl.thisCity.name }}! </h3>
+        <img ng-src="{{$ctrl.thisCity.image}}" />
     </div>
-    <img ng-src="{{$ctrl.thisCity.image}}" />
 
-    <div>
+    <div id="viewMap">
         <div id="map"></div>
+    </div>
+
+    <div id="viewSelect">
+        <button>Search {{ $ctrl.thisCitySport }}</button>
+        <button>Search {{ $ctrl.thisCityCuisine }}</button>
+        <button>Search {{ $ctrl.thisCityEntertainment }}</button>
+        
     </div>
 </div>

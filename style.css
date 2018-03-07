@@ -8,6 +8,9 @@ body {
 
 #vacaHeader {
 	text-align: center;
+	height: 10%;
+	border: 4px solid #d84727;
+	border-radius: 5px;
 }
 
 #appInput {
@@ -33,7 +36,7 @@ body {
 #cityView {
 	border: 4px solid #5eb1bf;
 	text-align: center;
-	margin-top: 90px;
+	height: 80%;
 	border-radius: 5px;
 }
 
@@ -49,9 +52,22 @@ margin-bottom: 15px;
 }
 
 img{
-	width: 300px;
-	height: 250px;
+	width: 50px;
+	height: 50px;
 	border-radius: 10px;
+	margin: 2px;
+}
+#viewHeader {
+	display: flex;
+	border: 2px solid #5eb1bf;
+	align-items: center;
+	justify-content: space-between;
+	margin: 2px;
+}
+#viewMap {
+	margin: 2px;
+	border: 2px solid #5eb1bf;
+	padding: 2px;
 }
 
 /* ---------------------------------------- desktop view */
