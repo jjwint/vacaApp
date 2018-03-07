@@ -98,12 +98,15 @@ flex-direction: column;
 }
 
 #inputButtons{
-
+	width: 500px;
 	flex-direction: column;
+	text-align: center;
+
 	min-width: 40%;
 	border-radius: 5px;
 	border: 4px solid #d84727;
 	background-color: #ef7b45;
+	margin: 0 auto;
 	/* order: 2; */
 }
 
@@ -127,9 +130,20 @@ flex-direction: column;
 	border-radius: 5px;
 }
 
+select {
+width: 300px;
+margin-bottom: 15px;
+margin: 0 auto;
+/* text-indent: 50%; */
+
+}
 
 
+options {
 
+text-indent: 10px;
+
+}
 
 
 
