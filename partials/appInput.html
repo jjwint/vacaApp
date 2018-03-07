@@ -1,31 +1,39 @@
-<div ng-controller="ButtonController as $ctrl">
-	<button ng-click="$ctrl.showRegionForm();" id="region">Region</button>
-	<div class="region" ng-show="$ctrl.regionShow">
-		<button ng-click="$ctrl.hideRegionForm();">Northeast</button>
-		<button ng-click="$ctrl.hideRegionForm();">Midwest</button>
-		<button ng-click="$ctrl.hideRegionForm();">Mountenous</button>
-		<button ng-click="$ctrl.hideRegionForm();">Coastal</button>
+<div ng-controller="OptionsController as $ctrl">
+	<div>
+		<button ng-click="$ctrl.showRegionForm();" id="region">Region</button>
+		<div class="region" ng-show="$ctrl.regionShow">
+			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Northeast</button>
+			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Midwest</button>
+			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Mountenous</button>
+			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Coastal</button>
+		</div>
 	</div>
-	<button ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
-	<div class="cuisine" ng-show="$ctrl.cuisineShow">
-		<button ng-click="$ctrl.hideCuisineForm();">Mexican</button>
-		<button ng-click="$ctrl.hideCuisineForm();">Italian</button>
-		<button ng-click="$ctrl.hideCuisineForm();">Asian</button>
-		<button ng-click="$ctrl.hideCuisineForm();">Vegan</button>
+	<div>
+		<button ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
+		<div class="cuisine" ng-show="$ctrl.cuisineShow">
+			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Mexican</button>
+			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Italian</button>
+			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Asian</button>
+			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Vegan</button>
+		</div>
 	</div>
-	<button ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
-	<div class="entertainment" ng-show="$ctrl.entertainmentShow">
-		<button ng-click="$ctrl.hideEntertainmentForm();">Museums</button>
-		<button ng-click="$ctrl.hideEntertainmentForm();">Outdoor Recreation</button>
-		<button ng-click="$ctrl.hideEntertainmentForm();">Zoos/Nature Preserves</button>
-		<button ng-click="$ctrl.hideEntertainmentForm();">Historical Site Tours</button>
+	<div>
+		<button ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
+		<div class="entertainment" ng-show="$ctrl.entertainmentShow">
+			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Museums</button>
+			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Outdoor Recreation</button>
+			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Zoos/Nature Preserves</button>
+			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Historical Site Tours</button>
+		</div>
 	</div>
-	<button ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
-	<div class="sports" ng-show="$ctrl.sportsShow">
-		<button ng-click="$ctrl.hideSportsForm();">Baseball</button>
-		<button ng-click="$ctrl.hideSportsForm();">Basketball</button>
-		<button ng-click="$ctrl.hideSportsForm();">Football</button>
-		<button ng-click="$ctrl.hideSportsForm();">Hockey</button>
+	<div>
+		<button ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
+		<div class="sports" ng-show="$ctrl.sportsShow">
+			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Baseball</button>
+			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Basketball</button>
+			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Football</button>
+			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Hockey</button>
+		</div>
 	</div>
 </div>
 
