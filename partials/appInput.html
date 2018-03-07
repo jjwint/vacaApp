@@ -1,31 +1,31 @@
 <div ng-controller="ButtonController as $ctrl">
 	<button ng-click="$ctrl.showRegionForm();" id="region">Region</button>
 	<div class="region" ng-show="$ctrl.regionShow">
-		<button>Northeast</button>
-		<button>Midwest</button>
-		<button>Mountenous</button>
-		<button>Coastal</button>
+		<button ng-click="$ctrl.hideRegionForm();">Northeast</button>
+		<button ng-click="$ctrl.hideRegionForm();">Midwest</button>
+		<button ng-click="$ctrl.hideRegionForm();">Mountenous</button>
+		<button ng-click="$ctrl.hideRegionForm();">Coastal</button>
 	</div>
 	<button ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
 	<div class="cuisine" ng-show="$ctrl.cuisineShow">
-		<button>Mexican</button>
-		<button>Italian</button>
-		<button>Asian</button>
-		<button>Vegan</button>
+		<button ng-click="$ctrl.hideCuisineForm();">Mexican</button>
+		<button ng-click="$ctrl.hideCuisineForm();">Italian</button>
+		<button ng-click="$ctrl.hideCuisineForm();">Asian</button>
+		<button ng-click="$ctrl.hideCuisineForm();">Vegan</button>
 	</div>
 	<button ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
 	<div class="entertainment" ng-show="$ctrl.entertainmentShow">
-		<button>Museums</button>
-		<button>Outdoor Recreation</button>
-		<button>Zoos/Nature Preserves</button>
-		<button>Historical Site Tours</button>
+		<button ng-click="$ctrl.hideEntertainmentForm();">Museums</button>
+		<button ng-click="$ctrl.hideEntertainmentForm();">Outdoor Recreation</button>
+		<button ng-click="$ctrl.hideEntertainmentForm();">Zoos/Nature Preserves</button>
+		<button ng-click="$ctrl.hideEntertainmentForm();">Historical Site Tours</button>
 	</div>
 	<button ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
 	<div class="sports" ng-show="$ctrl.sportsShow">
-		<button>Baseball</button>
-		<button>Basketball</button>
-		<button>Football</button>
-		<button>Hockey</button>
+		<button ng-click="$ctrl.hideSportsForm();">Baseball</button>
+		<button ng-click="$ctrl.hideSportsForm();">Basketball</button>
+		<button ng-click="$ctrl.hideSportsForm();">Football</button>
+		<button ng-click="$ctrl.hideSportsForm();">Hockey</button>
 	</div>
 </div>
 

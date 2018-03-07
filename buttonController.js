@@ -22,6 +22,22 @@ function ButtonController() {
         $ctrl.showSportsForm = function() {
         	$ctrl.sportsShow = true;
         }
+
+        $ctrl.hideRegionForm = function() {
+        	$ctrl.regionShow = false;
+        }
+
+        $ctrl.hideCuisineForm = function() {
+        	$ctrl.cuisineShow = false;
+        }
+
+        $ctrl.hideEntertainmentForm = function() {
+        	$ctrl.entertainmentShow = false;
+        }
+
+        $ctrl.hideSportsForm = function() {
+        	 $ctrl.sportsShow = false;
+        }
 }
 
 angular
