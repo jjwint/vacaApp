@@ -28,6 +28,8 @@
 			<option>Zoos/Nature Preserves</option>
 			<option>Historical Site Tours</option>
 		</select>
+		<!-- <button ng-click="$ctrl.reset()"></button> -->
+	</div>
 	</div>
 	<div id="userChoices">
 		<button class ="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index">{{ city.name }}</button>

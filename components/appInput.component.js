@@ -33,6 +33,12 @@
 
             }
 
+            // $ctrl.reset = function(){
+
+            //     possibleCities.length = 0;
+
+            // }
+
 
         }
 
