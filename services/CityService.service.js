@@ -13,7 +13,8 @@
             getCityObj: getCityObj,
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
-            getCityEntertainment: getCityEntertainment
+            getCityEntertainment: getCityEntertainment,
+            
         }
 
         function checkLogin(newObj, data) {
@@ -64,6 +65,7 @@
         }
 
         function saveCityObj(city) {
+            document.getElementById("appInput").style.display = "none";
             displayCity = city;
             console.log(displayCity, citySport, cityCuisine, cityEntertainment)
 
@@ -85,6 +87,7 @@
         function getCityEntertainment() {
             return cityEntertainment;
         }
+        
 
 
 
