@@ -37,10 +37,6 @@
             $ctrl.showRegionForm = function() {
                 console.log("hi");
             }
-            
-            $ctrl.sayhI = function() {
-                console.log("hi");
-            }
 
             }
 
