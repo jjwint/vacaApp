@@ -29,6 +29,7 @@
                     query: $ctrl.thisCityCuisine,
                     type: ['restaurant']
                 };
+
                 $ctrl.callback = function (results, status) {
                     if (status == google.maps.places.PlacesServiceStatus.OK) {
                         $ctrl.results = results;
@@ -36,9 +37,14 @@
                             console.log(results[i])
                             var place = results[i];
                             $ctrl.createMarker(results[i]);
+                            google.maps.event.addListener(marker, 'click', function() {
+                                infowindow.setContent(place.name);
+                                infowindow.open(map, this);
+                            });
                         }
                     }
                 }
+                $ctrl.infoWindow = new google.maps.infoWindow();
                 $ctrl.createMarker = function (place) {
                     var marker = new google.maps.Marker({
                         map: $ctrl.map,
@@ -49,7 +55,8 @@
                 }
 
                 $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
-                console.log($ctrl.results);
+                
+                
             };
 
 
