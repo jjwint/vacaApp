@@ -1,4 +1,39 @@
-<div id="appInput">
+<div ng-controller="ButtonController as $ctrl">
+	<button ng-click="$ctrl.showRegionForm();" id="region">Region</button>
+	<div class="region" ng-show="$ctrl.regionShow">
+		<button>Northeast</button>
+		<button>Midwest</button>
+		<button>Mountenous</button>
+		<button>Coastal</button>
+	</div>
+	<button ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
+	<div class="cuisine" ng-show="$ctrl.cuisineShow">
+		<button>Mexican</button>
+		<button>Italian</button>
+		<button>Asian</button>
+		<button>Vegan</button>
+	</div>
+	<button ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
+	<div class="entertainment" ng-show="$ctrl.entertainmentShow">
+		<button>Museums</button>
+		<button>Outdoor Recreation</button>
+		<button>Zoos/Nature Preserves</button>
+		<button>Historical Site Tours</button>
+	</div>
+	<button ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
+	<div class="sports" ng-show="$ctrl.sportsShow">
+		<button>Baseball</button>
+		<button>Basketball</button>
+		<button>Football</button>
+		<button>Hockey</button>
+	</div>
+</div>
+
+
+
+
+
+<!-- <div id="appInput">
 	<div id="inputButtons" ng-submit="$ctrl.submit(region, sport, cuisine, entertainment);">
 		<label>Region</label>
 		<select ng-model="region" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
@@ -32,4 +67,4 @@
 	<div id="userChoices">
 		<button class ="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index">{{ city.name }}</button>
 	</div>
-</div>
+</div> -->

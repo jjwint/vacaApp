@@ -6,11 +6,68 @@ body {
 	font-family: "Courier New";
 }
 
+button {
+	font-family: "Courier New";
+	display: block;
+	width: 150px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+
+#region {
+	background-color: red;
+}
+
+.region button {
+	color: red;
+	border: 2px solid red;
+	font-weight: bold;
+	background-color: white;
+}
+
+#cuisine {
+	background-color: orange;
+}
+
+.cuisine button {
+	color: orange;
+	border: 2px solid orange;
+	font-weight: bold;
+	background-color: white;
+}
+
+#entertainment {
+	background-color: green;
+}
+
+.entertainment button {
+	color: green;
+	border: 2px solid green;
+	font-weight: bold;
+	background-color: white;
+}
+
+#sports {
+	background-color: blue;
+}
+
+.sports button {
+	color: blue;
+	border: 2px solid blue;
+	font-weight: bold;
+	background-color: white;
+}
+
 #vacaHeader {
 	text-align: center;
 }
 
-#appInput {
+/*#appInput {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -55,7 +112,7 @@ img {
 	width: 300px;
 	height: 250px;
 	border-radius: 10px;
-}
+}*/
 
 /* ---------------------------------------- desktop view */
 
