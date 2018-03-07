@@ -20,8 +20,6 @@ body {
 	padding-left: 20px;
 }
 
-#userChoices {
-}
 
 #inputButtons, #userChoices {
 	display: flex;
@@ -57,3 +55,71 @@ img{
 }
 
 /* ---------------------------------------- desktop view */
+
+@media only screen and (min-width: 768px) {
+
+
+.mainView{
+
+display: flex;
+flex-direction: column; 
+}
+
+
+.citySelect{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100px;
+	border-radius: 5px;
+	
+	}
+
+
+#appInput {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#inputButtons{
+
+	flex-direction: column;
+	min-width: 40%;
+	border-radius: 5px;
+	border: 4px solid #d84727;
+	background-color: #ef7b45;
+	/* order: 2; */
+}
+
+
+#userChoices {
+	align-items: flex-start;
+	flex-direction: row;
+	min-width: 40%;
+	border-radius: 5px;
+	border: 4px solid #d84727;
+	background-color: #ef7b45;
+	/* order: 1; */
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+#cityView {
+	border: 4px solid #5eb1bf;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
