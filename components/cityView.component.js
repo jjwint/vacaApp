@@ -19,13 +19,13 @@
 
                 $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                     center: $ctrl.thisCityLoc,
-                    zoom: 10
+                    zoom: 15
                 });
                 $ctrl.service = new google.maps.places.PlacesService($ctrl.map);
 
                 $ctrl.request = {
                     location: $ctrl.thisCityLoc,
-                    radius: '50',
+                    radius: '100',
                     query: $ctrl.thisCityCuisine,
                     type: ['restaurant']
                 };
@@ -37,26 +37,40 @@
                             console.log(results[i])
                             var place = results[i];
                             $ctrl.createMarker(results[i]);
-                            google.maps.event.addListener(marker, 'click', function() {
-                                infowindow.setContent(place.name);
-                                infowindow.open(map, this);
-                            });
+                            // $ctrl.createInfoWindow(results[i]);
                         }
                     }
                 }
-                $ctrl.infoWindow = new google.maps.infoWindow();
+
                 $ctrl.createMarker = function (place) {
+
                     var marker = new google.maps.Marker({
                         map: $ctrl.map,
                         position: place.geometry.location
                     });
-
+              
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: "<p>hello</p>"
+                    });
+                    marker.addListener('click', function() {
+                        infoWindow.setContent(place.name);
+                        infoWindow.open($ctrl.map, marker)
+                    })
                     
+
                 }
+                $ctrl.createInfoWindow = function (result) {
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: "<p>hello</p>"
+                    });
+                    marker.addListener('click', function () {
+                        infoWindow.open($ctrl.map, marker)
+                    })
+                };
 
                 $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
-                
-                
+
+
             };
 
 
