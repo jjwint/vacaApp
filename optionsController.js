@@ -40,6 +40,9 @@ function OptionsController() {
         	 $ctrl.sportsShow = false;
         }
 
+        $ctrl.sayHi = function() {
+                console.log("hi!!");
+        }
 }
 
 angular
