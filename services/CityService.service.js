@@ -2,16 +2,27 @@
     var CityService = function ($http) {
         var possibleCities = [];
         var displayCity = {};
+        var cityCuisine = "";
+        var citySport = "";
+        var cityEntertainment = "";
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
             getCities: getCities,
             saveCityObj: saveCityObj,
-            getCityObj: getCityObj
+            getCityObj: getCityObj,
+            getCityCuisine: getCityCuisine,
+            getCitySport: getCitySport,
+            getCityEntertainment: getCityEntertainment
         }
 
         function checkLogin(newObj, data) {
-                
+            console.log(newObj)
+            cityCuisine = newObj.cuisine;   
+            citySport = newObj.sport;
+            cityEntertainment = newObj.entertainment; 
+            
+            
             for (i = 0; i < 7; i++) {
                 
                 
@@ -51,9 +62,21 @@
 
         function saveCityObj(city) {
             displayCity = city;
+            console.log(displayCity, citySport, cityCuisine, cityEntertainment)
+           
+            
         }
         function getCityObj() {
             return displayCity;
+        }
+        function getCitySport() {
+            return citySport;
+        }
+        function getCityCuisine() {
+            return cityCuisine;
+        }
+        function getCityEntertainment() {
+            return cityEntertainment;
         }
 
         

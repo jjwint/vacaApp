@@ -9,9 +9,17 @@
 
         controller: function (CityService) {
             var $ctrl = this;
+
             $ctrl.thisCity = CityService.getCityObj();
-            $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
+            $ctrl.$onInit = function () {
+                $ctrl.thisCitySport = CityService.getCitySport();
+                $ctrl.thisCityCuisine = CityService.getCityCuisine();
+                $ctrl.thisCityEntertainment = CityService.getCityEntertainment();
+                console.log($ctrl.thisCitySport, $ctrl.thisCityCuisine, $ctrl.thisCityEntertainment)
+            };
             
+            $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
+
             $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                 center: $ctrl.thisCityLoc,
                 zoom: 15
@@ -21,7 +29,7 @@
                 radius: '50',
                 type: ['restaurant']
             };
-        
+
         }
     };
 
