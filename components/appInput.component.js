@@ -19,10 +19,8 @@
                 
             }
             $ctrl.cities = CityService.getCities();
-
-
             $ctrl.showCityInfo = function (city) {
-                console.log(city.latitude, city.longitude)
+                CityService.saveCityObj(city);
                 $ctrl.thisCity = city;
                 $ctrl.onChangeCity({
                     $event: {

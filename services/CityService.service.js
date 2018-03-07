@@ -1,11 +1,13 @@
 (function () {
     var CityService = function ($http) {
         var possibleCities = [];
-        var displayCity = "";
+        var displayCity = {};
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
             getCities: getCities,
+            saveCityObj: saveCityObj,
+            getCityObj: getCityObj
         }
 
         function checkLogin(newObj, data) {
@@ -47,18 +49,15 @@
             return possibleCities;
         }
 
-        function showCityInfo(city) {
-            document.getElementById("cityView").style.display = "block";
-            console.log(city)
+        function saveCityObj(city) {
             displayCity = city;
         }
-
-        function getDisplayCity() {
-            if (displayCity !== "") {
-                console.log(displayCity)
-                return displayCity;
-            }
+        function getCityObj() {
+            return displayCity;
         }
+
+        
+        
     }
     angular
         .module("vaCaApp")

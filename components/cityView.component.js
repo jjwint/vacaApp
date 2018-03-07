@@ -1,33 +1,30 @@
 (function () {
     var cityView = {
+
         bindings: {
             thisCity: '<'
         },
+
         templateUrl: "partials/cityView.html",
+
         controller: function (CityService) {
             var $ctrl = this;
-            $ctrl.$onInit = function() {
+            $ctrl.thisCity = CityService.getCityObj();
+            $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
             
-            
-            }
-            
-            
-            // $ctrl.initMap = (function () {
-                 
-                 $ctrl.map = new google.maps.Map(document.getElementById("map"), {
-                    center: {lat: 42.3359240, lng: -83.0497190},
-                    zoom: 15
-                });
-                // $ctrl.marker = $ctrl.thisCity.map(function(location, i) {
-                //     return new google.maps.Marker ({
-                //         title: $ctrl.thisCity.name,
-                    
-                //     })
-                // })
-            // })();
-
+            $ctrl.map = new google.maps.Map(document.getElementById("map"), {
+                center: $ctrl.thisCityLoc,
+                zoom: 15
+            });
+            $ctrl.request = {
+                location: $ctrl.thisCityLoc,
+                radius: '50',
+                type: ['restaurant']
+            };
+        
         }
     };
+
     angular
         .module("vaCaApp")
         .component("cityView", cityView)
