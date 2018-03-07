@@ -1,44 +1,42 @@
 /* ---------------------------------------- mobile view */
 
-
-#vacaHeader {
-	text-align: center;
-}
-
-#inputButtons {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-around;
-	
-	/* padding-left: 20px; */
-	padding-right: 10%;
-	border-right: 3px solid black;
-
+body {
+	background-color: #CDEDF6;
+	color: #042a2b;
+	font-family: "Courier New";
 }
 
 #vacaHeader {
-	border-bottom: 2px solid purple;
-}
-
-#cityView {
-	border: 2px solid black;
 	text-align: center;
-	margin-top: 90px;
-}
-
-#userChoices {
-	display: flex;
-	flex-direction: column;
-	
-
 }
 
 #appInput {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	
+	justify-content: space-between;
+}
+
+#inputButtons {
+	padding-left: 20px;
+}
+
+#userChoices {
+}
+
+#inputButtons, #userChoices {
+	display: flex;
+	flex-direction: column;
+	min-width: 40%;
+	border-radius: 5px;
+	border: 4px solid #d84727;
+	background-color: #ef7b45;
+}
+
+#cityView {
+	border: 4px solid #5eb1bf;
+	text-align: center;
+	margin-top: 90px;
+	border-radius: 5px;
 }
 
 .citySelect{
@@ -54,10 +52,8 @@ margin-bottom: 15px;
 
 img{
 	width: 300px;
-	height: 300px;
+	height: 250px;
+	border-radius: 10px;
 }
-
-
-
 
 /* ---------------------------------------- desktop view */
