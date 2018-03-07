@@ -1,4 +1,48 @@
-<div id="appInput">
+<div ng-controller="OptionsController as $ctrl">
+	<div>
+		<button ng-click="$ctrl.showRegionForm();" id="region">Region</button>
+		<div class="region" ng-show="$ctrl.regionShow">
+			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Northeast</button>
+			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Midwest</button>
+			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Mountainous</button>
+			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Coastal</button>
+		</div>
+	</div>
+	<div>
+		<button ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
+		<div class="cuisine" ng-show="$ctrl.cuisineShow">
+			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Mexican</button>
+			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Italian</button>
+			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Asian</button>
+			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Vegan</button>
+		</div>
+	</div>
+	<div>
+		<button ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
+		<div class="entertainment" ng-show="$ctrl.entertainmentShow">
+			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Museums</button>
+			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Outdoor Recreation</button>
+			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Zoos/Nature Preserves</button>
+			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Historical Site Tours</button>
+		</div>
+	</div>
+	<div>
+		<button ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
+		<div class="sports" ng-show="$ctrl.sportsShow">
+			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Baseball</button>
+			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Basketball</button>
+			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Football</button>
+			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Hockey</button>
+		</div>
+	</div>
+<button id="submitButton" ng-click="$ctrl.sayHi();">FIND GETAWAYS</button>
+</div>
+
+
+
+
+
+<!-- <div id="appInput">
 	<div id="inputButtons" ng-submit="$ctrl.submit(region, sport, cuisine, entertainment);">
 		<label>Region</label>
 		<select ng-model="region" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
@@ -36,4 +80,4 @@
 	<div id="userChoices">
 		<button class ="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index">{{ city.name }}</button>
 	</div>
-</div>
+</div> -->

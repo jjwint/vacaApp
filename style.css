@@ -6,6 +6,72 @@ body {
 	font-family: "Courier New";
 }
 
+button {
+	font-family: "Courier New";
+	display: block;
+	width: 150px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.item:hover {
+	background-color: black;
+}
+
+#submitButton {
+	background-color: purple;
+	margin-top: 20px;
+}
+
+.hidden {
+	display: none;
+}
+
+#region {
+	background-color: red;
+}
+
+.region button {
+	color: red;
+	border: 2px solid red;
+	font-weight: bold;
+	background-color: white;
+}
+
+#cuisine {
+	background-color: orange;
+}
+
+.cuisine button {
+	color: orange;
+	border: 2px solid orange;
+	font-weight: bold;
+	background-color: white;
+}
+
+#entertainment {
+	background-color: green;
+}
+
+.entertainment button {
+	color: green;
+	border: 2px solid green;
+	font-weight: bold;
+	background-color: white;
+}
+
+#sports {
+	background-color: blue;
+}
+
+.sports button {
+	color: blue;
+	border: 2px solid blue;
+	font-weight: bold;
+	background-color: white;
+}
+
 #vacaHeader {
 	text-align: center;
 	height: 10%;
@@ -13,7 +79,7 @@ body {
 	border-radius: 5px;
 }
 
-#appInput {
+/*#appInput {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -36,21 +102,30 @@ body {
 #cityView {
 	border: 4px solid #5eb1bf;
 	text-align: center;
+	margin-top: 40px;
 	height: 80%;
 	border-radius: 5px;
 }
 
-.citySelect{
-
-margin-bottom: 15px;
-
+.citySelect {
+	text-align: center;
+	margin-bottom: 15px;
+	width: 100px;
+	height: 30px;
+	border: 2px solid black;
 }
+
 #map {
 	width: 300px;
 	height: 300px;
 	margin: 0 auto;
 }
 
+img {
+	width: 300px;
+	height: 250px;
+	border-radius: 10px;
+}*/
 img{
 	width: 50px;
 	height: 50px;
@@ -76,9 +151,8 @@ img{
 
 
 .mainView{
-
-display: flex;
-flex-direction: column; 
+	display: flex;
+	flex-direction: column; 
 }
 
 
@@ -87,8 +161,7 @@ flex-direction: column;
 	margin-bottom: 15px;
 	width: 100px;
 	border-radius: 5px;
-	
-	}
+}
 
 
 #appInput {
@@ -130,6 +203,7 @@ flex-direction: column;
 	border-radius: 5px;
 }
 
+<<<<<<< HEAD
 select {
 width: 300px;
 margin-bottom: 15px;
@@ -152,4 +226,6 @@ text-indent: 10px;
 
 
 
+=======
+>>>>>>> 3a0e0ec0bb91af0a94f5f844582ea0a5720c9755
 }

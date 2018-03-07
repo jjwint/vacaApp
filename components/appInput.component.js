@@ -6,6 +6,12 @@
         templateUrl: "partials/appInput.html",
         controller: function (CityService) {
             var $ctrl = this;
+            $ctrl.regionShow = true;
+            $ctrl.cuisineShow = false;
+            $ctrl.entertainmentShow = false;
+            $ctrl.sportsShow = false;
+
+
             CityService.getLibrary().then(function (data) {
                 $ctrl.data = data;
             })
@@ -24,12 +30,13 @@
                 $ctrl.thisCity = city;
                 $ctrl.onChangeCity({
                     $event: {
-                        thisCity: $ctrl.thisCity
-                        
+                        thisCity: $ctrl.thisCity 
                     }
                 });
                 
-
+            $ctrl.showRegionForm = function() {
+                console.log("hi");
+            }
 
             }
 
