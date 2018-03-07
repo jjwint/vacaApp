@@ -33,13 +33,18 @@ body {
 #cityView {
 	border: 4px solid #5eb1bf;
 	text-align: center;
-	margin-top: 90px;
+	margin-top: 40px;
 	border-radius: 5px;
 }
 
 .citySelect {
+	text-align: center;
 	margin-bottom: 15px;
+	width: 100px;
+	height: 30px;
+	border: 2px solid black;
 }
+
 #map {
 	width: 300px;
 	height: 300px;
@@ -58,9 +63,8 @@ img {
 
 
 .mainView{
-
-display: flex;
-flex-direction: column; 
+	display: flex;
+	flex-direction: column; 
 }
 
 
@@ -69,8 +73,7 @@ flex-direction: column;
 	margin-bottom: 15px;
 	width: 100px;
 	border-radius: 5px;
-	
-	}
+}
 
 
 #appInput {
@@ -108,16 +111,5 @@ flex-direction: column;
 	margin-top: 20px;
 	border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 }
