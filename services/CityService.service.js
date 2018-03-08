@@ -51,7 +51,7 @@
                     // }
                 }
             }
-            console.log(newObj);
+            
         }
 
         function getLibrary() {
@@ -68,7 +68,7 @@
         function saveCityObj(city) {
             document.getElementById("appInput").style.display = "none";
             displayCity = city; 
-            console.log(displayCity, citySport, cityCuisine, cityEntertainment)
+            
 
 
         }
