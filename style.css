@@ -23,53 +23,7 @@ body {
 }
 
 .cityDescription{
-
-font-size: 15px;
-
-}
-
-#region {
-	background-color: red;
-}
-
-.region button {
-	color: red;
-	border: 2px solid red;
-	font-weight: bold;
-	background-color: white;
-}
-
-#cuisine {
-	background-color: orange;
-}
-
-.cuisine button {
-	color: orange;
-	border: 2px solid orange;
-	font-weight: bold;
-	background-color: white;
-}
-
-#entertainment {
-	background-color: green;
-}
-
-.entertainment button {
-	color: green;
-	border: 2px solid green;
-	font-weight: bold;
-	background-color: white;
-}
-
-#sports {
-	background-color: blue;
-}
-
-.sports button {
-	color: blue;
-	border: 2px solid blue;
-	font-weight: bold;
-	background-color: white;
+	font-size: 15px;
 }
 
 #vacaHeader {
@@ -168,50 +122,12 @@ img {
 	z-index: -1;
 }
 
-#redCirc {
-	position: relative;
-	bottom: 350px;
-	border-radius: 50%;
-	background-color: red;
-	height: 150px;
-	width: 150px;
-}
-
-#orangeCirc {
-	position: relative;
-	left: 150px;
-	bottom: 180px;
-	border-radius: 50%;
-	background-color: orange;
-	height: 100px;
-	width: 100px;
-}
-
-#greenCirc {
-	position: relative;
-	bottom: 200px;
-	left: 100px;
-	border-radius: 50%;
-	background-color: green;
-	height: 180px;
-	width: 180px;
-}
-
-#blueCirc {
-	position: relative;
-	border-radius: 50%;
-	background-color: blue;
-	height: 225px;
-	width: 225px;
-}
-
 @media only screen and (min-width: 768px) {
 
 	.mainView{
 		display: flex;
 		flex-direction: column; 
 	}
-
 
 	#vacaHeader{
 		width: 50%;
@@ -228,7 +144,4 @@ img {
 			width: 35%;
 			height: 35%;
 		}
-
-
-
 }
