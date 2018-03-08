@@ -9,9 +9,9 @@
 
         controller: function (CityService) {
             var $ctrl = this;
-            
+            $ctrl.thisCity = CityService.getCityObj();
             $ctrl.$onInit = function () {
-                $ctrl.thisCity = CityService.getCityObj();
+               
                 $ctrl.thisCitySport = CityService.getCitySport();
                 $ctrl.thisCityCuisine = CityService.getCityCuisine();
                 $ctrl.thisCityEntertainment = CityService.getCityEntertainment();
@@ -23,7 +23,7 @@
                     zoom: 15
                     
                 });
-                console.log("Jooooo")
+                console.log($ctrl.map)
                 $ctrl.service = new google.maps.places.PlacesService($ctrl.map);
 
                 $ctrl.request = {
@@ -44,42 +44,22 @@
                         }
                     }
                 }
-
                 $ctrl.createMarker = function (place) {
 
                     var marker = new google.maps.Marker({
                         map: $ctrl.map,
                         position: place.geometry.location
                     });
-              
-                    // var infoWindow = new google.maps.InfoWindow({
-                    //     content: "<p>hello</p>"
-                    // });
-                    
-                    // marker.addListener('click', function() {
-                    //     infoWindow.setContent(place.name);
-                    //     infoWindow.open($ctrl.map, marker)
-                    // })
-                    
-
-                }
-                $ctrl.createInfoWindow = function (result) {
                     var infoWindow = new google.maps.InfoWindow({
                         content: "<p>hello</p>"
                     });
-                    marker.addListener('click', function () {
+                    marker.addListener('click', function() {
+                        infoWindow.setContent(place.name);
                         infoWindow.open($ctrl.map, marker)
                     })
-                };
-
+                }
                 $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
-
-
             };
-
-
-
-
         }
     };
 

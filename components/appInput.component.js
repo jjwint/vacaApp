@@ -6,7 +6,6 @@
         templateUrl: "partials/appInput.html",
         controller: function (CityService) {
             var $ctrl = this;
-
             $ctrl.newObj = {};
             $ctrl.regionShow = false;
             $ctrl.cuisineShow = false;
@@ -56,6 +55,8 @@
                 CityService.checkLogin($ctrl.newObj, $ctrl.data); 
             }
 
+           
+
             CityService.getLibrary().then(function (data) {
                 $ctrl.data = data;
             })
@@ -69,6 +70,8 @@
                         thisCity: $ctrl.thisCity
                     }
                 });
+
+                
             }
 
             // $ctrl.reset = function(){
