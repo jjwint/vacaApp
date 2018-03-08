@@ -73,7 +73,8 @@ font-size: 15px;
 }
 
 #vacaHeader {
-	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+/*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+*/	background:linear-gradient(to right, #c8cdcf, #fdfbfb);
 	text-align: center;
 	height: 10%;
 	border: 2px solid black;
@@ -145,7 +146,8 @@ img {
 }
 
 #infoDiv {
-	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+/*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+*/	background:linear-gradient(to right, #c8cdcf, #fdfbfb);
 	margin-left: 10px;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -160,6 +162,43 @@ img {
 
 #userChoices button {
 	margin: 5px;
+}
+
+#redCirc {
+	position: relative;
+	bottom: 350px;
+	border-radius: 50%;
+	background-color: red;
+	height: 150px;
+	width: 150px;
+}
+
+#orangeCirc {
+	position: relative;
+	left: 150px;
+	bottom: 180px;
+	border-radius: 50%;
+	background-color: orange;
+	height: 100px;
+	width: 100px;
+}
+
+#greenCirc {
+	position: relative;
+	bottom: 200px;
+	left: 100px;
+	border-radius: 50%;
+	background-color: green;
+	height: 180px;
+	width: 180px;
+}
+
+#blueCirc {
+	position: relative;
+	border-radius: 50%;
+	background-color: blue;
+	height: 225px;
+	width: 225px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -178,7 +217,7 @@ img {
 	.cityDescription{
 
 		font-size: 16px;
-		
+			
 		}
 
 		img {
