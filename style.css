@@ -164,6 +164,10 @@ img {
 	margin: 5px;
 }
 
+#circles {
+	z-index: -1;
+}
+
 #redCirc {
 	position: relative;
 	bottom: 350px;
