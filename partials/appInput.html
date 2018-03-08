@@ -1,6 +1,6 @@
 <div id="appInput">
 	<div id="flexDiv">
-		<div class="button-wrapper">
+		<div>
 			<div>
 				<button class="navButton" ng-click="$ctrl.showRegionForm();" id="region">Region</button>
 				<div class="region" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
@@ -31,11 +31,16 @@
 		</div>
 	</div>
 	<div id="userChoices">
-		<button class="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index" >{{ city.name }}</button>
+		<button class="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities | limitTo: 3 | orderBy:counter track by $index" >{{ city.name }}</button>
 	</div>
 </div>
 
-
+<div id="circles">
+	<div id="blueCirc"></div>
+	<div id="orangeCirc"></div>
+	<div id="greenCirc"></div>
+	<div id="redCirc"></div>
+</div>
 
 
 
