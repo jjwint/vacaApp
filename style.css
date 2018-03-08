@@ -8,7 +8,7 @@ body {
 	display: block;
 	/*width: 150px;*/
 	width: 100%;
-	color: white;
+	
 	font-size: 18px;
 	font-weight: bold;
 	color: #000;
@@ -19,9 +19,6 @@ body {
 	transition: 0.5s all;
 } 
 
-.navButton:hover {
-	background-color: lightgrey;
-}
 
 .navButton:after{
 	content: '\E145';
@@ -36,6 +33,42 @@ body {
 .item {
 	font-size: 18px;
 	font-family: "Open Sans";
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 5px;
+	
+}
+#region {
+	background-color: #21295C;
+	color: lightgray;
+}
+.region button {
+	background-color: lightgray;
+	color: #21295C
+}
+#cuisine {
+	background-color: #1B3B6F;
+	color: lightgray;
+}
+.cuisine button {
+	background-color: lightgray;
+	color: #1B3B6F;
+}
+#entertainment {
+	background-color: #065A82;
+	color: lightgray;
+}
+.entertainment button {
+	background-color: lightgray;
+	color: #065A82;
+}
+#sports {
+	background-color: #1C7293;
+	color: lightgray;
+}
+.sports button {
+	background-clor: lightgray;
+	color: #1C7293;
 }
 
 .button-wrapper {
@@ -50,6 +83,12 @@ body {
 /*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
 */	background:linear-gradient(to right, #c8cdcf, #fdfbfb);
 	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	
+	
 	height: 10%;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -62,7 +101,7 @@ body {
 }
 
 #cityView {
-	border: 4px solid #5eb1bf;
+	border: 4px solid #21295C;
 	text-align: center;
 	margin-top: 40px;
 	height: 80%;
@@ -97,21 +136,17 @@ img {
 #viewHeader {
 	display: flex;
 	flex-direction: column;
-	border: 2px solid #5eb1bf;
+	border: 2px solid #1B3B6F;
 	align-items: center;
 	justify-content: space-between;
 	margin: 2px;
 }
 #viewMap {
 	margin: 2px;
-	border: 2px solid #5eb1bf;
+	border: 2px solid #1B3B6F;
 	padding: 2px;
 }
 
-.material-icons {
-	position: relative;
-	top: 60px;
-}
 
 #flexDiv {
 	display: flex;
@@ -148,6 +183,7 @@ img {
 	width: 90%;
 	margin: 0 auto;
 }
+
 
 @media only screen and (min-width: 768px) {
 
