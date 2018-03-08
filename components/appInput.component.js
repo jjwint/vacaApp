@@ -11,9 +11,9 @@
             $ctrl.cuisineShow = false;
             $ctrl.entertainmentShow = false;
             $ctrl.sportsShow = false;
-            $ctrl.regions = ["Northeast", "Midwest", "Coastal", "Mountainous"];
-            $ctrl.cuisines = ["Mexican", "Italian", "Asian", "Vegan"];
-            $ctrl.entertainments = ["Museums", "Outdoor Recreation", "Zoos/Nature Preserves", "Historical Site Tours"];
+            $ctrl.regions = ["Northeast", "Midwest", "South", "West Coast"];
+            $ctrl.cuisines = ["Mexican", "Italian", "Chinese", "Vegan"];
+            $ctrl.entertainments = ["Museums", "Parks", "Landmarks", "Beaches"];
             $ctrl.sports = ["Baseball", "Basketball", "Football", "Hockey"];
             $ctrl.showRegionForm = function () {
                 $ctrl.regionShow = true;

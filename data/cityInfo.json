@@ -12,10 +12,10 @@
 }, {
     "name": "Los Angeles",
     "image": "images/LosAngeles.jpg",
-    "region": "Coastal",
+    "region": "West Coast",
     "sports": ["Basketball", "Football"],
     "cuisine": ["Mexican", "Italian"],
-    "entertainment": ["Beach", "Theme Parks"],
+    "entertainment": ["Beaches", "Parks"],
     "counter": 0,
     "description": "Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.",
     "latitude": 34.052234,
@@ -45,12 +45,12 @@
 }, {
     "name": "Miami",
     "image": "images/Miami.jpg",
-    "region": "Coastal",
+    "region": "South",
     "sports": ["Football"],
     "cuisine": ["Italian"],
-    "entertainment": ["Beach", "Landmarks"],
+    "entertainment": ["Beaches", "Landmarks"],
     "counter": 0,
-    "description": "Miami is an international city at Florida's southeastern tip. Its Cuban influence is reflected in the cafes and cigar shops that line Calle Ocho in Little Havana. On barrier islands across the turquoise waters of Biscayne Bay is Miami Beach, home to South Beach. This glamorous neighborhood is famed for its colorful art deco buildings, white sand, surfside hotels and trendsetting nightclubs.",
+    "description": "Miami is an international city at Florida's southeastern tip. Its Cuban influence is reflected in the cafes and cigar shops that line Calle Ocho in Little Havana. On barrier islands across the turquoise waters of Biscayne Bay is Miami beaches, home to South beaches. This glamorous neighborhood is famed for its colorful art deco buildings, white sand, surfside hotels and trendsetting nightclubs.",
     "latitude": 25.761680,
     "longitude": -80.191790
 }, {
@@ -67,7 +67,7 @@
 }, {
     "name": "New Orleans",
     "image": "images/NewOrleans.jpg",
-    "region": "Coastal",
+    "region": "South",
     "sports": ["Football"],
     "cuisine": ["Vegan"],
     "entertainment": ["Museums", "Landmarks"],
@@ -78,9 +78,9 @@
 }, {
     "name": "Atlanta",
     "image": "images/Atlanta.jpg",
-    "region": "Midwest",
+    "region": "South",
     "sports": ["Football"],
-    "cuisine": ["Vegan", "Ethiopian"],
+    "cuisine": ["Vegan"],
     "entertainment": ["Museums", "Landmarks"],
     "counter": 0,
     "description": "Atlanta is the capital of the U.S. state of Georgia. It played an important part in both the Civil War and the 1960s Civil Rights Movement. Atlanta History Center chronicles the city's past, and the Martin Luther King Jr. National Historic Site is dedicated to the African-American leader’s life and times. Downtown, Centennial Olympic Park, built for the 1996 Olympics, encompasses the massive Georgia Aquarium.",

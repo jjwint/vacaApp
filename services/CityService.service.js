@@ -24,9 +24,10 @@
             cityEntertainment = newObj.entertainment;
 
            
-
+            // possibleCities = [];
             for (i = 0; i <= 7; i++) {
-
+                // data[i].counter = 0;
+                
                 if(newObj.region === data[i].region && (possibleCities.includes(data[i]) === false)){
                     possibleCities.push(data[i]);
                     console.log(possibleCities);

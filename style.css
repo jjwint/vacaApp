@@ -1,5 +1,5 @@
 body {
-	background-color: #CDEDF6;
+	background:linear-gradient(to right, #fdfbfb, #c8cdcf);
 	font-family: "Courier New";
 }
 
@@ -20,6 +20,12 @@ body {
 
 .item:hover {
 	background-color: black;
+}
+
+.cityDescription{
+
+font-size: 15px;
+
 }
 
 #region {
@@ -67,9 +73,10 @@ body {
 }
 
 #vacaHeader {
+	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
 	text-align: center;
 	height: 10%;
-	border: 4px solid #d84727;
+	border: 2px solid black;
 	border-radius: 5px;
 }
 
@@ -106,14 +113,15 @@ body {
 }
 
 img {
-	width: 50%;
-	height: 50%;
+	width: 45%;
+	height: 45%;
 	border-radius: 10px;
 	margin: 2px;
 }
 
 #viewHeader {
 	display: flex;
+	flex-direction: column;
 	border: 2px solid #5eb1bf;
 	align-items: center;
 	justify-content: space-between;
@@ -137,8 +145,10 @@ img {
 }
 
 #infoDiv {
+	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
 	margin-left: 10px;
 	border: 2px solid black;
+	border-radius: 5px;
 	padding: 8px;
 }
 
@@ -158,4 +168,24 @@ img {
 		display: flex;
 		flex-direction: column; 
 	}
+
+
+	#vacaHeader{
+		width: 50%;
+		margin: 10px auto;
+	}
+
+	.cityDescription{
+
+		font-size: 16px;
+		
+		}
+
+		img {
+			width: 35%;
+			height: 35%;
+		}
+
+
+
 }
