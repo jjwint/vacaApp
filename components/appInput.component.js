@@ -6,10 +6,10 @@
         templateUrl: "partials/appInput.html",
         controller: function (CityService) {
             var $ctrl = this;
-            $ctrl.regionShow = true;
-            $ctrl.cuisineShow = false;
-            $ctrl.entertainmentShow = false;
-            $ctrl.sportsShow = false;
+            // $ctrl.regionShow = true;
+            // $ctrl.cuisineShow = false;
+            // $ctrl.entertainmentShow = false;
+            // $ctrl.sportsShow = false;
 
 
             CityService.getLibrary().then(function (data) {
@@ -34,9 +34,9 @@
                     }
                 });
                 
-            $ctrl.showRegionForm = function() {
-                console.log("hi");
-            }
+            // $ctrl.showRegionForm = function() {
+            //     console.log("hi");
+            // }
 
             }
 
