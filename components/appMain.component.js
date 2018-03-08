@@ -6,8 +6,6 @@
             $ctrl.$onInit = function() {
                 $ctrl.thisCity = null;
             }
-            
-            
         }
     };
     angular

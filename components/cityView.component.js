@@ -6,7 +6,7 @@
         },
 
         templateUrl: "partials/cityView.html",
-
+        
         controller: function (CityService) {
             var $ctrl = this;
             $ctrl.thisCity = CityService.getCityObj();

@@ -55,8 +55,6 @@
                 CityService.checkLogin($ctrl.newObj, $ctrl.data); 
             }
 
-           
-
             CityService.getLibrary().then(function (data) {
                 $ctrl.data = data;
             })
@@ -70,8 +68,6 @@
                         thisCity: $ctrl.thisCity
                     }
                 });
-
-                
             }
 
             // $ctrl.reset = function(){
@@ -79,12 +75,7 @@
             //     possibleCities.length = 0;
 
             // }
-
-
         }
-
-
-
     };
     angular
         .module("vaCaApp")
