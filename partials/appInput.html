@@ -1,29 +1,35 @@
 <div id="appInput">
-	<div>
-		<button ng-click="$ctrl.showRegionForm();" id="region">Region</button>
-		<div class="region" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
-			<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
+	<div id="flexDiv">
+		<div>
+			<div>
+				<button class="navButton" ng-click="$ctrl.showRegionForm();" id="region">Region</button>
+				<div class="region" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
+					<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
+				</div>
+			</div>
+			<div>
+				<button class="navButton" ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
+				<div class="cuisine" ng-show="$ctrl.cuisineShow" ng-repeat="cuisine in $ctrl.cuisines">
+					<button ng-click="$ctrl.hideCuisineForm(cuisine);" cuisine-directive class="item">{{ cuisine }}</button>
+				</div>
+			</div>
+			<div>
+				<button class="navButton" ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
+				<div class="entertainment" ng-show="$ctrl.entertainmentShow" ng-repeat="entertainment in $ctrl.entertainments">
+					<button ng-click="$ctrl.hideEntertainmentForm(entertainment);" entertainment-directive class="item">{{ entertainment }}</button>
+				</div>
+			</div>
+			<div>
+				<button class="navButton" ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
+				<div class="sports" ng-show="$ctrl.sportsShow" ng-repeat="sport in $ctrl.sports">
+					<button ng-click="$ctrl.hideSportsForm(sport);" sports-directive class="item">{{ sport }}</button>
+				</div>
+			</div>
+		</div>
+		<div id="infoDiv">
+			<p>And sometimes switches in french and say "miaou" just because well why not. Pose purrfectly to show my beauty man running from cops stops to pet cats, goes to jail for brown cats with pink ears.</p>
 		</div>
 	</div>
-	<div>
-		<button ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
-		<div class="cuisine" ng-show="$ctrl.cuisineShow" ng-repeat="cuisine in $ctrl.cuisines">
-			<button ng-click="$ctrl.hideCuisineForm(cuisine);" cuisine-directive class="item">{{ cuisine }}</button>
-		</div>
-	</div>
-	<div>
-		<button ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
-		<div class="entertainment" ng-show="$ctrl.entertainmentShow" ng-repeat="entertainment in $ctrl.entertainments">
-			<button ng-click="$ctrl.hideEntertainmentForm(entertainment);" entertainment-directive class="item">{{ entertainment }}</button>
-		</div>
-	</div>
-	<div>
-		<button ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
-		<div class="sports" ng-show="$ctrl.sportsShow" ng-repeat="sport in $ctrl.sports">
-			<button ng-click="$ctrl.hideSportsForm(sport);" sports-directive class="item">{{ sport }}</button>
-		</div>
-	</div>
-	<button id="submitButton" ng-click="$ctrl.submit;">FIND GETAWAYS</button>
 	<div id="userChoices">
 		<button class="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index" >{{ city.name }}</button>
 	</div>
