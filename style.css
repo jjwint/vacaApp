@@ -1,21 +1,46 @@
 body {
 	background:linear-gradient(to right, #fdfbfb, #c8cdcf);
-	font-family: "Courier New";
+	font-family: "Open Sans";
 }
 
 .navButton {
-	font-family: "Courier New";
+	font-family: "Open Sans";
 	display: block;
-	width: 150px;
+	/*width: 150px;*/
+	width: 100%;
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 10px;
+	position: relative;
+	transition: 0.5s all;
 } 
+
+.navButton:hover {
+	background-color: lightgrey;
+}
+
+.navButton:after{
+	content: '\E145';
+	display: block;
+	position: absolute;
+	font-family: "Material Icons";
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
 .item {
 	font-size: 18px;
 	width: 150px;
-	font-family: "Courier New";
+	font-family: "Open Sans";
+}
+
+.button-wrapper {
+	margin: 20px 0;
 }
 
 .item:hover {
@@ -95,17 +120,18 @@ img {
 
 #flexDiv {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column-reverse;
 	justify-content: space-between;
 }
 
 #infoDiv {
 /*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
 */	background:linear-gradient(to right, #c8cdcf, #fdfbfb);
-	margin-left: 10px;
+
 	border: 2px solid black;
 	border-radius: 5px;
 	padding: 8px;
+	text-align: center;
 }
 
 #userChoices {
@@ -122,6 +148,12 @@ img {
 	z-index: -1;
 }
 
+.container {
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
+}
+
 @media only screen and (min-width: 768px) {
 
 	.mainView{
@@ -129,9 +161,17 @@ img {
 		flex-direction: column; 
 	}
 
+	#flex-div {
+		flex-direction: row;
+	}
+
 	#vacaHeader{
 		width: 50%;
 		margin: 10px auto;
+	}
+
+	#infoDiv {
+		margin-left: 10px;
 	}
 
 	.cityDescription{
