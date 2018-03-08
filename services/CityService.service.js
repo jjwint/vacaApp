@@ -18,7 +18,7 @@
         }
 
         function checkLogin(newObj, data) {
-            console.log(newObj)
+            
             cityCuisine = newObj.cuisine;
             citySport = newObj.sport;
             cityEntertainment = newObj.entertainment;
@@ -46,11 +46,12 @@
                 }
                 if (data[i].counter > 3 && (possibleCities.includes(data[i]) === false)) {
 
-                    if (possibleCities.length < 3) {
+                    // if (possibleCities.length < 3) {
                         possibleCities.push(data[i]);
-                    }
+                    // }
                 }
             }
+            console.log(newObj);
         }
 
         function getLibrary() {
@@ -66,7 +67,7 @@
 
         function saveCityObj(city) {
             document.getElementById("appInput").style.display = "none";
-            displayCity = city;
+            displayCity = city; 
             console.log(displayCity, citySport, cityCuisine, cityEntertainment)
 
 
