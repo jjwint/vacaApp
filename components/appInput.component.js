@@ -6,12 +6,7 @@
         templateUrl: "partials/appInput.html",
         controller: function (CityService) {
             var $ctrl = this;
-<<<<<<< HEAD
-            // $ctrl.regionShow = true;
-            // $ctrl.cuisineShow = false;
-            // $ctrl.entertainmentShow = false;
-            // $ctrl.sportsShow = false;
-=======
+
             $ctrl.newObj = {};
             $ctrl.regionShow = false;
             $ctrl.cuisineShow = false;
@@ -24,7 +19,6 @@
             $ctrl.showRegionForm = function () {
                 $ctrl.regionShow = true;
             }
->>>>>>> b4fbb78125b833564efdf3d0cf5f22ce2272187e
 
             $ctrl.showCuisineForm = function () {
                 $ctrl.cuisineShow = true;
@@ -62,8 +56,6 @@
                 CityService.checkLogin($ctrl.newObj, $ctrl.data); 
             }
 
-           
-
             CityService.getLibrary().then(function (data) {
                 $ctrl.data = data;
             })
@@ -77,18 +69,6 @@
                         thisCity: $ctrl.thisCity
                     }
                 });
-<<<<<<< HEAD
-                
-            // $ctrl.showRegionForm = function() {
-            //     console.log("hi");
-            // }
-=======
-
-                $ctrl.showRegionForm = function () {
-                    console.log("hi");
-                }
->>>>>>> b4fbb78125b833564efdf3d0cf5f22ce2272187e
-
             }
 
             // $ctrl.reset = function(){
