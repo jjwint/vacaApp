@@ -23,35 +23,68 @@
             citySport = newObj.sport;
             cityEntertainment = newObj.entertainment;
 
+           
 
-            for (i = 0; i < 7; i++) {
+            for (i = 0; i <= 7; i++) {
+
+                if(newObj.region === data[i].region && (possibleCities.includes(data[i]) === false)){
+                    possibleCities.push(data[i]);
+                    console.log(possibleCities);
+                    if(possibleCities.length > 1 ){
+                        if (data[i].cuisine.includes(newObj.cuisine) === true) {
+
+                              data[i].counter++;
+                  
+                        }
+                    
+                        if (data[i].cuisine.includes(newObj.cuisine) === true) {
+
+                            data[i].counter++;
+                        
+                        }
+
+                        if (data[i].entertainment.includes(newObj.entertainment) === true) {
+
+                            data[i].counter++;
+                        
+                        }
 
 
-                if (newObj.region === data[i].region) {
-                    data[i].counter += 2;
+                        
+                    } 
                 }
+              
+            //     data[i].counter = 0;
+            //     // if the user selected a region
+               
+            //         // if the user's region matches this city's region
+            //     if (newObj.region === data[i].region) {
+            //         data[i].counter += 2;
+                    
+            //     }
+                
 
-                if (data[i].sports.includes(newObj.sport) === true) {
+           
 
-                    data[i].counter++;
-                }
+            //     if (data[i].cuisine.includes(newObj.cuisine) === true) {
 
-                if (data[i].cuisine.includes(newObj.cuisine) === true) {
+            //         data[i].counter++;
+                  
+            //     }
+            //     if (data[i].entertainment.includes(newObj.entertainment) === true) {
 
-                    data[i].counter++;
-                }
-                if (data[i].entertainment.includes(newObj.entertainment) === true) {
-
-                    data[i].counter++;
-                }
-                if (data[i].counter > 3 && (possibleCities.includes(data[i]) === false)) {
-
-                    if (possibleCities.length < 3) {
-                        possibleCities.push(data[i]);
+            //         data[i].counter++;
+                  
+            //     }
+            //     if (data[i].counter > 0 && (possibleCities.includes(data[i]) === false)) {
+                  
+            //        // if (possibleCities.length < 3) {
+            //             possibleCities.push(data[i]);
+            //             console.log(possibleCities);
                         
 
-                    }
-                }
+            //        // }
+            //     }
             }
             
         }
