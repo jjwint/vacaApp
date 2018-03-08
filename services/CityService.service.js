@@ -46,9 +46,9 @@
                 }
                 if (data[i].counter > 3 && (possibleCities.includes(data[i]) === false)) {
 
-                    if (possibleCities.length < 3) {
+                    // if (possibleCities.length < 3) {
                         possibleCities.push(data[i]);
-                    }
+                    // }
                 }
             }
         }

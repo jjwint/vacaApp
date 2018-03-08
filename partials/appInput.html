@@ -48,7 +48,7 @@
 		<select ng-model="region" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
 			<option>Northeast</option>
 			<option>Midwest</option>
-			<option>Mountainous</option>
+			<!-- <option>Mountainous</option> -->
 			<option>Coastal</option>
 		</select>
 		<label>Sports</label>
@@ -62,15 +62,17 @@
 		<select ng-model="cuisine" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
 			<option>Mexican</option>
 			<option>Italian</option>
-			<option>Asian</option>
+			<option>Chinese</option>
 			<option>Vegan</option>
+			<option>Ethiopian</option>
 		</select>
 		<label>Entertainment</label>
 		<select ng-model="entertainment" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
 			<option>Museums</option>
-			<option>Outdoor Recreation</option>
-			<option>Zoos/Nature Preserves</option>
-			<option>Historical Site Tours</option>
+			<option>Landmarks</option>
+			<option>Beach</option>
+			<option>Theme Parks</option>
+			<option>Parks</option>
 		</select>
 		<!-- <button ng-click="$ctrl.reset()"></button> -->
 </div>
