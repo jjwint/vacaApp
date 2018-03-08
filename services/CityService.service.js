@@ -2,6 +2,7 @@
     var CityService = function ($http) {
         var possibleCities = [];
         var displayCity = {};
+        var cityRegion = "";
         var cityCuisine = "";
         var citySport = "";
         var cityEntertainment = "";
@@ -19,73 +20,45 @@
 
         function checkLogin(newObj, data) {
             
+            cityRegion = newObj.region;
             cityCuisine = newObj.cuisine;
             citySport = newObj.sport;
             cityEntertainment = newObj.entertainment;
 
            
-            // possibleCities = [];
+            possibleCities.length = 0;
             for (i = 0; i <= 7; i++) {
-                // data[i].counter = 0;
+                var thisCity = data[i];
+                thisCity.counter = 0;
                 
-                if(newObj.region === data[i].region && (possibleCities.includes(data[i]) === false)){
-                    possibleCities.push(data[i]);
+                // TODO change this if so that it includes all cities if no region picked.
+                // if the city is in the right region, add it to the list and rate it.
+                if(cityRegion === thisCity.region){
+                    // add it to the list
+                    possibleCities.push(thisCity);
                     console.log(possibleCities);
-                    if(possibleCities.length > 1 ){
-                        if (data[i].cuisine.includes(newObj.cuisine) === true) {
+                    // rate it... a point for each
+                    if (thisCity.cuisine.includes(newObj.cuisine) === true) {
 
-                              data[i].counter++;
-                  
-                        }
+                            thisCity.counter++;
+                
+                    }
+                
+                    if (thisCity.sports.includes(newObj.sport) === true) {
+
+                        thisCity.counter++;
                     
-                        if (data[i].cuisine.includes(newObj.cuisine) === true) {
+                    }
 
-                            data[i].counter++;
-                        
-                        }
+                    if (thisCity.entertainment.includes(newObj.entertainment) === true) {
 
-                        if (data[i].entertainment.includes(newObj.entertainment) === true) {
+                        thisCity.counter++;
+                    
+                    }
 
-                            data[i].counter++;
-                        
-                        }
-
-
-                        
-                    } 
+                    console.log("region matched", thisCity);
                 }
               
-            //     data[i].counter = 0;
-            //     // if the user selected a region
-               
-            //         // if the user's region matches this city's region
-            //     if (newObj.region === data[i].region) {
-            //         data[i].counter += 2;
-                    
-            //     }
-                
-
-           
-
-            //     if (data[i].cuisine.includes(newObj.cuisine) === true) {
-
-            //         data[i].counter++;
-                  
-            //     }
-            //     if (data[i].entertainment.includes(newObj.entertainment) === true) {
-
-            //         data[i].counter++;
-                  
-            //     }
-            //     if (data[i].counter > 0 && (possibleCities.includes(data[i]) === false)) {
-                  
-            //        // if (possibleCities.length < 3) {
-            //             possibleCities.push(data[i]);
-            //             console.log(possibleCities);
-                        
-
-            //        // }
-            //     }
             }
             
         }
