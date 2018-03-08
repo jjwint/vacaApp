@@ -52,25 +52,25 @@
                         position: place.geometry.location
                     });
               
-                    var infoWindow = new google.maps.InfoWindow({
-                        content: "<p>hello</p>"
-                    });
+                    // var infoWindow = new google.maps.InfoWindow({
+                    //     content: "<p>hello</p>"
+                    // });
                     
-                    marker.addListener('click', function() {
-                        infoWindow.setContent(place.name);
-                        infoWindow.open($ctrl.map, marker)
-                    })
+                    // marker.addListener('click', function() {
+                    //     infoWindow.setContent(place.name);
+                    //     infoWindow.open($ctrl.map, marker)
+                    // })
                     
 
                 }
-                // $ctrl.createInfoWindow = function (result) {
-                //     var infoWindow = new google.maps.InfoWindow({
-                //         content: "<p>hello</p>"
-                //     });
-                //     marker.addListener('click', function () {
-                //         infoWindow.open($ctrl.map, marker)
-                //     })
-                // };
+                $ctrl.createInfoWindow = function (result) {
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: "<p>hello</p>"
+                    });
+                    marker.addListener('click', function () {
+                        infoWindow.open($ctrl.map, marker)
+                    })
+                };
 
                 $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
 
