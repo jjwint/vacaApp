@@ -20,7 +20,7 @@
                 
                 $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                     center: $ctrl.thisCityLoc,
-                    zoom: 15
+                    zoom: 13
                     
                 });
                 console.log($ctrl.map)
