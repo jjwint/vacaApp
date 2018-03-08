@@ -1,31 +1,26 @@
-/* ---------------------------------------- mobile view */
-
 body {
 	background-color: #CDEDF6;
 	color: #042a2b;
 	font-family: "Courier New";
 }
 
-button {
+.navButton {
 	font-family: "Courier New";
 	display: block;
 	width: 150px;
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
+} 
+
+.item {
+	font-size: 18px;
+	width: 150px;
+	font-family: "Courier New";
 }
 
 .item:hover {
 	background-color: black;
-}
-
-#submitButton {
-	background-color: purple;
-	margin-top: 20px;
-}
-
-.hidden {
-	display: none;
 }
 
 #region {
@@ -71,10 +66,7 @@ button {
 	font-weight: bold;
 	background-color: white;
 }
-.citySelect {
-	color: black;
-	background-color: green
-}
+
 #vacaHeader {
 	text-align: center;
 	height: 10%;
@@ -82,25 +74,10 @@ button {
 	border-radius: 5px;
 }
 
-
 #appInput {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-#inputButtons {
-	padding-left: 20px;
-}
-
-
-#inputButtons, #userChoices {
-	display: flex;
 	flex-direction: column;
-	min-width: 40%;
-	border-radius: 5px;
-	border: 4px solid #d84727;
-	background-color: #ef7b45;
+	justify-content: space-between;
 }
 
 #cityView {
@@ -114,28 +91,27 @@ button {
 .citySelect {
 	text-align: center;
 	margin-bottom: 15px;
-	width: 100px;
-	height: 30px;
+	width: 150px;
 	border: 2px solid black;
+	font-family: "Courier New";
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
 }
 
 #map {
-	width: 300px;
+	width: 100%;
 	height: 300px;
 	margin: 0 auto;
 }
 
 img {
-	width: 300px;
-	height: 250px;
-	border-radius: 10px;
-}
-img{
 	width: 50px;
 	height: 50px;
 	border-radius: 10px;
 	margin: 2px;
 }
+
 #viewHeader {
 	display: flex;
 	border: 2px solid #5eb1bf;
@@ -149,84 +125,37 @@ img{
 	padding: 2px;
 }
 
-/* ---------------------------------------- desktop view */
+.material-icons {
+	position: relative;
+	top: 60px;
+}
+
+#flexDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#infoDiv {
+	margin-left: 10px;
+	border: 2px solid black;
+	padding: 8px;
+}
+
+#userChoices {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+#userChoices button {
+	margin: 5px;
+}
 
 @media only screen and (min-width: 768px) {
 
-
-.mainView{
-	display: flex;
-	flex-direction: column; 
-}
-
-
-.citySelect{
-	margin-top: 15px;
-	margin-bottom: 15px;
-	width: 100px;
-	border-radius: 5px;
-}
-
-
-#appInput {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-#inputButtons{
-	width: 500px;
-	flex-direction: column;
-	text-align: center;
-
-	min-width: 40%;
-	border-radius: 5px;
-	border: 4px solid #d84727;
-	background-color: #ef7b45;
-	margin: 0 auto;
-	/* order: 2; */
-}
-
-
-#userChoices {
-	align-items: flex-start;
-	flex-direction: row;
-	min-width: 40%;
-	border-radius: 5px;
-	border: 4px solid #d84727;
-	background-color: #ef7b45;
-	/* order: 1; */
-	justify-content: space-between;
-	margin-top: 20px;
-}
-
-#cityView {
-	border: 4px solid #5eb1bf;
-	text-align: center;
-	margin-top: 20px;
-	border-radius: 5px;
-}
-
-select {
-width: 300px;
-margin-bottom: 15px;
-margin: 0 auto;
-/* text-indent: 50%; */
-
-}
-
-
-options {
-
-text-indent: 10px;
-
-}
-
-
-
-
-
-
-
-
+	.mainView{
+		display: flex;
+		flex-direction: column; 
+	}
 }
