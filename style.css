@@ -35,16 +35,11 @@ body {
 
 .item {
 	font-size: 18px;
-	width: 150px;
 	font-family: "Open Sans";
 }
 
 .button-wrapper {
 	margin: 20px 0;
-}
-
-.item:hover {
-	background-color: black;
 }
 
 .cityDescription{
