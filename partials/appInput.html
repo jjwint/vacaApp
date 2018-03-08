@@ -1,41 +1,32 @@
-<div ng-controller="OptionsController as $ctrl">
+<div id="appInput">
 	<div>
 		<button ng-click="$ctrl.showRegionForm();" id="region">Region</button>
-		<div class="region" ng-show="$ctrl.regionShow">
-			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Northeast</button>
-			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Midwest</button>
-			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Mountainous</button>
-			<button ng-click="$ctrl.hideRegionForm();" region-directive class="item">Coastal</button>
+		<div class="region" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
+			<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
 		</div>
 	</div>
 	<div>
 		<button ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
-		<div class="cuisine" ng-show="$ctrl.cuisineShow">
-			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Mexican</button>
-			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Italian</button>
-			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Asian</button>
-			<button ng-click="$ctrl.hideCuisineForm();" cuisine-directive class="item">Vegan</button>
+		<div class="cuisine" ng-show="$ctrl.cuisineShow" ng-repeat="cuisine in $ctrl.cuisines">
+			<button ng-click="$ctrl.hideCuisineForm(cuisine);" cuisine-directive class="item">{{ cuisine }}</button>
 		</div>
 	</div>
 	<div>
 		<button ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
-		<div class="entertainment" ng-show="$ctrl.entertainmentShow">
-			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Museums</button>
-			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Outdoor Recreation</button>
-			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Zoos/Nature Preserves</button>
-			<button ng-click="$ctrl.hideEntertainmentForm();" entertainment-directive class="item">Historical Site Tours</button>
+		<div class="entertainment" ng-show="$ctrl.entertainmentShow" ng-repeat="entertainment in $ctrl.entertainments">
+			<button ng-click="$ctrl.hideEntertainmentForm(entertainment);" entertainment-directive class="item">{{ entertainment }}</button>
 		</div>
 	</div>
 	<div>
 		<button ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
-		<div class="sports" ng-show="$ctrl.sportsShow">
-			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Baseball</button>
-			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Basketball</button>
-			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Football</button>
-			<button ng-click="$ctrl.hideSportsForm();" sports-directive class="item">Hockey</button>
+		<div class="sports" ng-show="$ctrl.sportsShow" ng-repeat="sport in $ctrl.sports">
+			<button ng-click="$ctrl.hideSportsForm(sport);" sports-directive class="item">{{ sport }}</button>
 		</div>
 	</div>
-	<button id="submitButton" ng-click="$ctrl.sayHi();">FIND GETAWAYS</button>
+	<button id="submitButton" ng-click="$ctrl.submit;">FIND GETAWAYS</button>
+	<div id="userChoices">
+		<button class="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index" >{{ city.name }}</button>
+	</div>
 </div>
 
 
@@ -48,8 +39,8 @@
 		<select ng-model="region" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
 			<option>Northeast</option>
 			<option>Midwest</option>
-			<!-- <option>Mountainous</option> -->
-			<option>Coastal</option>
+			<!<option>Mountainous</option> -->
+<!-- <option>Coastal</option>
 		</select>
 		<label>Sports</label>
 		<select ng-model="sport" ng-change="$ctrl.submit(region, sport, cuisine, entertainment);">
@@ -74,10 +65,10 @@
 			<option>Theme Parks</option>
 			<option>Parks</option>
 		</select>
-		<!-- <button ng-click="$ctrl.reset()"></button> -->
-</div>
+		<!-<button ng-click="$ctrl.reset()"></button> -->
+<!-- </div>
 </div>
 <div id="userChoices">
 	<button class="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities track by $index">{{ city.name }}</button>
 </div>
-</div> -->
+</div>

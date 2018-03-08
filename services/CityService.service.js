@@ -18,7 +18,7 @@
         }
 
         function checkLogin(newObj, data) {
-            console.log(newObj)
+            
             cityCuisine = newObj.cuisine;
             citySport = newObj.sport;
             cityEntertainment = newObj.entertainment;
@@ -51,6 +51,7 @@
                     // }
                 }
             }
+            console.log(newObj);
         }
 
         function getLibrary() {
@@ -66,7 +67,7 @@
 
         function saveCityObj(city) {
             document.getElementById("appInput").style.display = "none";
-            displayCity = city;
+            displayCity = city; 
             console.log(displayCity, citySport, cityCuisine, cityEntertainment)
 
 

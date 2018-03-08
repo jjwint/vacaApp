@@ -71,13 +71,17 @@ button {
 	font-weight: bold;
 	background-color: white;
 }
-
+.citySelect {
+	color: black;
+	background-color: green
+}
 #vacaHeader {
 	text-align: center;
 	height: 10%;
 	border: 4px solid #d84727;
 	border-radius: 5px;
 }
+
 
 /*#appInput {
 	display: flex;
@@ -203,7 +207,6 @@ img{
 	border-radius: 5px;
 }
 
-<<<<<<< HEAD
 select {
 width: 300px;
 margin-bottom: 15px;
@@ -226,6 +229,4 @@ text-indent: 10px;
 
 
 
-=======
->>>>>>> 3a0e0ec0bb91af0a94f5f844582ea0a5720c9755
 }
