@@ -34,12 +34,43 @@
 
                 // TODO change this if so that it includes all cities if no region picked.
 
-                // if the city is in the right region, add it to the list and rate it.  
+                // if the city is in the right region, add it to the list and rate it.
 
-                if (cityRegion === thisCity.region) {
+                if (cityRegion !== thisCity.region) {
+
+                    // console.log("yes");
+                    if (thisCity.cuisine.includes(newObj.cuisine) === true) {
+
+                        thisCity.counter++;
+
+                    }
+
+                    if (thisCity.sports.includes(newObj.sport) === true) {
+
+                        thisCity.counter++;
+
+                    }
+
+                    if (thisCity.entertainment.includes(newObj.entertainment) === true) {
+
+                        thisCity.counter++;
+
+                    }
+
+                    // console.log("counter", thisCity.counter);
+
+                    if (thisCity.counter > 1) {
+
+                        possibleCities.push(thisCity);
+
+                    }
+
+                } else if (cityRegion === thisCity.region) {
+
                     // add it to the list
+                    // possibleCities.length = 0;
                     possibleCities.push(thisCity);
-                    console.log(possibleCities);
+                    // console.log(possibleCities);
                     // rate it... a point for each
                     if (thisCity.cuisine.includes(newObj.cuisine) === true) {
 
@@ -60,6 +91,7 @@
 
                     console.log("counter", thisCity.counter);
                 }
+
 
             }
 
