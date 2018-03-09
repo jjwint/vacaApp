@@ -6,6 +6,10 @@
             $ctrl.$onInit = function() {
                 $ctrl.thisCity = null;
             }
+            $ctrl.reset = function () {
+                $ctrl.thisCity = null;
+                CityService.reset();
+            }
         }
     };
     angular

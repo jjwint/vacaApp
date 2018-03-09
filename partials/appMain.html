@@ -1,5 +1,9 @@
 <div>
-    <app-header></app-header>
+    <div id="vacaHeader">
+        <button ng-click="$ctrl.reset()">Reset</button>
+
+        <h1>Get-A-Ways</h1>
+    </div>
     <div class="mainView">
         <app-input on-change-city="$ctrl.thisCity = $event.thisCity"></app-input>
         <city-view ng-if="$ctrl.thisCity" this-city="$ctrl.thisCity"></city-view>
