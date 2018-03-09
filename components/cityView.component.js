@@ -12,7 +12,7 @@
             $ctrl.thisCity = CityService.getCityObj();
             $ctrl.reset = function () {
                 $ctrl.thisCity = {};
-                CityService.reset();
+                
             }
             $ctrl.$onInit = function () {
 
