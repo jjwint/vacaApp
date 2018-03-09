@@ -69,6 +69,7 @@
 
                     // add it to the list
                     // possibleCities.length = 0;
+                    thisCity.counter+=2;
                     possibleCities.push(thisCity);
                     // console.log(possibleCities);
                     // rate it... a point for each
