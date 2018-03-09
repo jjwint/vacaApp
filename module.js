@@ -1,4 +1,4 @@
 (function () {
     angular
-        .module("vaCaApp", ['ngAnimate']);
+        .module("vaCaApp", ["ngRoute", "ngAnimate"]);
 })();
