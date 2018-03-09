@@ -45,21 +45,15 @@ body {
 	color: lightgray;
 }
 
-
-
 #cuisine {
 	background-color: #1B3B6F;
 	color: lightgray;
 }
 
-
-
 #entertainment {
 	background-color: #065A82;
 	color: lightgray;
 }
-
-
 
 #sports {
 	background-color: #1C7293;
@@ -83,8 +77,6 @@ body {
 }
 
 #vacaHeader {
-	/*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
-*/
 	background: linear-gradient(to right, #c8cdcf, #fdfbfb);
 	text-align: center;
 	display: flex;
@@ -157,8 +149,6 @@ img {
 }
 
 #infoDiv {
-	/*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
-*/
 	background: linear-gradient(to right, #c8cdcf, #fdfbfb);
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -194,24 +184,19 @@ img {
 	}
 
 	.item:hover{
-
 		background-color:#ccccff;
-
 	}
 
 	
 	#region:hover{
-
 		color: white;
 	}
 
 	#cuisine:hover{
-
 		color: white;
 	}
 
 	#entertainment:hover{
-
 		color: white;
 	}
 
@@ -225,25 +210,26 @@ img {
 	}
 
 	.citySelect:hover{
-
 		background-color: #d4c9c4;
-
 	}
-
 
 	#flex-div {
 		flex-direction: row;
 	}
+
 	#vacaHeader {
 		width: 50%;
 		margin: 10px auto;
 	}
+
 	#infoDiv {
 		margin-left: 10px;
 	}
+
 	.cityDescription {
 		font-size: 16px;
 	}
+	
 	img {
 		width: 35%;
 		height: 35%;
