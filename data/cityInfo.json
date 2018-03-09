@@ -21,6 +21,17 @@
     "latitude": 34.052234,
     "longitude": -118.243685
 }, {
+    "name": "Milwaukee",
+    "image": "images/Milwaukee.jpg",
+    "region": "Midwest",
+    "sports": ["Basketball", "Football"],
+    "cuisine": ["Mexican", "Italian"],
+    "entertainment": ["Beaches", "Parks"],
+    "counter": 0,
+    "description": "'Milwaukee is a city in the U.S. state of Wisconsin on Lake Michigan's western shore. It's known for its breweries, many of which offer tours chronicling its role in the beer industry. Overlooking the Menomonee River, the Harley-Davidson Museum displays classic motorcycles, including one of Elvis Presley’s. Nearby is the Milwaukee Public Museum, with its large-scale European Village and a recreation of old Milwaukee.' (Google)",
+    "latitude": 43.038902,
+    "longitude": -87.906474
+},{
     "name": "New York City",
     "image": "images/NYC.jpg",
     "region": "Northeast",
