@@ -17,7 +17,6 @@
             getCityEntertainment: getCityEntertainment,
             // reset: reset
 
-
         }
 
         function checkLogin(newObj, data) {
