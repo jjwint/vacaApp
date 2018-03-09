@@ -33,16 +33,32 @@
             }
             // input show
             $ctrl.showRegionForm = function () {
-                $ctrl.regionShow = true;
+                if ($ctrl.regionShow === false) {
+                    $ctrl.regionShow = true;
+                } else {
+                    $ctrl.regionShow = false;
+                }
             }
             $ctrl.showCuisineForm = function () {
-                $ctrl.cuisineShow = true;
+                if ($ctrl.cuisineShow === false) {
+                    $ctrl.cuisineShow = true;
+                } else {
+                    $ctrl.cuisineShow = false;
+                }
             }
             $ctrl.showEntertainmentForm = function () {
-                $ctrl.entertainmentShow = true;
+                if ($ctrl.entertainmentShow === false) {
+                    $ctrl.entertainmentShow = true;
+                } else {
+                    $ctrl.entertainmentShow = false;
+                }
             }
             $ctrl.showSportsForm = function () {
-                $ctrl.sportsShow = true;
+                if ($ctrl.sportsShow === false) {
+                    $ctrl.sportsShow = true;
+                } else {
+                    $ctrl.sportsShow = false;
+                }
             }
             // input hide, bind data to newObj
             $ctrl.hideRegionForm = function (region) {

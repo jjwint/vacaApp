@@ -26,14 +26,15 @@
                 $ctrl.request = {
                     location: $ctrl.thisCityLoc,
                     radius: '100',
-                    query: $ctrl.thisCityCuisine,
-                    type: ['restaurant']
+                    query: $ctrl.thisCityCuisine, //change this for buttons
+                    type: ['restaurant'] //change this for buttons
                 };
                 $ctrl.callback = function (results, status) {
                     if (status == google.maps.places.PlacesServiceStatus.OK) {
                         $ctrl.results = results;
                         for (var i = 0; i < results.length; i++) {
                             var place = results[i];
+                            console.log(place)
                             $ctrl.createMarker(results[i]);
                         }
                     }
@@ -47,7 +48,7 @@
                         content: "<p>hello</p>"
                     });
                     marker.addListener('click', function () {
-                        infoWindow.setContent(place.name);
+                        infoWindow.setContent(place.name);  //can be more robust
                         infoWindow.open($ctrl.map, marker)
                     })
                 }
