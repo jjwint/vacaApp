@@ -14,11 +14,8 @@
             getCityObj: getCityObj,
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
-            getCityEntertainment: getCityEntertainment,
-<<<<<<< HEAD
-=======
+            getCityEntertainment: getCityEntertainment, 
             reset: reset
->>>>>>> 82cb19e260973eec881454efccf73fc0e47c1786
 
         }
 
@@ -36,27 +33,16 @@
                 thisCity.counter = 0;
 
                 // TODO change this if so that it includes all cities if no region picked.
-<<<<<<< HEAD
                 // if the city is in the right region, add it to the list and rate it.  
 
-
-
-=======
-                // if the city is in the right region, add it to the list and rate it.
->>>>>>> 82cb19e260973eec881454efccf73fc0e47c1786
                 if (cityRegion === thisCity.region) {
                     // add it to the list
                     possibleCities.push(thisCity);
                     console.log(possibleCities);
                     // rate it... a point for each
                     if (thisCity.cuisine.includes(newObj.cuisine) === true) {
-<<<<<<< HEAD
-                        thisCity.counter++;
-=======
 
                         thisCity.counter++;
-
->>>>>>> 82cb19e260973eec881454efccf73fc0e47c1786
                     }
 
                     if (thisCity.sports.includes(newObj.sport) === true) {
@@ -93,8 +79,6 @@
             document.getElementById("appInput").style.display = "none";
             displayCity = city;
 
-
-
         }
 
         function getCityObj() {
@@ -113,8 +97,6 @@
             return cityEntertainment;
         }
 
-<<<<<<< HEAD
-=======
         function reset() {
             possibleCities = [];
             displayCity = {};
@@ -123,13 +105,7 @@
             citySport = "";
             cityEntertainment = "";
             document.getElementById("appInput").style.display = "block";
-
         }
-
->>>>>>> 82cb19e260973eec881454efccf73fc0e47c1786
-
-
-
     }
     angular
         .module("vaCaApp")
