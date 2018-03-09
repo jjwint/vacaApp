@@ -6,7 +6,7 @@
         var cityCuisine = "";
         var citySport = "";
         var cityEntertainment = "";
-        
+
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
@@ -27,75 +27,28 @@
             cityEntertainment = newObj.entertainment;
 
             possibleCities.length = 0;
-            
+
             for (i = 0; i <= 11; i++) {
                 var thisCity = data[i];
                 thisCity.counter = 0;
-
-                // TODO change this if so that it includes all cities if no region picked.
-
-                // if the city is in the right region, add it to the list and rate it.
-
                 if (cityRegion !== thisCity.region) {
-
-                    // console.log("yes");
                     if (thisCity.cuisine.includes(newObj.cuisine) === true) {
-
                         thisCity.counter++;
-
                     }
-
                     if (thisCity.sports.includes(newObj.sport) === true) {
-
                         thisCity.counter++;
-
                     }
-
                     if (thisCity.entertainment.includes(newObj.entertainment) === true) {
-
                         thisCity.counter++;
-
                     }
-
-                    // console.log("counter", thisCity.counter);
-
                     if (thisCity.counter > 1) {
-
                         possibleCities.push(thisCity);
-
                     }
-
                 } else if (cityRegion === thisCity.region) {
-
-                    // add it to the list
-                    // possibleCities.length = 0;
-                    thisCity.counter+=2;
+                    thisCity.counter += 2;
                     possibleCities.push(thisCity);
-                    // console.log(possibleCities);
-                    // rate it... a point for each
-                    if (thisCity.cuisine.includes(newObj.cuisine) === true) {
-
-                        thisCity.counter++;
-                    }
-
-                    if (thisCity.sports.includes(newObj.sport) === true) {
-
-                        thisCity.counter++;
-
-                    }
-
-                    if (thisCity.entertainment.includes(newObj.entertainment) === true) {
-
-                        thisCity.counter++;
-
-                    }
-
-                    console.log("counter", thisCity.counter);
                 }
-
-
             }
-
         }
 
         function getLibrary() {
@@ -110,7 +63,6 @@
         }
 
         function saveCityObj(city) {
-            
             displayCity = city;
         }
 
@@ -131,18 +83,14 @@
         }
 
         function reset() {
-
             possibleCities.length = 0;
-            
             cityRegion = "";
             cityCuisine = "";
             citySport = "";
             cityEntertainment = "";
-           
-
         }
-
     }
+
     angular
         .module("vaCaApp")
         .factory("CityService", CityService)
