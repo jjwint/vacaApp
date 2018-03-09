@@ -14,8 +14,9 @@
             getCityObj: getCityObj,
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
-            getCityEntertainment: getCityEntertainment, 
-            reset: reset
+            getCityEntertainment: getCityEntertainment,
+            // reset: reset
+
 
         }
 
@@ -33,6 +34,7 @@
                 thisCity.counter = 0;
 
                 // TODO change this if so that it includes all cities if no region picked.
+
                 // if the city is in the right region, add it to the list and rate it.  
 
                 if (cityRegion === thisCity.region) {
@@ -97,15 +99,17 @@
             return cityEntertainment;
         }
 
-        function reset() {
-            possibleCities = [];
-            displayCity = {};
-            cityRegion = "";
-            cityCuisine = "";
-            citySport = "";
-            cityEntertainment = "";
-            document.getElementById("appInput").style.display = "block";
-        }
+        // function reset() {
+        //     possibleCities = [];
+        //     displayCity = {};
+        //     cityRegion = "";
+        //     cityCuisine = "";
+        //     citySport = "";
+        //     cityEntertainment = "";
+        //     document.getElementById("appInput").style.display = "block";
+
+        // }
+
     }
     angular
         .module("vaCaApp")
