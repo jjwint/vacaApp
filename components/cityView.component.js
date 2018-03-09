@@ -54,6 +54,9 @@
                 }
                 $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
             };
+            $ctrl.searchCuisine = function() {
+                CityService.searchCuisine();
+            }
         }
     };
 
