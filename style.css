@@ -97,6 +97,7 @@ position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	height: 10%;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -195,6 +196,10 @@ img {
 	align-self: flex-start
 }
 .resetButton {
+	position: absolute;
+	left: 10px;
+
+
 	border: 1px solid black;
 	border-radius: 5px;
 	background-color: #ccccff;
