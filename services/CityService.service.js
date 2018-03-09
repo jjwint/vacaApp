@@ -28,7 +28,7 @@
 
             possibleCities.length = 0;
             
-            for (i = 0; i <= 7; i++) {
+            for (i = 0; i <= 9; i++) {
                 var thisCity = data[i];
                 thisCity.counter = 0;
 
