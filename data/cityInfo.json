@@ -10,17 +10,6 @@
     "latitude": 42.331427,
     "longitude": -83.045754
 }, {
-    "name": "Los Angeles",
-    "image": "images/LosAngeles.jpg",
-    "region": "West Coast",
-    "sports": ["Basketball", "Football"],
-    "cuisine": ["Mexican", "Italian"],
-    "entertainment": ["Beaches", "Parks"],
-    "counter": 0,
-    "description": "'Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.' (Google)",
-    "latitude": 34.052234,
-    "longitude": -118.243685
-}, {
     "name": "Milwaukee",
     "image": "images/Milwaukee.jpg",
     "region": "Midwest",
@@ -31,29 +20,7 @@
     "description": "'Milwaukee is a city in the U.S. state of Wisconsin on Lake Michigan's western shore. It's known for its breweries, many of which offer tours chronicling its role in the beer industry. Overlooking the Menomonee River, the Harley-Davidson Museum displays classic motorcycles, including one of Elvis Presley’s. Nearby is the Milwaukee Public Museum, with its large-scale European Village and a recreation of old Milwaukee.' (Google)",
     "latitude": 43.038902,
     "longitude": -87.906474
-},{
-    "name": "New York City",
-    "image": "images/NYC.jpg",
-    "region": "Northeast",
-    "sports": ["Basketball", "Baseball"],
-    "cuisine": ["Chinese"],
-    "entertainment": ["Landmarks", "Museums" ],
-    "counter": 0,
-    "description": "'New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.' (Google)",
-    "latitude": 40.712775,
-    "longitude": -74.005973
-},  {
-    "name": "Boston",
-    "image": "images/Boston.jpg",
-    "region": "Northeast",
-    "sports": ["Basketball", "Baseball"],
-    "cuisine": ["Chinese"],
-    "entertainment": ["Landmarks", "Museums" ],
-    "counter": 0,
-    "description": "'Boston is Massachusetts’ capital and largest city. Founded in 1630, it’s one of the oldest cities in the U.S. The key role it played in the American Revolution is highlighted on the Freedom Trail, a 2.5-mile walking route of historic sites that tells the story of the nation’s founding. One stop, former meeting house Faneuil Hall, is a popular marketplace.' (Google)",
-    "latitude": 42.360082,
-    "longitude": -71.058880
-},  {
+}, {
     "name": "Chicago",
     "image": "images/Chicago.jpg",
     "region": "Midwest",
@@ -65,16 +32,27 @@
     "latitude": 41.878114,
     "longitude": -87.629798
 }, {
-    "name": "Miami",
-    "image": "images/Miami.jpg",
-    "region": "South",
-    "sports": ["Football"],
-    "cuisine": ["Italian"],
-    "entertainment": ["Beaches", "Landmarks"],
+    "name": "New York City",
+    "image": "images/NYC.jpg",
+    "region": "Northeast",
+    "sports": ["Basketball", "Baseball"],
+    "cuisine": ["Chinese"],
+    "entertainment": ["Landmarks", "Museums" ],
     "counter": 0,
-    "description": "'Miami is an international city at Florida's southeastern tip. Its Cuban influence is reflected in the cafes and cigar shops that line Calle Ocho in Little Havana. On barrier islands across the turquoise waters of Biscayne Bay is Miami beaches, home to South beaches. This glamorous neighborhood is famed for its colorful art deco buildings, white sand, surfside hotels and trendsetting nightclubs.' (Google)",
-    "latitude": 25.761680,
-    "longitude": -80.191790
+    "description": "'New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.' (Google)",
+    "latitude": 40.712775,
+    "longitude": -74.005973
+}, {
+    "name": "Boston",
+    "image": "images/Boston.jpg",
+    "region": "Northeast",
+    "sports": ["Basketball", "Baseball"],
+    "cuisine": ["Chinese"],
+    "entertainment": ["Landmarks", "Museums" ],
+    "counter": 0,
+    "description": "'Boston is Massachusetts’ capital and largest city. Founded in 1630, it’s one of the oldest cities in the U.S. The key role it played in the American Revolution is highlighted on the Freedom Trail, a 2.5-mile walking route of historic sites that tells the story of the nation’s founding. One stop, former meeting house Faneuil Hall, is a popular marketplace.' (Google)",
+    "latitude": 42.360082,
+    "longitude": -71.058880
 }, {
     "name": "Philadelphia",
     "image": "images/Philadelphia.jpg",
@@ -86,6 +64,17 @@
     "description": "'Philadelphia, Pennsylvania’s largest city, is notable for its rich history, on display at the Liberty Bell, Independence Hall (where the Declaration of Independence and Constitution were signed) and other American Revolutionary sites.' (Google)",
     "latitude": 39.952584,
     "longitude": -75.165222
+}, {
+    "name": "Miami",
+    "image": "images/Miami.jpg",
+    "region": "South",
+    "sports": ["Football"],
+    "cuisine": ["Italian"],
+    "entertainment": ["Beaches", "Landmarks"],
+    "counter": 0,
+    "description": "'Miami is an international city at Florida's southeastern tip. Its Cuban influence is reflected in the cafes and cigar shops that line Calle Ocho in Little Havana. On barrier islands across the turquoise waters of Biscayne Bay is Miami beaches, home to South beaches. This glamorous neighborhood is famed for its colorful art deco buildings, white sand, surfside hotels and trendsetting nightclubs.' (Google)",
+    "latitude": 25.761680,
+    "longitude": -80.191790
 }, {
     "name": "New Orleans",
     "image": "images/NewOrleans.jpg",
@@ -108,6 +97,16 @@
     "description": "'Atlanta is the capital of the U.S. state of Georgia. It played an important part in both the Civil War and the 1960s Civil Rights Movement. Atlanta History Center chronicles the city's past, and the Martin Luther King Jr. National Historic Site is dedicated to the African-American leader’s life and times. Downtown, Centennial Olympic Park, built for the 1996 Olympics, encompasses the massive Georgia Aquarium.' (Google)",
     "latitude": 33.748995,
     "longitude": -84.387982
+}, {
+    "name": "Los Angeles",
+    "image": "images/LosAngeles.jpg",
+    "region": "West Coast",
+    "sports": ["Basketball", "Football"],
+    "cuisine": ["Mexican", "Italian"],
+    "entertainment": ["Beaches", "Parks"],
+    "counter": 0,
+    "description": "'Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.' (Google)",
+    "latitude": 34.052234,
+    "longitude": -118.243685
 }
-
 ]
