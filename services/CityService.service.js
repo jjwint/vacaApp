@@ -111,7 +111,6 @@
         function saveCityObj(city) {
             document.getElementById("appInput").style.display = "none";
             displayCity = city;
-
         }
 
         function getCityObj() {
@@ -132,7 +131,6 @@
 
         function reset() {
             possibleCities = [];
-            
             cityRegion = "";
             cityCuisine = "";
             citySport = "";
