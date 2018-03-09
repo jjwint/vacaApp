@@ -3,25 +3,25 @@
 		<div>
 			<div>
 				<button class="navButton" ng-click="$ctrl.showRegionForm();" id="region">Region</button>
-				<div class="region" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
+				<div class="parameters" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
 					<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
 				</div>
 			</div>
 			<div>
 				<button class="navButton" ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
-				<div class="cuisine" ng-show="$ctrl.cuisineShow" ng-repeat="cuisine in $ctrl.cuisines">
+				<div class="parameters" ng-show="$ctrl.cuisineShow" ng-repeat="cuisine in $ctrl.cuisines">
 					<button ng-click="$ctrl.hideCuisineForm(cuisine);" cuisine-directive class="item">{{ cuisine }}</button>
 				</div>
 			</div>
 			<div>
 				<button class="navButton" ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
-				<div class="entertainment" ng-show="$ctrl.entertainmentShow" ng-repeat="entertainment in $ctrl.entertainments">
+				<div class="parameters" ng-show="$ctrl.entertainmentShow" ng-repeat="entertainment in $ctrl.entertainments">
 					<button ng-click="$ctrl.hideEntertainmentForm(entertainment);" entertainment-directive class="item">{{ entertainment }}</button>
 				</div>
 			</div>
 			<div>
 				<button class="navButton" ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
-				<div class="sports" ng-show="$ctrl.sportsShow" ng-repeat="sport in $ctrl.sports">
+				<div class="parameters" ng-show="$ctrl.sportsShow" ng-repeat="sport in $ctrl.sports">
 					<button ng-click="$ctrl.hideSportsForm(sport);" sports-directive class="item">{{ sport }}</button>
 				</div>
 			</div>
@@ -35,12 +35,12 @@
 	</div>
 </div>
 
-<div id="circles">
+<!-- <div id="circles">
 	<div id="blueCirc"></div>
 	<div id="orangeCirc"></div>
 	<div id="greenCirc"></div>
 	<div id="redCirc"></div>
-</div>
+</div> -->
 
 
 

@@ -1,5 +1,5 @@
 body {
-	background:linear-gradient(to right, #fdfbfb, #c8cdcf);
+	background: linear-gradient(to right, #fdfbfb, #c8cdcf);
 	font-family: "Open Sans";
 }
 
@@ -8,7 +8,6 @@ body {
 	display: block;
 	/*width: 150px;*/
 	width: 100%;
-	
 	font-size: 18px;
 	font-weight: bold;
 	color: #000;
@@ -17,10 +16,13 @@ body {
 	padding: 10px;
 	position: relative;
 	transition: 0.5s all;
-} 
+	width:60%;
+	margin: 10px auto;
+	/* content: '\E876';
+	font-family: "Material Icons"; */
+}
 
-
-.navButton:after{
+.navButton:after {
 	content: '\E145';
 	display: block;
 	position: absolute;
@@ -36,59 +38,58 @@ body {
 	width: 100%;
 	border: 1px solid black;
 	border-radius: 5px;
-	
 }
+
 #region {
 	background-color: #21295C;
 	color: lightgray;
 }
-.region button {
-	background-color: lightgray;
-	color: #21295C
-}
+
+
+
 #cuisine {
 	background-color: #1B3B6F;
 	color: lightgray;
 }
-.cuisine button {
-	background-color: lightgray;
-	color: #1B3B6F;
-}
+
+
+
 #entertainment {
 	background-color: #065A82;
 	color: lightgray;
 }
-.entertainment button {
-	background-color: lightgray;
-	color: #065A82;
-}
+
+
+
 #sports {
 	background-color: #1C7293;
 	color: lightgray;
 }
-.sports button {
-	background-clor: lightgray;
+
+.parameters {
+	background-color: lightgray;
 	color: #1C7293;
+	margin-bottom: 5px;
+	width:40%;
+	margin: 5px auto;
 }
 
 .button-wrapper {
 	margin: 20px 0;
 }
 
-.cityDescription{
+.cityDescription {
 	font-size: 15px;
 }
 
 #vacaHeader {
-/*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
-*/	background:linear-gradient(to right, #c8cdcf, #fdfbfb);
+	/*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+*/
+	background: linear-gradient(to right, #c8cdcf, #fdfbfb);
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
-	
-	
 	height: 10%;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -112,12 +113,13 @@ body {
 	text-align: center;
 	margin-bottom: 15px;
 	width: 150px;
-	border: 2px solid black;
+	border: px outset black;
 	font-family: "Courier New";
 	font-size: 18px;
 	font-weight: bold;
 	display: block;
-	background-color: white;
+	background-color: #e8e3e3;
+	border-radius: 5px;
 }
 
 #map {
@@ -141,12 +143,12 @@ img {
 	justify-content: space-between;
 	margin: 2px;
 }
+
 #viewMap {
 	margin: 2px;
 	border: 2px solid #1B3B6F;
 	padding: 2px;
 }
-
 
 #flexDiv {
 	display: flex;
@@ -155,9 +157,11 @@ img {
 }
 
 #infoDiv {
-/*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
-*/	background:linear-gradient(to right, #c8cdcf, #fdfbfb);
-
+	/*	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+*/
+	background: linear-gradient(to right, #c8cdcf, #fdfbfb);
+	margin-top: 20px;
+	margin-bottom: 20px;
 	border: 2px solid black;
 	border-radius: 5px;
 	padding: 8px;
@@ -166,8 +170,7 @@ img {
 
 #userChoices {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: center;
 }
 
 #userChoices button {
@@ -184,35 +187,65 @@ img {
 	margin: 0 auto;
 }
 
-
 @media only screen and (min-width: 768px) {
-
-	.mainView{
+	.mainView {
 		display: flex;
-		flex-direction: column; 
+		flex-direction: column;
 	}
+
+	.item:hover{
+
+		background-color:#ccccff;
+
+	}
+
+	
+	#region:hover{
+
+		color: white;
+	}
+
+	#cuisine:hover{
+
+		color: white;
+	}
+
+	#entertainment:hover{
+
+		color: white;
+	}
+
+	#sports:hover{
+		color: white;
+	}
+
+	.navButton{
+		margin:10px auto;
+		width: 40%;
+	}
+
+	.citySelect:hover{
+
+		background-color: #d4c9c4;
+
+	}
+
 
 	#flex-div {
 		flex-direction: row;
 	}
-
-	#vacaHeader{
+	#vacaHeader {
 		width: 50%;
 		margin: 10px auto;
 	}
-
 	#infoDiv {
 		margin-left: 10px;
 	}
-
-	.cityDescription{
-
+	.cityDescription {
 		font-size: 16px;
-			
-		}
-
-		img {
-			width: 35%;
-			height: 35%;
-		}
+	}
+	img {
+		width: 35%;
+		height: 35%;
+	}
 }
