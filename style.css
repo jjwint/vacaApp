@@ -35,6 +35,10 @@ body {
 .resetButton{
 
 position: relative;
+background: linear-gradient(to right, #fdfbfb, #c8cdcf);;
+color: black;
+border: 1px solid black ;
+
 /* right: 10px;
 	top: 50%;
 	transform: translateY(-50%); */
