@@ -9,20 +9,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
 </head>
 
 <body ng-app="vaCaApp">
     <div class="container">
-        <app-main></app-main>
+        <!-- <app-main></app-main> -->
+        <ng-view></ng-view>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular-animate.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKiuEQ9J0dQfsn3oPvOmzl4jDo6r8jMsA&libraries=places"  async defer>
     </script>
     <script src="module.js"></script>
+    <script src="config.js"></script>
+    <script src="components/welcomePage.component.js"></script>
     <script src="components/appMain.component.js"></script>
-    
     <script src="components/appInput.component.js"></script>
     <script src="components/cityView.component.js"></script>
     <script src="services/CityService.service.js"></script>
