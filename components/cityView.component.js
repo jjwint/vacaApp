@@ -1,38 +1,34 @@
 (function () {
     var cityView = {
-        // thisCity passed from appMain component
+        // thisCity object passed from appMain component
         bindings: {
             thisCity: '<'
         },
         templateUrl: "partials/cityView.html",
         controller: function (CityService) {
             var $ctrl = this;
-            
-            
-           
+            // API code won't fire until cityView is initialized
             $ctrl.$onInit = function () {
-
+                // import data from service
                 $ctrl.thisCitySport = CityService.getCitySport();
                 $ctrl.thisCityCuisine = CityService.getCityCuisine();
                 $ctrl.thisCityEntertainment = CityService.getCityEntertainment();
-
+                // construct a latitude/longitude location for thisCity
                 $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
-
+                // intialize google map, bind to map id
                 $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                     center: $ctrl.thisCityLoc,
                     zoom: 13
-
                 });
-                console.log($ctrl.map);
+                // make a search request to API
                 $ctrl.service = new google.maps.places.PlacesService($ctrl.map);
-
+                // create request object with search parameters
                 $ctrl.request = {
                     location: $ctrl.thisCityLoc,
                     radius: '100',
                     query: $ctrl.thisCityCuisine,
                     type: ['restaurant']
                 };
-
                 $ctrl.callback = function (results, status) {
                     if (status == google.maps.places.PlacesServiceStatus.OK) {
                         $ctrl.results = results;
@@ -43,7 +39,6 @@
                     }
                 }
                 $ctrl.createMarker = function (place) {
-
                     var marker = new google.maps.Marker({
                         map: $ctrl.map,
                         position: place.geometry.location
