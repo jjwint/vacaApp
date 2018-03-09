@@ -15,7 +15,7 @@
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
-            // reset: reset
+            reset: reset
 
         }
 
@@ -131,16 +131,16 @@
             return cityEntertainment;
         }
 
-        // function reset() {
-        //     possibleCities = [];
-        //     displayCity = {};
-        //     cityRegion = "";
-        //     cityCuisine = "";
-        //     citySport = "";
-        //     cityEntertainment = "";
-        //     document.getElementById("appInput").style.display = "block";
+        function reset() {
+            possibleCities = [];
+            
+            cityRegion = "";
+            cityCuisine = "";
+            citySport = "";
+            cityEntertainment = "";
+            document.getElementById("appInput").style.display = "block";
 
-        // }
+        }
 
 
 

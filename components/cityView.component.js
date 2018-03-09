@@ -10,6 +10,10 @@
         controller: function (CityService) {
             var $ctrl = this;
             $ctrl.thisCity = CityService.getCityObj();
+            $ctrl.reset = function () {
+                $ctrl.thisCity = {};
+                CityService.reset();
+            }
             $ctrl.$onInit = function () {
 
                 $ctrl.thisCitySport = CityService.getCitySport();
