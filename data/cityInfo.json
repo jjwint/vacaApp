@@ -108,5 +108,27 @@
     "description": "'Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.' (Google)",
     "latitude": 34.052234,
     "longitude": -118.243685
+}, {
+    "name": "San Francisco",
+    "image": "images/SanFran.jpg",
+    "region": "West Coast",
+    "sports": ["Basketball", "Football"],
+    "cuisine": ["Mexican", "Italian"],
+    "entertainment": ["Beaches", "Parks"],
+    "counter": 0,
+    "description": "'San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.' (Google)",
+    "latitude": 37.774929,
+    "longitude": -122.419416
+}, {
+    "name": "San Francisco",
+    "image": "images/SanFran.jpg",
+    "region": "West Coast",
+    "sports": ["Basketball", "Football"],
+    "cuisine": ["Mexican", "Italian"],
+    "entertainment": ["Beaches", "Parks"],
+    "counter": 0,
+    "description": "'San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.' (Google)",
+    "latitude": 37.774929,
+    "longitude": -122.419416
 }
 ]
