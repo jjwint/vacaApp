@@ -32,6 +32,18 @@ body {
 	transform: translateY(-50%);
 }
 
+.resetButton{
+
+position: relative;
+/* right: 10px;
+	top: 50%;
+	transform: translateY(-50%); */
+}
+
+
+
+
+
 .item {
 	font-size: 18px;
 	font-family: "Open Sans";
@@ -77,11 +89,13 @@ body {
 	font-size: 15px;
 }
 
+
+
 #vacaHeader {
 	background: linear-gradient(to right, #c8cdcf, #fdfbfb);
 	text-align: center;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	height: 10%;
 	border: 2px solid black;
