@@ -194,6 +194,11 @@ img {
 .material-icons {
 	align-self: flex-start
 }
+.resetButton {
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #ccccff;
+}
 
 @media only screen and (min-width: 768px) {
 	.mainView {
