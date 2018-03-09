@@ -6,6 +6,7 @@
         var cityCuisine = "";
         var citySport = "";
         var cityEntertainment = "";
+        
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
@@ -16,7 +17,6 @@
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
             reset: reset
-
         }
 
         function checkLogin(newObj, data) {
@@ -26,8 +26,8 @@
             citySport = newObj.sport;
             cityEntertainment = newObj.entertainment;
 
-
             possibleCities.length = 0;
+            
             for (i = 0; i <= 7; i++) {
                 var thisCity = data[i];
                 thisCity.counter = 0;
@@ -109,7 +109,7 @@
         }
 
         function saveCityObj(city) {
-            document.getElementById("appInput").style.display = "none";
+            
             displayCity = city;
 
         }
@@ -131,13 +131,13 @@
         }
 
         function reset() {
-            possibleCities = [];
+            possibleCities.length = 0;
             
             cityRegion = "";
             cityCuisine = "";
             citySport = "";
             cityEntertainment = "";
-            document.getElementById("appInput").style.display = "block";
+           
 
         }
 
