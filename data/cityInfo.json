@@ -120,15 +120,15 @@
     "latitude": 37.774929,
     "longitude": -122.419416
 }, {
-    "name": "San Francisco",
-    "image": "images/SanFran.jpg",
+    "name": "San Diego",
+    "image": "images/SanDiego.jpg",
     "region": "West Coast",
     "sports": ["Basketball", "Football"],
     "cuisine": ["Mexican", "Italian"],
     "entertainment": ["Beaches", "Parks"],
     "counter": 0,
-    "description": "'San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.' (Google)",
-    "latitude": 37.774929,
-    "longitude": -122.419416
+    "description": "'San Diego is a city on the Pacific coast of California known for its beaches, parks and warm climate. Immense Balboa Park is the site of the renowned San Diego Zoo, as well as numerous art galleries, artist studios, museums and gardens. A deep harbor is home to a large active naval fleet, with the USS Midway, an aircraft-carrier-turned-museum, open to the public.' (Google)",
+    "latitude": 32.715738,
+    "longitude": -117.161084
 }
 ]
