@@ -1,14 +1,11 @@
 <div id="cityView">
+    <div id="viewHead">
         <h3>Visit {{ $ctrl.thisCity.name }}! </h3>
         <p class="cityDescription">{{ $ctrl.thisCity.description }}</p>
     </div>
     <div id="viewMap">
         <div id="map"></div>
-        <!-- <div id="right-panel">
-            <h5 class="resultsTitle">Results</h5>
-            <ol id="places"></ol>
-
-          </div> -->
+        
     </div>
     <div id="viewSelect">
         <!--         <p>{{ $ctrl.thisCitySport }}</p> -->
@@ -17,7 +14,8 @@
        <button ng-click="$ctrl.searchEntertainment()">{{ $ctrl.thisCityEntertainment }} </button>
        <button ng-click="$ctrl.searchSport()">{{ $ctrl.thisCitySport }} </button>
     </div>
-</div>
+
     <p ng-repeat="place in $ctrl.results">
-        {{place.name}}, {{place.rating}}
+        Name: {{place.name}} Rating: {{place.rating}}
     </p>
+</div>
