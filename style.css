@@ -92,6 +92,30 @@ body {
 	font-family: "Open Sans";
 }
 
+#welcome {
+	border: 4px solid black;
+	border-radius: 50px;
+	text-align: center;
+	background: linear-gradient(to right, #21295C, #1B3B6F, #065A82, #1C7293);
+	color: lightgray;
+	padding: 50px;
+	font-family: 'Playfair Display', serif;
+	margin-top: 100px;
+}
+
+#welcome a {
+	color: lightgray;
+	text-decoration: none;
+}
+
+#welcome a:hover{
+	color: #fff
+}
+
+#welcome i {
+	position: relative;
+}
+
 .navButton {
 	font-family: "Open Sans";
 	display: block;
@@ -168,6 +192,70 @@ body {
 	margin-bottom: 5px;
 	width:40%;
 	margin: 5px auto;
+	transition: .5s linear all;
+	height: 30px;
+	overflow: hidden;
+}
+
+.parameters.ng-hide {
+	height: 0;
+}
+
+#appInput.ng-enter {
+	transform: translateX(-500px);
+	opacity: 0;
+	transition: all .35s cubic-bezier(1, .01, 0, .99);
+}
+
+#appInput.ng-enter-active {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+/* #routedContent.ng-enter {
+	transform: translateX(-500px);
+	opacity: 0;
+	transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+}
+
+#routedContent.ng-enter-active {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+#routedContent.ng-leave {
+	transform: translateX(0);
+	opacity: 1;
+	transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+}
+
+#routedContent.ng-leave-active {
+	transform: translateX(500px);
+	opacity: 0;
+} */
+
+.citySelect.ng-enter, .citySelect.ng-leave {
+		transition: all linear 1s;
+}
+
+.citySelect.ng-leave {
+	top: 0;
+	opacity: 1;
+}
+
+.citySelect.ng-leave.ng-active {
+	top: 200px;
+	opacity: 0;
+}
+
+.citySelect.ng-enter {
+	opacity: 0;
+	top: -500px;
+}
+
+.citySelect.ng-enter.ng-enter-active {
+	opacity: 1;
+	top: 0px;
 }
 
 .button-wrapper {
@@ -177,8 +265,6 @@ body {
 .cityDescription {
 	font-size: 15px;
 }
-
-
 
 #vacaHeader {
 	background: linear-gradient(to right, #c8cdcf, #fdfbfb);
@@ -272,10 +358,6 @@ img {
 	margin: 5px;
 }
 
-#circles {
-	z-index: -1;
-}
-
 .container {
 	max-width: 1400px;
 	width: 90%;
@@ -287,21 +369,9 @@ img {
 .resetButton {
 	position: absolute;
 	left: 10px;
-
-
 	border: 1px solid black;
 	border-radius: 5px;
 	background-color: #ccccff;
-}
-
-.parameters {
-	transition: .3s linear all;
-    height: 30px;
-    overflow: hidden;
-}
-
-.parameters.ng-hide {
-	height: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -358,7 +428,7 @@ img {
 	#sportsDiv .item:hover {
 		background-color: #1C7293;
 	}
-	
+
 	#region:hover{
 		color: white;
 	}
@@ -400,9 +470,13 @@ img {
 	.cityDescription {
 		font-size: 16px;
 	}
-	
+
 	img {
 		width: 35%;
 		height: 35%;
 	}
+}
+
+@media only screen and (min-width: 1024px){
+
 }

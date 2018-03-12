@@ -23,7 +23,6 @@
             })
             // pass cityObj to appMain
             $ctrl.showCityInfo = function (city) {
-                CityService.saveCityObj(city);
                 $ctrl.thisCity = city;
                 $ctrl.onChangeCity({
                     $event: {
@@ -64,22 +63,22 @@
             $ctrl.hideRegionForm = function (region) {
                 $ctrl.regionShow = false;
                 $ctrl.newObj.region = region;
-                CityService.checkLogin($ctrl.newObj, $ctrl.data); 
+                CityService.checkLogin($ctrl.newObj, $ctrl.data);
             }
             $ctrl.hideCuisineForm = function (cuisine) {
                 $ctrl.cuisineShow = false;
                 $ctrl.newObj.cuisine = cuisine;
-                CityService.checkLogin($ctrl.newObj, $ctrl.data); 
+                CityService.checkLogin($ctrl.newObj, $ctrl.data);
             }
             $ctrl.hideEntertainmentForm = function (entertainment) {
                 $ctrl.entertainmentShow = false;
                 $ctrl.newObj.entertainment = entertainment;
-                CityService.checkLogin($ctrl.newObj, $ctrl.data); 
+                CityService.checkLogin($ctrl.newObj, $ctrl.data);
             }
             $ctrl.hideSportsForm = function (sport) {
                 $ctrl.sportsShow = false;
                 $ctrl.newObj.sport = sport;
-                CityService.checkLogin($ctrl.newObj, $ctrl.data); 
+                CityService.checkLogin($ctrl.newObj, $ctrl.data);
             }
         }
     };
