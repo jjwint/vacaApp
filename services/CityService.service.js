@@ -6,7 +6,8 @@
         var cityCuisine = "";
         var citySport = "";
         var cityEntertainment = "";
-
+        var cityName = "";
+      
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
@@ -14,6 +15,8 @@
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
+            getCityName: getCityName,
+
             reset: reset,
 
         }
@@ -24,6 +27,8 @@
             cityCuisine = newObj.cuisine;
             citySport = newObj.sport;
             cityEntertainment = newObj.entertainment;
+            cityName = newObj.name;
+            console.log(cityName);
 
             possibleCities.length = 0;
 
@@ -74,6 +79,10 @@
 
         function getCityEntertainment() {
             return cityEntertainment;
+        }
+
+        function getCityName() {
+            return cityName;
         }
 
         function reset() {

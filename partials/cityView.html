@@ -24,5 +24,9 @@
        <button ng-click="$ctrl.searchCuisine()">{{ $ctrl.thisCityCuisine }} </button>
        <button ng-click="$ctrl.searchEntertainment()">{{ $ctrl.thisCityEntertainment }} </button>
        <button ng-click="$ctrl.searchSport()">{{ $ctrl.thisCitySport }} </button>
+
+       <ul>
+           <li ng-repeat="place in $ctrl.results">{{place}}</li>
+       </ul>
     </div>
 </div>
