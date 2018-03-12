@@ -41,9 +41,9 @@
             }
 
             function search(query, type, numberToShow) {
-                console.log($ctrl.thisCity);
+                // console.log($ctrl.thisCity);
                 console.log("query", query);
-                console.log($ctrl.thisCityName);
+                // console.log($ctrl.thisCityName);
                 $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
                 $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                     center: $ctrl.thisCityLoc,
@@ -64,7 +64,7 @@
                             $ctrl.results = results.slice(0, numberToShow);
                             for (var i = 0; i < numberToShow; i++) {
                                 var place = results[i];
-                                console.log(place);
+                                
                                 $ctrl.createMarker(results[i]);
                             }
                         } else {
@@ -77,6 +77,7 @@
                         map: $ctrl.map,
                         position: place.geometry.location
                     });
+                    console.log(place.geometry.location);
                     var infoWindow = new google.maps.InfoWindow({
 
                     });
