@@ -1,4 +1,5 @@
 (function () {
+//declares CityService with $http passed in so it can access JSON via GET request
     var CityService = function ($http) {
         var possibleCities = [];
         var displayCity = {};
@@ -7,7 +8,6 @@
         var citySport = "";
         var cityEntertainment = "";
 
-//
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
@@ -16,11 +16,10 @@
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
             reset: reset,
-
         }
 
         function checkLogin(newObj, data) {
-
+          
             cityRegion = newObj.region;
             cityCuisine = newObj.cuisine;
             citySport = newObj.sport;
@@ -79,7 +78,7 @@
             return cityEntertainment;
         }
 
-//function that resets inputs when the rest button is clicked
+//function that resets inputs when the reset button is clicked
         function reset() {
             possibleCities.length = 0;
             cityRegion = "";
