@@ -32,7 +32,7 @@
     "latitude": 41.878114,
     "longitude": -87.629798
 }, {
-    "name": "New York City",
+    "name": "New York",
     "image": "images/NYC.jpg",
     "region": "Northeast",
     "sports": ["Basketball", "Baseball"],

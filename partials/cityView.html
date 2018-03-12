@@ -9,14 +9,20 @@
     </div>
 
     <div id="viewMap">
+        
         <div id="map"></div>
+        <div id="right-panel">
+            <h5 class="resultsTitle">Results</h5>
+            <ol id="places"></ol>
+            <!-- <button id="more">More results</button> -->
+          </div>
     </div>
 
     <div id="viewSelect">
         <!--         <p>{{ $ctrl.thisCitySport }}</p> -->
-        <p>Try some {{ $ctrl.thisCityCuisine }} food from {{ $ctrl.thisCity.name }}!</p>
-       <button ng-click="$ctrl.searchCuisine()">Cuisine</button>
-       <button ng-click="$ctrl.searchEntertainment()">Entertainment</button>
-       <button ng-click="$ctrl.searchSport()">Sports</button>
+        <p>You will love {{ $ctrl.thisCityCuisine}} food, {{ $ctrl.thisCityEntertainment }}, and {{ $ctrl.thisCitySport }} games in {{ $ctrl.thisCity.name }}!</p>
+       <button ng-click="$ctrl.searchCuisine()">{{ $ctrl.thisCityCuisine }} </button>
+       <button ng-click="$ctrl.searchEntertainment()">{{ $ctrl.thisCityEntertainment }} </button>
+       <button ng-click="$ctrl.searchSport()">{{ $ctrl.thisCitySport }} </button>
     </div>
 </div>
