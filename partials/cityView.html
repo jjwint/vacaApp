@@ -1,7 +1,6 @@
 <div id="cityView">
 
-
-    <div id="viewHeader" ng-style="{'background-image': 'url(' + $ctrl.thisCity.image + ')'}">
+ >
         
         <h3>Visit {{ $ctrl.thisCity.name }}! </h3>
         
@@ -10,12 +9,12 @@
 
     <div id="viewMap">
         
-        <div id="map"></div>
-        <div id="right-panel">
+        <div id="map">
+        </div>
+        <!-- <div id="right-panel">
             <h5 class="resultsTitle">Results</h5>
             <ol id="places"></ol>
-            <!-- <button id="more">More results</button> -->
-          </div>
+        </div> -->
     </div>
 
     <div id="viewSelect">
@@ -24,9 +23,13 @@
        <button ng-click="$ctrl.searchCuisine()">{{ $ctrl.thisCityCuisine }} </button>
        <button ng-click="$ctrl.searchEntertainment()">{{ $ctrl.thisCityEntertainment }} </button>
        <button ng-click="$ctrl.searchSport()">{{ $ctrl.thisCitySport }} </button>
-
-       <ul>
-           <li ng-repeat="place in $ctrl.results">{{place}}</li>
-       </ul>
     </div>
 </div>
+
+    <p ng-repeat="place in $ctrl.results">
+        {{place.name}}, {{place.rating}}
+    </p>
+
+
+
+<!-- 
