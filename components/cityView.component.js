@@ -64,7 +64,7 @@
                             $ctrl.results = results.slice(0, numberToShow);
                             for (var i = 0; i < numberToShow; i++) {
                                 var place = results[i];
-                                
+
                                 $ctrl.createMarker(results[i]);
                             }
                         } else {
