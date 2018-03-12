@@ -1,4 +1,5 @@
 (function () {
+//declares CityService with $http passed in so it can access JSON via GET request
     var CityService = function ($http) {
         var possibleCities = [];
         var displayCity = {};
@@ -7,7 +8,7 @@
         var citySport = "";
         var cityEntertainment = "";
         var cityName = "";
-      
+
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
@@ -15,10 +16,9 @@
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
-            getCityName: getCityName,
+            
 
             reset: reset,
-
         }
 
         function checkLogin(newObj, data) {
@@ -68,21 +68,19 @@
         function getCities() {
             return possibleCities;
         }
-
+//returns the sport
         function getCitySport() {
             return citySport;
         }
 
+//returns the cuisine
         function getCityCuisine() {
             return cityCuisine;
         }
 
+//returns the entertainment
         function getCityEntertainment() {
             return cityEntertainment;
-        }
-
-        function getCityName() {
-            return cityName;
         }
 
         function reset() {

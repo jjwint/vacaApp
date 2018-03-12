@@ -8,9 +8,9 @@
         controller: function ($scope, CityService) {
             var $ctrl = this;
             // API code won't fire until cityView is initialized
-            
-            
-            
+
+
+
             $ctrl.$onInit = function () {
                 // import data from service
                 $ctrl.thisCitySport = CityService.getCitySport();
@@ -27,8 +27,6 @@
                 });
                 // make a search request to API
 
-
-
             };
             $ctrl.searchCuisine = function () {
                 search("top " + $ctrl.thisCityCuisine + " restaurant", "restaurant", 5);
@@ -41,7 +39,6 @@
             $ctrl.searchSport = function () {
                 search($ctrl.thisCitySport, "stadium", 3);
             }
-
 
             function search(query, type, numberToShow) {
                 // console.log($ctrl.thisCity);
@@ -60,6 +57,7 @@
                     query: query + " near " + $ctrl.thisCityName,  //change this for buttons
                     type: [type] //change this for buttons
                 };
+                //callback runs when promise gets answered, calls the callback function
                 $ctrl.callback = function (results, status) {
                     $scope.$apply(function() {
                         if (status == google.maps.places.PlacesServiceStatus.OK) {
