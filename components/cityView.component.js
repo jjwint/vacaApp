@@ -40,7 +40,6 @@
                 search($ctrl.thisCitySport, "stadium", 3);
             }
 
-
             function search(query, type, numberToShow) {
                 console.log($ctrl.thisCity);
                 console.log("query", query);

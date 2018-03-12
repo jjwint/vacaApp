@@ -16,8 +16,11 @@
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
+<<<<<<< HEAD
             
 
+=======
+>>>>>>> 2afbe59c0c42f29b8f2d2b8261de2f75c7867bc5
             reset: reset,
         }
 
