@@ -7,6 +7,7 @@
         var citySport = "";
         var cityEntertainment = "";
 
+//
         return {
             checkLogin: checkLogin,
             getLibrary: getLibrary,
@@ -63,19 +64,22 @@
         function getCities() {
             return possibleCities;
         }
-
+//returns the sport
         function getCitySport() {
             return citySport;
         }
 
+//returns the cuisine
         function getCityCuisine() {
             return cityCuisine;
         }
 
+//returns the entertainment
         function getCityEntertainment() {
             return cityEntertainment;
         }
 
+//function that resets inputs when the rest button is clicked
         function reset() {
             possibleCities.length = 0;
             cityRegion = "";
