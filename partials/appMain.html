@@ -4,9 +4,9 @@
         <h1 class="title">Get-A-Ways</h1>
     </div>
     <div class="mainView">
-      /*onChangeCity passes the $ctrl.thisCity into the main component coming from the appInput component */
+      <!-- onChangeCity passes the $ctrl.thisCity into the main component coming from the appInput component -->
         <app-input ng-hide="$ctrl.thisCity" on-change-city="$ctrl.thisCity = $event.thisCity"></app-input>
-/*$ctrl.thisCity is bound to the main component and passed in to the cityView with one-way binding*/
+<!-- $ctrl.thisCity is bound to the main component and passed in to the cityView with one-way binding -->
         <city-view ng-if="$ctrl.thisCity" this-city="$ctrl.thisCity"></city-view>
     </div>
 </div>
