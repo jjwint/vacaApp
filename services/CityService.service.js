@@ -16,8 +16,6 @@
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
-            getCityName: getCityName,
-
             reset: reset,
         }
 
