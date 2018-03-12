@@ -11,13 +11,11 @@
             checkLogin: checkLogin,
             getLibrary: getLibrary,
             getCities: getCities,
-            saveCityObj: saveCityObj,
-            getCityObj: getCityObj,
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
             reset: reset,
-            
+
         }
 
         function checkLogin(newObj, data) {
@@ -51,7 +49,7 @@
                 }
             }
         }
-//http passed into the city service at the top; 
+//http passed into the city service at the top;
 //then calls .get and passes the path to the json file
 //.then is the callback; called when it gets the data
 //then calls the function to return the response data
@@ -64,14 +62,6 @@
 //returns the array of possible cities
         function getCities() {
             return possibleCities;
-        }
-//sets the displayCity object to the 
-        function saveCityObj(city) {
-            displayCity = city;
-        }
-
-        function getCityObj() {
-            return displayCity;
         }
 
         function getCitySport() {
