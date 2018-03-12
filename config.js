@@ -1,5 +1,4 @@
 (function() {
-
 	angular
 		.module("vaCaApp")
 		.config(function($routeProvider) {

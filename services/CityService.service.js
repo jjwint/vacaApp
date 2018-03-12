@@ -51,18 +51,21 @@
                 }
             }
         }
-
+//http passed into the city service at the top; 
+//then calls .get and passes the path to the json file
+//.then is the callback; called when it gets the data
+//then calls the function to return the response data
         function getLibrary() {
             return $http.get("data/cityInfo.json")
                 .then(function (response) {
                     return response.data;
                 });
         }
-
+//returns the array of possible cities
         function getCities() {
             return possibleCities;
         }
-
+//sets the displayCity object to the 
         function saveCityObj(city) {
             displayCity = city;
         }

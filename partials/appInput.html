@@ -3,26 +3,34 @@
 		<div>
 			<div>
 				<button class="navButton" ng-click="$ctrl.showRegionForm();" id="region">Region</button>
-				<div id="regionDiv" class="parameters" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
-					<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
+				<div class="navContainer">
+					<div id="regionDiv" class="parameters" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
+						<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
+					</div>
 				</div>
 			</div>
 			<div>
 				<button class="navButton" ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
-				<div id="cuisineDiv" class="parameters" ng-show="$ctrl.cuisineShow" ng-repeat="cuisine in $ctrl.cuisines">
-					<button ng-click="$ctrl.hideCuisineForm(cuisine);" cuisine-directive class="item">{{ cuisine }}</button>
+				<div class="navContainer">
+					<div id="cuisineDiv" class="parameters" ng-show="$ctrl.cuisineShow" ng-repeat="cuisine in $ctrl.cuisines">
+						<button ng-click="$ctrl.hideCuisineForm(cuisine);" cuisine-directive class="item">{{ cuisine }}</button>
+					</div>
 				</div>
 			</div>
 			<div>
-				<button class="navButton" ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
-				<div id="entertainmentDiv" class="parameters" ng-show="$ctrl.entertainmentShow" ng-repeat="entertainment in $ctrl.entertainments">
-					<button ng-click="$ctrl.hideEntertainmentForm(entertainment);" entertainment-directive class="item">{{ entertainment }}</button>
+					<button class="navButton" ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
+					<div class="navContainer">
+					<div id="entertainmentDiv" class="parameters" ng-show="$ctrl.entertainmentShow" ng-repeat="entertainment in $ctrl.entertainments">
+						<button ng-click="$ctrl.hideEntertainmentForm(entertainment);" entertainment-directive class="item">{{ entertainment }}</button>
+					</div>
 				</div>
 			</div>
 			<div>
 				<button class="navButton" ng-click="$ctrl.showSportsForm();" id="sports">Sports</button>
-				<div id="sportsDiv" class="parameters" ng-show="$ctrl.sportsShow" ng-repeat="sport in $ctrl.sports">
-					<button ng-click="$ctrl.hideSportsForm(sport);" sports-directive class="item">{{ sport }}</button>
+				<div class="navContainer">
+					<div id="sportsDiv" class="parameters" ng-show="$ctrl.sportsShow" ng-repeat="sport in $ctrl.sports">
+						<button ng-click="$ctrl.hideSportsForm(sport);" sports-directive class="item">{{ sport }}</button>
+					</div>
 				</div>
 			</div>
 		</div>
