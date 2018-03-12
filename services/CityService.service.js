@@ -7,6 +7,7 @@
         var cityCuisine = "";
         var citySport = "";
         var cityEntertainment = "";
+        var cityName = "";
 
         return {
             checkLogin: checkLogin,
@@ -15,15 +16,19 @@
             getCityCuisine: getCityCuisine,
             getCitySport: getCitySport,
             getCityEntertainment: getCityEntertainment,
+            getCityName: getCityName,
+
             reset: reset,
         }
 
         function checkLogin(newObj, data) {
-          
+
             cityRegion = newObj.region;
             cityCuisine = newObj.cuisine;
             citySport = newObj.sport;
             cityEntertainment = newObj.entertainment;
+            cityName = newObj.name;
+            console.log(cityName);
 
             possibleCities.length = 0;
 
@@ -78,7 +83,6 @@
             return cityEntertainment;
         }
 
-//function that resets inputs when the reset button is clicked
         function reset() {
             possibleCities.length = 0;
             cityRegion = "";
