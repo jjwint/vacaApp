@@ -111,14 +111,25 @@ body {
 	height: 0;
 }
 
-#routedContent.ng-enter {
+#appInput.ng-enter {
+	transform: translateX(-500px);
+	opacity: 0;
+	transition: all .35s cubic-bezier(1, .01, 0, .99);
+}
+
+#appInput.ng-enter-active {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+/* #routedContent.ng-enter {
 	transform: translateX(-500px);
 	opacity: 0;
 	transition: all 0.35s cubic-bezier(1, .01, 0, .99);
 }
 
 #routedContent.ng-enter-active {
-	transform: translateX(opx);
+	transform: translateX(0px);
 	opacity: 1;
 }
 
@@ -131,7 +142,7 @@ body {
 #routedContent.ng-leave-active {
 	transform: translateX(500px);
 	opacity: 0;
-}
+} */
 
 .citySelect.ng-enter, .citySelect.ng-leave {
 		transition: all linear 1s;
