@@ -64,7 +64,7 @@
                             $ctrl.results = results.slice(0, numberToShow);
                             for (var i = 0; i < numberToShow; i++) {
                                 var place = results[i];
-
+                                console.log(place)
                                 $ctrl.createMarker(results[i]);
                             }
                         } else {
@@ -77,16 +77,24 @@
                         map: $ctrl.map,
                         position: place.geometry.location
                     });
-                    console.log(place.geometry.location);
+                
                     var infoWindow = new google.maps.InfoWindow({
 
                     });
                     marker.addListener('click', function () {
-                        infoWindow.setContent('<div class ="infoBox"><h2 class="infoName">' + place.name + '</h2>' + '<div class="rating">Rating: ' + place.rating + '</div>' + place.formatted_address + '</div');
+                        infoWindow.setContent(`<div class ="infoBox">
+                                                    <div>
+                                                    <h2 class="infoName">`+ place.name + `</h2>
+                                                    
+                                                    </div>` 
+                                                    
+                                                 + `<div class="rating">Rating: ` + place.rating + `</div>`
+                                                  + place.formatted_address + '</div');
                         infoWindow.open($ctrl.map, marker)
                     })
                 }
                 $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
+                
             }
 
 
