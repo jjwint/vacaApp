@@ -1,11 +1,11 @@
-<div>
+<divclass="mainView">
     <div id="vacaHeader">
         <button class="resetButton" ng-click="$ctrl.reset()" reset-directive>Reset</button>
         <h2 class="header-font">Get-A-Ways</h2>
 		<p>Ever neeeded to get away? We can help! Personalize your next vacation with us.</p>
 
     </div>
-    <div class="mainView">
+    <div>
       <!-- onChangeCity passes the $ctrl.thisCity into the main component coming from the appInput component -->
         <app-input ng-hide="$ctrl.thisCity" on-change-city="$ctrl.thisCity = $event.thisCity"></app-input>
 <!-- $ctrl.thisCity is bound to the main component and passed in to the cityView with one-way binding -->
