@@ -431,13 +431,70 @@ h3 {
 	}
 
 	#flexDiv {
+        
 		flex-direction: row;
 		justify-content: space-around;
 	}
 	.navButtons {
-		width: 100%;
+        width: 100%;
+        
 		margin: 0 2px;
-	}
+    }
+    .navButton {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 150%;
+    }
+    #region.navButton:after {
+        content: '\E564';
+        display: block;
+        position: relative;
+        font-family: "Material Icons";
+        right: 0px;
+        top: 50%;
+        
+        transform: translateY(-50%);
+        color: #6699cc;
+        font-size: 250%;
+    }
+    #cuisine.navButton:after {
+        content: '\E56C';
+        display: block;
+        position: relative;
+        font-family: "Material Icons";
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6699cc;
+        font-size: 250%;
+        
+    }
+    #entertainment.navButton:after {     
+        content: '\E53F';
+        display: block;
+        position: relative;
+        font-family: "Material Icons";
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6699cc;
+        font-size: 250%;
+    }
+    #sports.navButton:after {    
+        content: '\E894';
+        display: block;
+        position: relative;
+        font-family: "Material Icons";
+        
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6699cc;
+        font-size: 250%;
+    }
 
 	.item:hover {
 		color: #fff;
