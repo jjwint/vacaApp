@@ -82,7 +82,7 @@
 
                     });
                     marker.addListener('click', function () {
-                        infoWindow.setContent('<div class ="infoBox"><h3 class="infoName">' + place.name + '</h3>' + '<div class ="rating">Rating: ' + place.rating + '</div>' + place.formatted_address + '</div');
+                        infoWindow.setContent('<div class ="infoBox"><h2 class="infoName">' + place.name + '</h2>' + '<div class="rating">Rating: ' + place.rating + '</div>' + place.formatted_address + '</div');
                         infoWindow.open($ctrl.map, marker)
                     })
                 }

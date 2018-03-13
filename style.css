@@ -1,7 +1,7 @@
 /* universal stylings */
 
 body {
-	background-image: url("images/cloud.jpg");
+    background-image: url("images/cloud.jpg");
     font-family: "Open Sans";
     box-sizing: border-box;
 }
@@ -9,7 +9,8 @@ body {
 /* welcome page stylings */
 
 .header-font {
-	font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', cursive;
+   
 }
 
 #welcome {
@@ -21,7 +22,7 @@ body {
     padding: 50px;
     font-family: 'Playfair Display', serif;
     margin-top: 100px;
-		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 #welcome a {
@@ -34,14 +35,14 @@ body {
 }
 
 #welcome i {
-	position: relative;
-	top: 7px;
+    position: relative;
+    top: 7px;
 }
 
 #welcome-flex {
-	position: relative;
-	top: 20px;
-	left: 120px;
+    position: relative;
+    top: 20px;
+    left: 120px;
 }
 
 /* input page stylings */
@@ -56,20 +57,16 @@ body {
 
 .navButton {
     opacity: 0.9;
-
     font-family: "Open Sans";
     display: block;
     width: 100%;
     font-size: 18px;
     font-weight: bold;
-
-
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
     position: relative;
     transition: 0.5s all;
-
     margin: 10px auto;
 }
 
@@ -90,31 +87,34 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     border: 2px solid black;
     border-radius: 5px;
-
 }
+
 #vacaHeader h2 {
     margin-bottom: -2%;
 }
+
 #vacaHeader p {
     font-size: 60%;
 }
+
 #infoDiv {
     opacity: 0.9;
     background: linear-gradient(to right, #ff3c48, #ff8c42);
     margin: 5% auto;
-	border: 2px solid black;
-	font-size: 60%;
+    border: 2px solid black;
+    font-size: 60%;
     border-radius: 5px;
     padding: 2px;
     text-align: center;
 }
+
 .regionContainer {
-	width: 100%;
+    width: 100%;
 }
 
 .resetButton {
@@ -125,9 +125,6 @@ body {
     border-radius: 5px;
     background-color: #fff275;
 }
-
-
-
 
 /* nav items */
 
@@ -162,7 +159,6 @@ body {
     color: black;
 }
 
-
 .parameters {
     margin-bottom: 5px;
     transition: .5s linear all;
@@ -186,17 +182,18 @@ body {
 }
 
 /* suggested cities */
+
 .citySelect {
     opacity: 0.9;
     text-align: center;
     margin-bottom: 15px;
     width: 150px;
     border: 1px outset black;
-
     font-size: 18px;
     background-color: #6699cc;
     border-radius: 5px;
 }
+
 .citySelect.ng-enter,
 .citySelect.ng-leave {
     transition: all linear 1s;
@@ -242,8 +239,6 @@ body {
     border-radius: 5px;
 }
 
-
-
 #map {
     width: 100%;
     height: 300px;
@@ -274,6 +269,7 @@ img {
     width: 90%;
     border-bottom: 2px solid black;
 }
+
 h3 {
     font-size: 180%;
     font-family: 'Pacifico', cursive;
@@ -282,7 +278,6 @@ h3 {
 
 #viewMap {
     margin: 2px;
-
     padding: 2px;
 }
 
@@ -296,6 +291,7 @@ h3 {
     display: flex;
     justify-content: space-around;
 }
+
 #viewSelect button {
     opacity: 0.9;
     background-color: #ff8c42;
@@ -304,15 +300,16 @@ h3 {
     border-radius: 5px;
     margin: 5px;
 }
+
 #userChoices {
     display: flex;
     justify-content: center;
 }
 
 #userChoices button {
-
     margin: 5px;
 }
+
 #viewResults {
     display: flex;
     flex-direction: column;
@@ -323,220 +320,77 @@ h3 {
     opacity: 0.9;
     margin: 5px;
 }
+
 #viewResults p {
     margin: 0 0;
 }
+
 .container {
     max-width: 1400px;
     width: 90%;
     margin: 0 auto;
 }
-
-.material-icons {
-    align-self: flex-start
+.infoBox {
+    width: 200px;
+    
 }
-
-
-#right-panel {
-    font-family: 'Roboto', 'sans-serif';
-    line-height: 30px;
-    padding-left: 10px;
-}
-
-#right-panel select,
-#right-panel input {
-    font-size: 15px;
-}
-
-#right-panel select {
-    width: 100%;
-}
-
-#right-panel i {
-    font-size: 9px;
-}
-
-#right-panel {
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 90%;
-    /* margin-top: -195px; */
-    opacity: 1;
-    height: 110px;
-    width: 110px;
-    padding: 5px;
-    z-index: 5;
-    border: 1px solid #999;
-    background: #fff;
-    right: 10%;
-    /* cursor: move; */
-}
-
-ol {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    height: 80px;
-    width: 105px;
-    overflow-y: scroll;
-}
-
-li {
-    background-color: #ebebe0;
-    padding: 0px;
-    /* text-overflow: ellipsis; */
-    white-space: nowrap;
-}
-
-li:nth-child(odd) {
-    background-color: white;
-}
-
 .rating {
     color: red;
 }
 
-.results {
-    font-size: 10px;
-}
-
-.resultsTitle {
-    margin: 0px 0px;
-}
-
-.infoBox {
-    font-size: 10px;
-}
-
-.infoName {
-    margin-bottom: 0px;
-}
 @media only screen and (min-width: 768px) {
+   
+    .container {
+        max-width: 500px;
+    }
+    
 
-	
 
-	/* .mainView {
-		display: flex;
-		flex-direction: column;
-	} */
-
-	.navButton{
-		margin:10px auto;
-		width: 40%;
-	}
-
-	#flex-div {
-		flex-direction: row;
-	}
-
-	#infoDiv {
-		margin-left: 10px;
-	}
-
-	.cityDescription {
-		font-size: 16px;
-	}
-
-	img {
-		width: 35%;
-		height: 35%;
-	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 1024px){
-	body {
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
-
-	#welcome {
-		width: 550px;
-		margin: 0 auto;
-		margin-top: 100px;
-	}
-
-	#vacaHeader {
-		width: 50%;
-		margin: 0 auto;
-		color: #fff;
-	}
-
-	.header-font {
-		font-size:
-	}
-
-	.item:hover {
-		color: #fff;
-	}
-
-	#regionDiv .item:hover {
-		background-color: #21295C;
-	}
-
-	#cuisineDiv .item:hover {
-		background-color: #1B3B6F;
-	}
-
-	#entertainmentDiv .item:hover {
-		background-color: #065A82;
-	}
-
-	#sportsDiv .item:hover {
-		background-color: #1C7293;
-	}
-
-	#region:hover{
-		color: #fff;
-	}
-
-	#cuisine:hover{
-		color: #fff;
-	}
-
-	#entertainment:hover{
-		color: #fff;
-	}
-
-	#sports:hover{
-		color: #fff;
-	}
-
-	.citySelect:hover{
-		background-color: #d4c9c4;
-	}
-
+@media only screen and (min-width: 1024px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #welcome {
+        width: 550px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    #vacaHeader {
+        width: 50%;
+        margin: 0 auto;
+        color: #fff;
+    }
+    .item:hover {
+        color: #fff;
+    }
+    #regionDiv .item:hover {
+        background-color: #21295C;
+    }
+    #cuisineDiv .item:hover {
+        background-color: #1B3B6F;
+    }
+    #entertainmentDiv .item:hover {
+        background-color: #065A82;
+    }
+    #sportsDiv .item:hover {
+        background-color: #1C7293;
+    }
+    #region:hover {
+        color: #fff;
+    }
+    #cuisine:hover {
+        color: #fff;
+    }
+    #entertainment:hover {
+        color: #fff;
+    }
+    #sports:hover {
+        color: #fff;
+    }
+    .citySelect:hover {
+        background-color: #d4c9c4;
+    }
 }

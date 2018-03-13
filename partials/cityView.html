@@ -17,6 +17,6 @@
         <button ng-if="$ctrl.thisCitySport" ng-click="$ctrl.searchSport()">Visit {{ $ctrl.thisCitySport}} stadiums!</button>
     </div>
     <div id="viewResults">
-        <p ng-repeat="place in $ctrl.results">Name: {{place.name}} Rating: {{place.rating}}</p>
+        <p ng-repeat="place in $ctrl.results">{{place.name}} Rating: {{place.rating}}</p>
     </div>
 </div>
