@@ -462,6 +462,9 @@ h3 {
         color: #6699cc;
         font-size: 250%;
     }
+    #viewResults {
+       display: none;
+    }
 
 	.item:hover {
 		color: #fff;
