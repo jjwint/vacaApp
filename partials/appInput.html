@@ -1,9 +1,7 @@
 <div id="appInput">
 	<div id="flexDiv">
-
 			<div class="navButtons">
 				<button class="navButton" ng-click="$ctrl.showRegionForm();" id="region">Region</button>
-				
 					<div id="regionDiv" class="parameters" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
 						<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
 					</div>
@@ -31,4 +29,3 @@
 		<button class="citySelect" ng-style="{'background-image': 'url(' + city.image + ')'}" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities | limitTo: 3 | orderBy:counter track by $index" ><p>{{ city.name }}</p></button>
 	</div>
 </div>
-
