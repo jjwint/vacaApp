@@ -3,6 +3,7 @@
 
 			<div class="navButtons">
 				<button class="navButton" ng-click="$ctrl.showRegionForm();" id="region">Region</button>
+				
 					<div id="regionDiv" class="parameters" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
 						<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
 					</div>
