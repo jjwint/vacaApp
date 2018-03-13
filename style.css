@@ -17,6 +17,7 @@ body {
     border-radius: 50px;
     text-align: center;
     background: linear-gradient(to right, #ff8c42, #ff3c48);
+		opacity: 0.9;
     color: #fff;
     padding: 50px;
     font-family: 'Playfair Display', serif;
@@ -27,6 +28,7 @@ body {
 #welcome a {
     color: #fff;
     text-decoration: none;
+		font-family: "Open Sans";
 }
 
 #welcome a:hover {
@@ -36,12 +38,6 @@ body {
 #welcome i {
 	position: relative;
 	top: 7px;
-}
-
-#welcome-flex {
-	position: relative;
-	top: 20px;
-	left: 120px;
 }
 
 /* input page stylings */
@@ -125,9 +121,6 @@ body {
     border-radius: 5px;
     background-color: #fff275;
 }
-
-
-
 
 /* nav items */
 
@@ -413,17 +406,14 @@ li:nth-child(odd) {
 }
 @media only screen and (min-width: 768px) {
 
-	
+
 
 	/* .mainView {
 		display: flex;
 		flex-direction: column;
 	} */
 
-	.navButton{
-		margin:10px auto;
-		width: 40%;
-	}
+
 
 	#flex-div {
 		flex-direction: row;
@@ -489,6 +479,12 @@ li:nth-child(odd) {
 		margin-top: 100px;
 	}
 
+	#welcome-flex {
+		position: relative;
+		top: 20px;
+		left: 120px;
+	}
+
 	#vacaHeader {
 		width: 50%;
 		margin: 0 auto;
@@ -497,6 +493,18 @@ li:nth-child(odd) {
 
 	.header-font {
 		font-size:
+	}
+
+	#flexDiv {
+		flex-direction: row;
+	}
+	.navButton {
+		width: 100%;
+	}
+
+
+	.nav-button {
+		min-width: 200px
 	}
 
 	.item:hover {
