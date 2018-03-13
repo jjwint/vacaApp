@@ -2,7 +2,6 @@
 
 body {
 	background-image: url("images/cloud.jpg");
-    /* background: linear-gradient(to right, #fdfbfb, #c8cdcf); */
     font-family: "Open Sans";
     box-sizing: border-box;
 }
@@ -14,27 +13,35 @@ body {
 }
 
 #welcome {
-    border: 4px solid black;
+    border: 2px solid #fff;
     border-radius: 50px;
     text-align: center;
-    background: linear-gradient(to right, #21295C, #1B3B6F, #065A82, #1C7293);
-    color: lightgray;
+    background: linear-gradient(to right, #ff8c42, #ff3c48);
+    color: #fff;
     padding: 50px;
     font-family: 'Playfair Display', serif;
     margin-top: 100px;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 #welcome a {
-    color: lightgray;
+    color: #fff;
     text-decoration: none;
 }
 
 #welcome a:hover {
-    color: #fff
+    text-decoration: underline;
 }
 
 #welcome i {
-    position: relative;
+	position: relative;
+	top: 7px;
+}
+
+#welcome-flex {
+	position: relative;
+	top: 20px;
+	left: 120px;
 }
 
 /* input page stylings */
@@ -257,13 +264,12 @@ img {
     opacity: 0.9;
     display: flex;
     flex-direction: column;
-    background: 100% 100%;
+    /* background: 100% 100%; */
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid black;
-
-
 }
+
 #nameWrap {
     width: 90%;
     border-bottom: 2px solid black;
@@ -273,8 +279,6 @@ h3 {
     font-family: 'Pacifico', cursive;
     margin: 0 -2px;
 }
-
-
 
 #viewMap {
     margin: 2px;
@@ -538,5 +542,15 @@ li:nth-child(odd) {
 
 
 @media only screen and (min-width: 1024px){
+	#welcome {
+		width: 550px;
+		margin: 0 auto;
+		margin-top: 100px;
+	}
+
+	body {
+	  background-repeat: no-repeat;
+		
+	}
 
 }
