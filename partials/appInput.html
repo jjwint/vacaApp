@@ -34,9 +34,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div id="infoDiv">
-			<p>Ever wanted to Get-A-Way? We can help! Pick your favorite Get-A-Ways options to personalize your next vacation.</p>
-		</div> -->
 	</div>
 	<div id="userChoices">
 		<button class="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities | limitTo: 3 | orderBy:counter track by $index" >{{ city.name }}</button>
