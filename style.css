@@ -18,6 +18,7 @@ body {
     border-radius: 50px;
     text-align: center;
     background: linear-gradient(to right, #ff8c42, #ff3c48);
+		opacity: 0.9;
     color: #fff;
     padding: 50px;
     font-family: 'Playfair Display', serif;
@@ -28,6 +29,7 @@ body {
 #welcome a {
     color: #fff;
     text-decoration: none;
+		font-family: "Open Sans";
 }
 
 #welcome a:hover {
@@ -339,58 +341,144 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
-   
-    .container {
-        max-width: 500px;
-    }
-    
 
 
+
+	/* .mainView {
+		display: flex;
+		flex-direction: column;
+	} */
+
+
+
+	#flex-div {
+		flex-direction: row;
+	}
+
+	#infoDiv {
+		margin-left: 10px;
+	}
+
+	.cityDescription {
+		font-size: 16px;
+	}
+
+	img {
+		width: 35%;
+		height: 35%;
+	}
 }
 
-@media only screen and (min-width: 1024px) {
-    body {
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    #welcome {
-        width: 550px;
-        margin: 0 auto;
-        margin-top: 100px;
-    }
-    #vacaHeader {
-        width: 50%;
-        margin: 0 auto;
-        color: #fff;
-    }
-    .item:hover {
-        color: #fff;
-    }
-    #regionDiv .item:hover {
-        background-color: #21295C;
-    }
-    #cuisineDiv .item:hover {
-        background-color: #1B3B6F;
-    }
-    #entertainmentDiv .item:hover {
-        background-color: #065A82;
-    }
-    #sportsDiv .item:hover {
-        background-color: #1C7293;
-    }
-    #region:hover {
-        color: #fff;
-    }
-    #cuisine:hover {
-        color: #fff;
-    }
-    #entertainment:hover {
-        color: #fff;
-    }
-    #sports:hover {
-        color: #fff;
-    }
-    .citySelect:hover {
-        background-color: #d4c9c4;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px){
+	body {
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#welcome {
+		width: 550px;
+		margin: 0 auto;
+		margin-top: 100px;
+	}
+
+	#welcome-flex {
+		position: relative;
+		top: 20px;
+		left: 120px;
+	}
+
+	#vacaHeader {
+		width: 50%;
+		margin: 0 auto;
+		color: #fff;
+	}
+
+	
+
+	#flexDiv {
+		flex-direction: row;
+	}
+	.navButton {
+		width: 100%;
+	}
+
+
+	.nav-button {
+		min-width: 200px
+	}
+
+	.item:hover {
+		color: #fff;
+	}
+
+	#regionDiv .item:hover {
+		background-color: #21295C;
+	}
+
+	#cuisineDiv .item:hover {
+		background-color: #1B3B6F;
+	}
+
+	#entertainmentDiv .item:hover {
+		background-color: #065A82;
+	}
+
+	#sportsDiv .item:hover {
+		background-color: #1C7293;
+	}
+
+	#region:hover{
+		color: #fff;
+	}
+
+	#cuisine:hover{
+		color: #fff;
+	}
+
+	#entertainment:hover{
+		color: #fff;
+	}
+
+	#sports:hover{
+		color: #fff;
+	}
+
+	.citySelect:hover{
+		background-color: #d4c9c4;
+	}
+
 }
