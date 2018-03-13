@@ -12,9 +12,9 @@
         <div id="map"></div>
     </div>
     <div id="viewSelect">
-        <button ng-if="$ctrl.thisCityCuisine" ng-click="$ctrl.searchCuisine()">Try some {{ $ctrl.thisCityCuisine}} food from {{$ctrl.thisCityName}}!</button>
-        <button ng-if="$ctrl.thisCityEntertainment" ng-click="$ctrl.searchEntertainment()">Check out some {{ $ctrl.thisCityEntertainment}} from {{$ctrl.thisCityName}}! </button>
-        <button ng-if="$ctrl.thisCitySport" ng-click="$ctrl.searchSport()">Visit {{ $ctrl.thisCitySport}} stadiums from{{$ctrl.thisCityName}}!</button>
+        <button ng-if="$ctrl.thisCityCuisine" ng-click="$ctrl.searchCuisine()">Try some {{ $ctrl.thisCityCuisine}} food!</button>
+        <button ng-if="$ctrl.thisCityEntertainment" ng-click="$ctrl.searchEntertainment()">Check out some {{ $ctrl.thisCityEntertainment}}! </button>
+        <button ng-if="$ctrl.thisCitySport" ng-click="$ctrl.searchSport()">Visit {{ $ctrl.thisCitySport}} stadiums!</button>
     </div>
     <div id="viewResults">
         <p ng-repeat="place in $ctrl.results">Name: {{place.name}} Rating: {{place.rating}}</p>

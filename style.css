@@ -226,6 +226,7 @@ body {
 /* city display styles */
 
 #cityView {
+    opacity: 0.9;
     border: 2px solid black;
     background-color: #6699cc;
     text-align: center;
@@ -240,6 +241,8 @@ body {
     width: 100%;
     height: 300px;
     margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 img {
@@ -251,6 +254,7 @@ img {
 }
 
 #viewHead {
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
     background: 100% 100%;
@@ -263,6 +267,11 @@ img {
 #nameWrap {
     width: 90%;
     border-bottom: 2px solid black;
+}
+h3 {
+    font-size: 180%;
+    font-family: 'Pacifico', cursive;
+    margin: 0 -2px;
 }
 
 
@@ -279,16 +288,40 @@ img {
     justify-content: space-between;
 }
 
-
+#viewSelect {
+    display: flex;
+    justify-content: space-around;
+}
+#viewSelect button {
+    opacity: 0.9;
+    background-color: #ff8c42;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
 #userChoices {
     display: flex;
     justify-content: center;
 }
 
 #userChoices button {
+    
     margin: 5px;
 }
-
+#viewResults {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ff3c38;
+    opacity: 0.9;
+    margin: 5px;
+}
+#viewResults p {
+    margin: 0 0;
+}
 .container {
     max-width: 1400px;
     width: 90%;
