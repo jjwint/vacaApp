@@ -28,6 +28,8 @@
 
 	</div>
 	<div id="userChoices">
-		<button class="citySelect" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities | limitTo: 3 | orderBy:counter track by $index" >{{ city.name }}</button>
+		<button class="citySelect" ng-style="{'background-image': 'url(' + city.image + ')'}" ng-click="$ctrl.showCityInfo(city)" ng-repeat="city in $ctrl.cities | limitTo: 3 | orderBy:counter track by $index" >{{ city.name }}</button>
 	</div>
 </div>
+
+
