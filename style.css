@@ -40,12 +40,6 @@ body {
     top: 7px;
 }
 
-#welcome-flex {
-    position: relative;
-    top: 20px;
-    left: 120px;
-}
-
 /* input page stylings */
 
 #appInput {
@@ -379,40 +373,6 @@ h3 {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 1024px){
 	body {
 		background-repeat: no-repeat;
@@ -425,12 +385,6 @@ h3 {
 		margin-top: 100px;
 	}
 
-	#welcome-flex {
-		position: relative;
-		top: 20px;
-		left: 120px;
-	}
-
 	#vacaHeader {
 		width: 50%;
 		margin: 0 auto;
@@ -438,14 +392,13 @@ h3 {
 	}
 
 	#flexDiv {
-        
+
 		flex-direction: row;
 		justify-content: space-around;
 	}
 	.navButtons {
         width: 100%;
-        
-		margin: 0 2px;
+		    margin: 0 2px;
     }
     .navButton {
         height: 250px;
@@ -462,7 +415,7 @@ h3 {
         font-family: "Material Icons";
         right: 0px;
         top: 50%;
-        
+
         transform: translateY(-50%);
         color: #6699cc;
         font-size: 250%;
@@ -477,9 +430,9 @@ h3 {
         transform: translateY(-50%);
         color: #6699cc;
         font-size: 250%;
-        
+
     }
-    #entertainment.navButton:after {     
+    #entertainment.navButton:after {
         content: '\E53F';
         display: block;
         position: relative;
@@ -490,12 +443,12 @@ h3 {
         color: #6699cc;
         font-size: 250%;
     }
-    #sports.navButton:after {    
+    #sports.navButton:after {
         content: '\E894';
         display: block;
         position: relative;
         font-family: "Material Icons";
-        
+
         right: 0px;
         top: 50%;
         transform: translateY(-50%);
