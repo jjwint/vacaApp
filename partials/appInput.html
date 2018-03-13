@@ -2,19 +2,19 @@
 	<div id="flexDiv">
 
 			<div class="navButtons">
-				<button class="navButton" ng-click="$ctrl.showRegionForm();" id="region"><i class="material-icons">terrain</i>Region</button>
+				<button class="navButton" ng-click="$ctrl.showRegionForm();" id="region">Region</button>
 					<div id="regionDiv" class="parameters" ng-show="$ctrl.regionShow" ng-repeat="region in $ctrl.regions">
 						<button ng-click="$ctrl.hideRegionForm(region);" region-directive class="item">{{ region }}</button>
 					</div>
 			</div>
 			<div class="navButtons">
-				<button class="navButton" ng-click="$ctrl.showCuisineForm();" id="cuisine"><i class="material-icons">restaurant</i>Cuisine</button>
+				<button class="navButton" ng-click="$ctrl.showCuisineForm();" id="cuisine">Cuisine</button>
 					<div id="cuisineDiv" class="parameters" ng-show="$ctrl.cuisineShow" ng-repeat="cuisine in $ctrl.cuisines">
 						<button ng-click="$ctrl.hideCuisineForm(cuisine);" cuisine-directive class="item">{{ cuisine }}</button>
 					</div>
 			</div>
 			<div class="navButtons">
-					<button class="navButton" ng-click="$ctrl.showEntertainmentForm();" id="entertainment"><i class="material-icons">local_activity</i>Entertainment</button>
+					<button class="navButton" ng-click="$ctrl.showEntertainmentForm();" id="entertainment">Entertainment</button>
 					<div id="entertainmentDiv" class="parameters" ng-show="$ctrl.entertainmentShow" ng-repeat="entertainment in $ctrl.entertainments">
 						<button ng-click="$ctrl.hideEntertainmentForm(entertainment);" entertainment-directive class="item">{{ entertainment }}</button>
 					</div>
