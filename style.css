@@ -10,7 +10,7 @@ body {
 
 .header-font {
     font-family: 'Pacifico', cursive;
-   
+
 }
 
 #welcome {
@@ -77,7 +77,7 @@ body {
     display: block;
     position: absolute;
     font-family: "Material Icons";
-    right: 10px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     color: black;
@@ -334,7 +334,7 @@ h3 {
 }
 .infoBox {
     width: 200px;
-    
+
 }
 .rating {
     color: red;
@@ -427,18 +427,13 @@ h3 {
 		color: #fff;
 	}
 
-	
-
 	#flexDiv {
 		flex-direction: row;
+		justify-content: space-around;
 	}
-	.navButton {
+	.navButtons {
 		width: 100%;
-	}
-
-
-	.nav-button {
-		min-width: 200px
+		margin: 0 2px;
 	}
 
 	.item:hover {
@@ -446,11 +441,11 @@ h3 {
 	}
 
 	#regionDiv .item:hover {
-		background-color: #21295C;
+		background-color: #a23e48;
 	}
 
 	#cuisineDiv .item:hover {
-		background-color: #1B3B6F;
+		background-color: #ff3c38;
 	}
 
 	#entertainmentDiv .item:hover {
