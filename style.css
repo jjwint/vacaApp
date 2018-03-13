@@ -310,7 +310,7 @@ h3 {
 }
 
 #userChoices button {
-    
+
     margin: 5px;
 }
 #viewResults {
@@ -420,49 +420,9 @@ li:nth-child(odd) {
 		flex-direction: column;
 	} */
 
-	.item:hover {
-		color: #fff;
-	}
-
-	#regionDiv .item:hover {
-		background-color: #21295C;
-	}
-
-	#cuisineDiv .item:hover {
-		background-color: #1B3B6F;
-	}
-
-	#entertainmentDiv .item:hover {
-		background-color: #065A82;
-	}
-
-	#sportsDiv .item:hover {
-		background-color: #1C7293;
-	}
-
-	#region:hover{
-		color: white;
-	}
-
-	#cuisine:hover{
-		color: white;
-	}
-
-	#entertainment:hover{
-		color: white;
-	}
-
-	#sports:hover{
-		color: white;
-	}
-
 	.navButton{
 		margin:10px auto;
 		width: 40%;
-	}
-
-	.citySelect:hover{
-		background-color: #d4c9c4;
 	}
 
 	#flex-div {
@@ -518,15 +478,65 @@ li:nth-child(odd) {
 
 
 @media only screen and (min-width: 1024px){
+	body {
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
 	#welcome {
 		width: 550px;
 		margin: 0 auto;
 		margin-top: 100px;
 	}
 
-	body {
-	  background-repeat: no-repeat;
-		
+	#vacaHeader {
+		width: 50%;
+		margin: 0 auto;
+		color: #fff;
+	}
+
+	.header-font {
+		font-size:
+	}
+
+	.item:hover {
+		color: #fff;
+	}
+
+	#regionDiv .item:hover {
+		background-color: #21295C;
+	}
+
+	#cuisineDiv .item:hover {
+		background-color: #1B3B6F;
+	}
+
+	#entertainmentDiv .item:hover {
+		background-color: #065A82;
+	}
+
+	#sportsDiv .item:hover {
+		background-color: #1C7293;
+	}
+
+	#region:hover{
+		color: #fff;
+	}
+
+	#cuisine:hover{
+		color: #fff;
+	}
+
+	#entertainment:hover{
+		color: #fff;
+	}
+
+	#sports:hover{
+		color: #fff;
+	}
+
+	.citySelect:hover{
+		background-color: #d4c9c4;
 	}
 
 }
