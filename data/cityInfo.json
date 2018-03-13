@@ -1,6 +1,6 @@
 [{
     "name": "Detroit",
-    "image": "images/Detroit.jpg",
+    "image": "images/Detroit.JPG",
     "region": "Midwest",
     "sports": ["Hockey"],
     "cuisine": ["Mexican"],
