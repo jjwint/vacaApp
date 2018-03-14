@@ -130,5 +130,17 @@
     "description": "'San Diego is a city on the Pacific coast of California known for its beaches, parks and warm climate. Immense Balboa Park is the site of the renowned San Diego Zoo, as well as numerous art galleries, artist studios, museums and gardens. A deep harbor is home to a large active naval fleet, with the USS Midway, an aircraft-carrier-turned-museum, open to the public.' (Google)",
     "latitude": 32.715738,
     "longitude": -117.161084
+}, {
+    "name": "Las Vegas",
+    "image": "images/Vegas.jpg",
+    "region": "West Coast",
+    "sports": ["Basketball", "Football"],
+    "cuisine": ["Mexican", "Italian"],
+    "entertainment": ["Beaches", "Parks"],
+    "counter": 0,
+    "description": "'' (Google)",
+    "latitude": ,
+    "longitude": 
 }
+
 ]
