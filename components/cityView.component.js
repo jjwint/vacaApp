@@ -110,7 +110,7 @@
                         infoWindow.setContent(`<div class ="infoBox">
                                                     <div>
                                                     <h2 class="infoName">`+ place.name + `</h2>
-                                                    <img src="` + place.photos[0].getUrl({'maxWidth': 35, 'maxHeight': 35}) +`">
+                                                    <img src="` + place.photos[0].getUrl({'maxWidth': 100, 'maxHeight': 100}) +`">
                                                     </div>`
                                                  + `<div class="rating">Rating: ` + place.rating + `</div>`
                                                   + place.formatted_address + '</div>');
