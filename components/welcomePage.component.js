@@ -5,7 +5,6 @@
 			var vm = this;
 		}
 	};
-
 	angular
 		.module("vaCaApp")
 		.component("welcomePage", welcomePage);
