@@ -182,8 +182,9 @@ body {
 .citySelect {
     opacity: 0.9;
     text-align: center;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     width: 150px;
+    
     border: 1px outset black;
     height: 30px;
     color: #ff8c42;
@@ -192,6 +193,9 @@ body {
 
     border-radius: 5px;
 
+}
+.citySelect p {
+    margin-bottom: 10px;
 }
 
 
@@ -294,6 +298,7 @@ h3 {
 }
 
 #viewSelect button {
+    
     opacity: 0.9;
     background-color: #ff8c42;
     height: 30px;
