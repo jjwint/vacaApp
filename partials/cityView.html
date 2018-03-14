@@ -18,11 +18,12 @@
         <button class="viewSelectButton" ng-click="$ctrl.showItinerary()">Itinerary</button>
     </div>
     <div ng-click="$ctrl.saveResult(place)" id="viewResults" ng-repeat="place in $ctrl.results" ng-class="{'in-itinerary': $ctrl.isInItinerary(place)}">
-
+        <div id="viewResultsName">
+            <p ng-if="$ctrl.isInItinerary(place)">
+                    <i class="material-icons">check</i>
+                </p>
         <p>{{place.name}}</p>
-        <p ng-if="$ctrl.isInItinerary(place)">
-            <i class="material-icons">check</i>
-        </p>
+    </div>
         <p>Rating: {{place.rating}} </p>
 
 
