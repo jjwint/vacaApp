@@ -7,6 +7,13 @@
         templateUrl: "partials/cityView.html",
         controller: function ($scope, CityService) {
             var $ctrl = this;
+
+
+            $ctrl.getList = function(){
+
+                
+
+            }
             // API code won't fire until cityView is initialized
             $ctrl.$onInit = function () {
                 // import data from service
