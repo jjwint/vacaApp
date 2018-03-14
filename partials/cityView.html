@@ -1,8 +1,8 @@
 <div id="cityView">
     <div id="viewHead">
         <div id="nameWrap">
-        <h3>Visit {{ $ctrl.thisCity.name }}! </h3>
-    </div>
+            <h3>Visit {{ $ctrl.thisCity.name }}! </h3>
+        </div>
         <div id="cityInfo">
             <img ng-src="{{$ctrl.thisCity.image}}">
             <p class="cityDescription">{{ $ctrl.thisCity.description }}</p>
@@ -18,8 +18,14 @@
         <button class="viewSelectButton" ng-click="$ctrl.showItinerary()">Itinerary</button>
     </div>
     <div ng-click="$ctrl.saveResult(place)" id="viewResults" ng-repeat="place in $ctrl.results" ng-class="{'in-itinerary': $ctrl.isInItinerary(place)}">
-        <p >{{place.name}}</p>
-        <p>Rating: {{place.rating}} {{ $ctrl.isInItinerary(place)}}</p>
+
+        <p>{{place.name}}</p>
+        <p ng-if="$ctrl.isInItinerary(place)">
+            <i class="material-icons">check</i>
+        </p>
+        <p>Rating: {{place.rating}} </p>
+
+
     </div>
     <!-- <div id="savedResults" ng-repeat="result in $ctrl.savedResults">
         <p >{{result.name}}</p>

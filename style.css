@@ -329,11 +329,15 @@ h3 {
     margin: 2px;
     padding: 8px
 }
+.in-itinerary {
+    background: linear-gradient(to right, #fff275, #6699cc) !important;
+}
 
 #viewResults p {
     margin: 0 0;
     font-size: 80%;
 }
+
 
 .container {
     max-width: 1400px;
