@@ -113,6 +113,7 @@ body {
 }
 
 .resetButton {
+    opacity: 0.8;
     position: absolute;
     left: 5px;
     top: 5px;
