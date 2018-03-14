@@ -16,7 +16,7 @@
                 $ctrl.thisCityName = $ctrl.thisCity.name;
                 // construct a latitude/longitude location for thisCity
                 $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
-                // intialize google map, bind to map id
+                // intialize google map, bind to map id - displays map
                 $ctrl.map = new google.maps.Map(document.getElementById("map"), {
                     center: $ctrl.thisCityLoc,
                     zoom: 13
@@ -75,13 +75,13 @@
                         infoWindow.setContent(`<div class ="infoBox">
                                                     <div>
                                                     <h2 class="infoName">`+ place.name + `</h2>
-                                                    </div>` 
+                                                    </div>`
                                                  + `<div class="rating">Rating: ` + place.rating + `</div>`
-                                                  + place.formatted_address + '</div');
+                                                  + place.formatted_address + '</div>');
                         infoWindow.open($ctrl.map, marker)
                     })
                 }
-                $ctrl.service.textSearch($ctrl.request, $ctrl.callback);   
+                $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
             }
         }
     };

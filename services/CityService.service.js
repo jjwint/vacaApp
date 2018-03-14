@@ -27,9 +27,12 @@
             cityEntertainment = newObj.entertainment;
             cityName = newObj.name;
             console.log(cityName);
-
             possibleCities.length = 0;
 
+//checks to see if user input matches data from JSON file
+//if one parameter matches, then adds 1 to the counter
+//if a city gets at least one match from user input, will push the city into the possible cities array
+//if the region matches, will add 2 to the counter instead of 1 and push the city to the array
             for (i = 0; i <= 11; i++) {
                 var thisCity = data[i];
                 thisCity.counter = 0;
@@ -66,17 +69,17 @@
         function getCities() {
             return possibleCities;
         }
-//returns the sport
+//returns the sport the user selected
         function getCitySport() {
             return citySport;
         }
 
-//returns the cuisine
+//returns the cuisine the user selected
         function getCityCuisine() {
             return cityCuisine;
         }
 
-//returns the entertainment
+//returns the entertainment the user selected
         function getCityEntertainment() {
             return cityEntertainment;
         }
