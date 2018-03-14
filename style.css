@@ -481,13 +481,19 @@ h3 {
         color: #6699cc;
         font-size: 250%;
     }
-    /* #viewResults {
-       display: none;
-    } */
+    .navButton:hover {
+        opacity: 1;
+    }
 
 	.item:hover {
 		color: #fff;
-	}
+    }
+    .citySelect:hover {
+        opacity: 1;
+    }
+    .resetButton:hover {
+        opacity: 1;
+    }
 
 	#regionDiv .item:hover {
 		background-color: #a23e48;
@@ -523,6 +529,13 @@ h3 {
 
 	.citySelect:hover{
 		background-color: #d4c9c4;
-	}
+    }
+   
+    #viewSelect button:hover {
+        opacity: 0.6;
+    }
+    #viewResults:hover {
+        opacity: 0.6;
+    }
 
 }

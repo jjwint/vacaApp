@@ -7,13 +7,25 @@
         templateUrl: "partials/cityView.html",
         controller: function ($scope, CityService) {
             var $ctrl = this;
-
-
-            $ctrl.getList = function(){
-
-                
-
+            $ctrl.savedResults = [];
+            $ctrl.saveResult = function(place) {
+                if (!$ctrl.isInItinerary(place)) {
+                    $ctrl.savedResults.push(place);
+                    console.log($ctrl.savedResult);
+                }
             }
+
+            $ctrl.showItinerary = function(){
+                resetMap();
+                updateResults($ctrl.savedResults);
+            }
+
+            $ctrl.isInItinerary = function(place) {
+                return $ctrl.savedResults.some(function(savedPlace) {
+                    return savedPlace.id === place.id;
+                });
+            }
+         
             // API code won't fire until cityView is initialized
             $ctrl.$onInit = function () {
                 // import data from service
@@ -44,11 +56,7 @@
                 console.log("query", query);
                 // console.log($ctrl.thisCityName);
                 $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
-                $ctrl.map = new google.maps.Map(document.getElementById("map"), {
-                    center: $ctrl.thisCityLoc,
-                    zoom: 11
-                });
-                $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
+                resetMap();
                 $ctrl.service = new google.maps.places.PlacesService($ctrl.map);
                 $ctrl.request = {
                     location: $ctrl.thisCityLoc,
@@ -60,19 +68,38 @@
                 $ctrl.callback = function (results, status) {
                     $scope.$apply(function() {
                         if (status == google.maps.places.PlacesServiceStatus.OK) {
-                            $ctrl.results = results.slice(0, numberToShow);
-                            for (var i = 0; i < numberToShow; i++) {
-                                var place = results[i];
-                                console.log(place)
-                                $ctrl.createMarker(results[i]);
-                            }
+                            results = results.slice(0, numberToShow);
+                            updateResults(results);
                         } else {
-                            $ctrl.results = [];
+                            updateResults([]);
                         }
                     });
                 }
-                $ctrl.createMarker = function (place) {
+               
+                $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
+            }
+
+            // Start a new clean map
+            function resetMap() {
+                $ctrl.map = new google.maps.Map(document.getElementById("map"), {
+                    center: $ctrl.thisCityLoc,
+                    zoom: 11
+                });
+            }
+
+            // Set results list and add markers to map
+            function updateResults(results) {
+                $ctrl.results = results;
+                for (var i = 0; i < results.length; i++) {
+                    var place = results[i];
+                    console.log(place)
+                    createMarker(results[i]);
+                }
+
+                function createMarker(place) {
+                    console.log("hi")
                     var marker = new google.maps.Marker({
+                        
                         map: $ctrl.map,
                         position: place.geometry.location
                     });
@@ -88,7 +115,6 @@
                         infoWindow.open($ctrl.map, marker)
                     })
                 }
-                $ctrl.service.textSearch($ctrl.request, $ctrl.callback);
             }
         }
     };
