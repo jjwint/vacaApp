@@ -22,6 +22,12 @@
                 $ctrl.data = data;
             })
             // pass cityObj to appMain
+            //$ctrl.onChangeCity is a function that passes the city object into the main component
+            //so that it can be accessed from the main component by the other two components
+            //cityView component doesn't exist until the city info is passed to it
+            //so then $ctrl.thisCity is no longer null in the main component
+            //then thisCity is on the viewmodel for cityView
+            //cityview 
             $ctrl.showCityInfo = function (city) {
                 $ctrl.thisCity = city;
                 $ctrl.onChangeCity({
