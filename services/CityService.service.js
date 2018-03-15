@@ -33,7 +33,7 @@
 //if one parameter matches, then adds 1 to the counter
 //if a city gets at least one match from user input, will push the city into the possible cities array
 //if the region matches, will add 2 to the counter instead of 1 and push the city to the array
-            for (i = 0; i <= 11; i++) {
+            for (i = 0; i <= data.length; i++) {
                 var thisCity = data[i];
                 thisCity.counter = 0;
                 if (cityRegion !== thisCity.region) {
