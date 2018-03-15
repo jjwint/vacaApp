@@ -17,7 +17,7 @@ body {
     border-radius: 50px;
     text-align: center;
     background: linear-gradient(to right, #ff8c42, #ff3c48);
-		opacity: 0.9;
+    opacity: 0.9;
     color: #fff;
     padding: 50px;
     font-family: 'Playfair Display', serif;
@@ -28,7 +28,7 @@ body {
 #welcome a {
     color: #fff;
     text-decoration: none;
-		font-family: "Open Sans";
+    font-family: "Open Sans";
 }
 
 #welcome a:hover {
@@ -87,15 +87,12 @@ body {
     position: relative;
     border: 2px solid black;
     border-radius: 5px;
-
 }
 
 #vacaHeader h2 {
     font-size: 300%;
     margin-bottom: 5%;
 }
-
-
 
 #infoDiv {
     opacity: 0.9;
@@ -184,15 +181,14 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-
     width: 33%;
     border: 1px outset black;
     height: 40px;
-    
     color: #fff275;
     font-weight: 700;
     border-radius: 5px;
 }
+
 .citySelect p {
     width: 100%;
     background-color: #6699cc;
@@ -292,22 +288,17 @@ h3 {
 }
 
 #viewSelect {
-   
     display: flex;
     justify-content: space-around;
-    
 }
 
 #viewSelect button {
-
     opacity: 0.9;
     background-color: #ff8c42;
-    
     border: 1px solid black;
     border-radius: 5px;
     margin: 5px;
 }
-
 
 #userChoices {
     display: flex;
@@ -321,19 +312,19 @@ h3 {
 #viewResults {
     display: flex;
     flex-direction: row;
-    /* align-items: flex-start; */
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 5px;
-    /* background-color: #ff3c38; */
     background: linear-gradient(to right, #ff8c42, #ff3c48);
     opacity: 0.9;
     margin: 2px;
     padding: 8px
 }
+
 #viewResultsName {
     display: flex;
 }
+
 .in-itinerary {
     background: linear-gradient(to right, #fff275, #6699cc) !important;
 }
@@ -342,31 +333,30 @@ h3 {
     margin: 0 0;
     font-size: 80%;
 }
+
 #viewResults p i {
     font-size: 100%;
     font-weight: 700;
     color: #6699cc;
 }
 
-
 .container {
     max-width: 1400px;
     width: 90%;
     margin: 0 auto;
 }
+
 .infoBox {
     width: 200px;
-
 }
+
 .rating {
     color: red;
 }
 
 @media only screen and (min-width: 768px) {
-
-	#userChoices {
+    #userChoices {
         justify-content: space-around;
-
     }
     .citySelect {
         background-color: none;
@@ -376,70 +366,56 @@ h3 {
         font-size: 280%;
         background-position: center center;
         background-size: cover;
-
     }
     .citySelect p {
         width: 100%;
         background-color: #6699cc;
         opacity: 0.9;
     }
-
-
-	#flex-div {
-		flex-direction: row;
-	}
-
-	#infoDiv {
-		margin-left: 10px;
-	}
-
-	.cityDescription {
-		font-size: 16px;
-	}
-
-	img {
-		width: 35%;
-		height: 35%;
-	}
-
-  #viewResults {
-    width: 70%;
-    margin: 2px auto;
-
-    /* padding: px */
-  }
-
-  #viewResults p {
-    font-size: 100%;
-  }
+    #flex-div {
+        flex-direction: row;
+    }
+    #infoDiv {
+        margin-left: 10px;
+    }
+    .cityDescription {
+        font-size: 16px;
+    }
+    img {
+        width: 35%;
+        height: 35%;
+    }
+    #viewResults {
+        width: 70%;
+        margin: 2px auto;
+    }
+    #viewResults p {
+        font-size: 100%;
+    }
 }
 
-@media only screen and (min-width: 1024px){
-	body {
-		background-repeat: no-repeat;
-		background-size: 130%;
-	}
-
-	#welcome {
-		width: 550px;
-		margin: 0 auto;
-		margin-top: 100px;
-	}
-
-	#vacaHeader {
-		width: 50%;
-		margin: 0 auto;
-    margin-bottom: 40px;
-	}
-
-	#flexDiv {
-
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	.navButtons {
+@media only screen and (min-width: 1024px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 130%;
+    }
+    #welcome {
+        width: 550px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    #vacaHeader {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    #flexDiv {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navButtons {
         width: 100%;
-		    margin: 0 2px;
+        margin: 0 2px;
     }
     .navButton {
         height: 250px;
@@ -456,7 +432,6 @@ h3 {
         font-family: "Material Icons";
         right: 0px;
         top: 50%;
-
         transform: translateY(-50%);
         color: #6699cc;
         font-size: 250%;
@@ -471,7 +446,6 @@ h3 {
         transform: translateY(-50%);
         color: #6699cc;
         font-size: 250%;
-
     }
     #entertainment.navButton:after {
         content: '\E53F';
@@ -489,7 +463,6 @@ h3 {
         display: block;
         position: relative;
         font-family: "Material Icons";
-
         right: 0px;
         top: 50%;
         transform: translateY(-50%);
@@ -499,9 +472,8 @@ h3 {
     .navButton:hover {
         opacity: 1;
     }
-
-	.item:hover {
-		color: #fff;
+    .item:hover {
+        color: #fff;
     }
     .citySelect:hover {
         opacity: 1;
@@ -509,53 +481,38 @@ h3 {
     .resetButton:hover {
         opacity: 1;
     }
-
-	#regionDiv .item:hover {
-		background-color: #a23e48;
-	}
-
-	#cuisineDiv .item:hover {
-		background-color: #ff3c38;
-	}
-
-	#entertainmentDiv .item:hover {
-		background-color: #ff8c42;
-	}
-
-	#sportsDiv .item:hover {
-		background-color: #fff275;
-	}
-
-	#region:hover{
-		color: #6699cc;
-	}
-
-	#cuisine:hover{
-		color: #6699cc;
-	}
-
-	#entertainment:hover{
-		color: #6699cc;
-	}
-
-	#sports:hover{
-		color: #6699cc;
-	}
-
-    	
-    #viewSelect button{
+    #regionDiv .item:hover {
+        background-color: #a23e48;
+    }
+    #cuisineDiv .item:hover {
+        background-color: #ff3c38;
+    }
+    #entertainmentDiv .item:hover {
+        background-color: #ff8c42;
+    }
+    #sportsDiv .item:hover {
+        background-color: #fff275;
+    }
+    #region:hover {
+        color: #6699cc;
+    }
+    #cuisine:hover {
+        color: #6699cc;
+    }
+    #entertainment:hover {
+        color: #6699cc;
+    }
+    #sports:hover {
+        color: #6699cc;
+    }
+    #viewSelect button {
         font-size: 15px;
         padding: 5px;
-
     }
-
-	
     #viewSelect button:hover {
         opacity: 0.6;
-       
     }
     #viewResults:hover {
         opacity: 0.6;
     }
-
 }

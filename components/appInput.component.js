@@ -1,12 +1,14 @@
 (function () {
     var appInput = {
+
         bindings: {
             onChangeCity: '&',
         },
+
         templateUrl: "partials/appInput.html",
+
         controller: function (CityService) {
             var $ctrl = this;
-            // service variables
             $ctrl.newObj = {};
             $ctrl.regionShow = false;
             $ctrl.cuisineShow = false;
@@ -16,18 +18,10 @@
             $ctrl.cuisines = ["Mexican", "Italian", "Chinese", "Vegan"];
             $ctrl.entertainments = ["Museums", "Parks", "Landmarks", "Beaches"];
             $ctrl.sports = ["Baseball", "Basketball", "Football", "Hockey"];
-            // bind possibleCities, json data to view model
             $ctrl.cities = CityService.getCities();
             CityService.getLibrary().then(function (data) {
                 $ctrl.data = data;
             })
-            // pass cityObj to appMain
-            //$ctrl.onChangeCity is a function that passes the city object into the main component
-            //so that it can be accessed from the main component by the other two components
-            //cityView component doesn't exist until the city info is passed to it
-            //so then $ctrl.thisCity is no longer null in the main component
-            //then thisCity is on the viewmodel for cityView
-            //cityview 
             $ctrl.showCityInfo = function (city) {
                 $ctrl.thisCity = city;
                 $ctrl.onChangeCity({
@@ -36,7 +30,6 @@
                     }
                 });
             }
-            // input show
             $ctrl.showRegionForm = function () {
                 if ($ctrl.regionShow === false) {
                     $ctrl.regionShow = true;
@@ -65,7 +58,6 @@
                     $ctrl.sportsShow = false;
                 }
             }
-            // input hide, bind data to newObj
             $ctrl.hideRegionForm = function (region) {
                 $ctrl.regionShow = false;
                 $ctrl.newObj.region = region;

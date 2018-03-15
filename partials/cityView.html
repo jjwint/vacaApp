@@ -20,13 +20,10 @@
     <div ng-click="$ctrl.saveResult(place)" id="viewResults" ng-repeat="place in $ctrl.results | orderBy:place.rating" ng-class="{'in-itinerary': $ctrl.isInItinerary(place)}">
         <div id="viewResultsName">
             <p ng-if="$ctrl.isInItinerary(place)">
-                    <i class="material-icons">check</i>
-                </p>
-        <p>{{place.name}}</p>
-    </div>
+                <i class="material-icons">check</i>
+            </p>
+            <p>{{place.name}}</p>
+        </div>
         <p>Rating: {{place.rating}} </p>
-
-
     </div>
-
 </div>
