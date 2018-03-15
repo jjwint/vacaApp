@@ -1,13 +1,13 @@
 <div class="mainView">
     <div id="vacaHeader">
-        <button class="resetButton" ng-click="$ctrl.reset()" reset-directive>
+        <button class="resetButton" ng-click="$ctrl.reset()">
             <i class="material-icons">autorenew</i>
         </button>
         <h2 class="header-font">Get-A-Ways</h2>
         <p>Ever neeeded to get away? We can help! Personalize your next vacation with us.</p>
     </div>
     <div>
-        <app-input ng-hide="$ctrl.thisCity" on-change-city="$ctrl.thisCity = $event.thisCity"></app-input>
+        <app-input ng-if="!$ctrl.thisCity" on-change-city="$ctrl.thisCity = $event.thisCity"></app-input>
         <city-view ng-if="$ctrl.thisCity" this-city="$ctrl.thisCity"></city-view>
     </div>
 </div>

@@ -86,7 +86,6 @@
                     
                     var place = results[i];
                     bounds.extend(createMarker(results[i]).getPosition());
-                    
                 }
 
                 if(results.length > 1){

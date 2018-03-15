@@ -27,7 +27,7 @@
 	</div>
 	<div id="userChoices">
 		<button class="citySelect" ng-style="{'background-image': 'url(' + city.image + ')'}" ng-click="$ctrl.showCityInfo(city)"
-		    ng-repeat="city in $ctrl.cities | limitTo: 3 | orderBy:counter track by $index">
+		    ng-repeat="city in $ctrl.cities | orderBy:'-counter' | limitTo: 3 track by $index">
 			<p>{{ city.name }}</p>
 		</button>
 	</div>
