@@ -81,10 +81,18 @@
 
             function updateResults(results) {
                 $ctrl.results = results;
+                var bounds = new google.maps.LatLngBounds();
                 for (var i = 0; i < results.length; i++) {
+                    
                     var place = results[i];
-                    createMarker(results[i]);
+                    bounds.extend(createMarker(results[i]).getPosition());
+                    
                 }
+
+                if(results.length > 1){
+                $ctrl.map.fitBounds(bounds);
+                }
+
                 function createMarker(place) {
                     var marker = new google.maps.Marker({
                         map: $ctrl.map,
@@ -103,7 +111,8 @@
                             `<div class="rating">Rating: ` + place.rating + `</div>` +
                             place.formatted_address + '</div>');
                         infoWindow.open($ctrl.map, marker)
-                    })
+                    });
+                    return marker;
                 }
             }
         }
