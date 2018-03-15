@@ -417,7 +417,7 @@ h3 {
 @media only screen and (min-width: 1024px){
 	body {
 		background-repeat: no-repeat;
-		background-size: 100%;
+		background-size: 130%;
 	}
 
 	#welcome {
@@ -542,9 +542,17 @@ h3 {
 		color: #6699cc;
 	}
 
+    	
+    #viewSelect button{
+        font-size: 15px;
+        padding: 5px;
+
+    }
+
 	
     #viewSelect button:hover {
         opacity: 0.6;
+       
     }
     #viewResults:hover {
         opacity: 0.6;

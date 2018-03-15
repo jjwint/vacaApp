@@ -12,7 +12,7 @@
             $ctrl.cuisineShow = false;
             $ctrl.entertainmentShow = false;
             $ctrl.sportsShow = false;
-            $ctrl.regions = ["Northeast", "Midwest", "South", "West Coast"];
+            $ctrl.regions = ["Northeast", "Midwest", "South", "West"];
             $ctrl.cuisines = ["Mexican", "Italian", "Chinese", "Vegan"];
             $ctrl.entertainments = ["Museums", "Parks", "Landmarks", "Beaches"];
             $ctrl.sports = ["Baseball", "Basketball", "Football", "Hockey"];

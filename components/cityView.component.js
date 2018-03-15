@@ -91,12 +91,14 @@
             // Set results list and add markers to map
             function updateResults(results) {
                 $ctrl.results = results;
+              
                 for (var i = 0; i < results.length; i++) {
                     var place = results[i];
                     console.log(place)
+                    // $ctrl.thisCityLoc.extend(results[i].getPosition());
                     createMarker(results[i]);
                 }
-
+                // map.fitBounds($ctrl.thisCityLoc);
                 function createMarker(place) {
                     console.log("hi")
                     var marker = new google.maps.Marker({
