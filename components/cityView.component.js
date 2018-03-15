@@ -57,6 +57,7 @@
                 // console.log($ctrl.thisCityName);
                 $ctrl.thisCityLoc = new google.maps.LatLng($ctrl.thisCity.latitude, $ctrl.thisCity.longitude);
                 resetMap();
+                
                 $ctrl.service = new google.maps.places.PlacesService($ctrl.map);
                 $ctrl.request = {
                     location: $ctrl.thisCityLoc,
