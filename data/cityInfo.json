@@ -6,7 +6,7 @@
     "cuisine": ["Mexican"],
     "entertainment": ["Museums"],
     "counter": 0,
-    "description": "'Detroit is the largest city in the midwestern state of Michigan. Near Downtown, the neoclassical Detroit Institute of Arts is famed for the Detroit Industry Murals painted by Diego Rivera, and inspired by the city’s ties to the auto industry, giving it the nickname 'Motor City.' Detroit is also the birthplace of Motown Records, whose chart-topping history is on display at their original headquarters, Hitsville U.S.A.' (Google)",
+    "description": "\"Detroit is the largest city in the midwestern state of Michigan. Near Downtown, the neoclassical Detroit Institute of Arts is famed for the Detroit Industry Murals painted by Diego Rivera, and inspired by the city’s ties to the auto industry, giving it the nickname 'Motor City.' Detroit is also the birthplace of Motown Records, whose chart-topping history is on display at their original headquarters, Hitsville U.S.A.\" (Google)",
     "latitude": 42.331427,
     "longitude": -83.045754
 }, {
@@ -17,7 +17,7 @@
     "cuisine": ["Mexican", "Italian"],
     "entertainment": ["Beaches", "Parks"],
     "counter": 0,
-    "description": "'Milwaukee is a city in the U.S. state of Wisconsin on Lake Michigan's western shore. It's known for its breweries, many of which offer tours chronicling its role in the beer industry. Overlooking the Menomonee River, the Harley-Davidson Museum displays classic motorcycles, including one of Elvis Presley’s. Nearby is the Milwaukee Public Museum, with its large-scale European Village and a recreation of old Milwaukee.' (Google)",
+    "description": "\"Milwaukee is a city in the U.S. state of Wisconsin on Lake Michigan's western shore. It's known for its breweries, many of which offer tours chronicling its role in the beer industry. Overlooking the Menomonee River, the Harley-Davidson Museum displays classic motorcycles, including one of Elvis Presley’s. Nearby is the Milwaukee Public Museum, with its large-scale European Village and a recreation of old Milwaukee.\" (Google)",
     "latitude": 43.038902,
     "longitude": -87.906474
 }, {
@@ -28,7 +28,7 @@
     "cuisine": ["Vegan"],
     "entertainment": ["Museums", "Parks"],
     "counter": 0,
-    "description": "'Chicago, on Lake Michigan in Illinois, is among the largest cities in the U.S. Famed for its bold architecture, it has a skyline punctuated by skyscrapers such as the iconic John Hancock Center, 1,451-ft. Willis Tower (formerly the Sears Tower) and the neo-Gothic Tribune Tower. The city is also renowned for its museums, including the Art Institute of Chicago with its noted Impressionist and Post-Impressionist works.' (Google)",
+    "description": "\"Chicago, on Lake Michigan in Illinois, is among the largest cities in the U.S. Famed for its bold architecture, it has a skyline punctuated by skyscrapers such as the iconic John Hancock Center, 1,451-ft. Willis Tower (formerly the Sears Tower) and the neo-Gothic Tribune Tower. The city is also renowned for its museums, including the Art Institute of Chicago with its noted Impressionist and Post-Impressionist works.\" (Google)",
     "latitude": 41.878114,
     "longitude": -87.629798
 }, {
@@ -39,7 +39,7 @@
     "cuisine": ["Chinese"],
     "entertainment": ["Landmarks", "Museums" ],
     "counter": 0,
-    "description": "'New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.' (Google)",
+    "description": "\"New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.\" (Google)",
     "latitude": 40.712775,
     "longitude": -74.005973
 }, {
@@ -50,7 +50,7 @@
     "cuisine": ["Chinese"],
     "entertainment": ["Landmarks", "Museums" ],
     "counter": 0,
-    "description": "'Boston is Massachusetts’ capital and largest city. Founded in 1630, it’s one of the oldest cities in the U.S. The key role it played in the American Revolution is highlighted on the Freedom Trail, a 2.5-mile walking route of historic sites that tells the story of the nation’s founding. One stop, former meeting house Faneuil Hall, is a popular marketplace.' (Google)",
+    "description": "\"Boston is Massachusetts’ capital and largest city. Founded in 1630, it’s one of the oldest cities in the U.S. The key role it played in the American Revolution is highlighted on the Freedom Trail, a 2.5-mile walking route of historic sites that tells the story of the nation’s founding. One stop, former meeting house Faneuil Hall, is a popular marketplace.\" (Google)",
     "latitude": 42.360082,
     "longitude": -71.058880
 }, {
@@ -58,13 +58,24 @@
     "image": "images/Philadelphia.jpg",
     "region": "Northeast",
     "sports": ["Football"],
-    "cuisine": ["American"],
+    "cuisine": ["Vegan"],
     "entertainment": ["Museums", "Parks"],
     "counter": 0,
-    "description": "'Philadelphia, Pennsylvania’s largest city, is notable for its rich history, on display at the Liberty Bell, Independence Hall (where the Declaration of Independence and Constitution were signed) and other American Revolutionary sites.' (Google)",
+    "description": "\"Philadelphia, Pennsylvania’s largest city, is notable for its rich history, on display at the Liberty Bell, Independence Hall (where the Declaration of Independence and Constitution were signed) and other American Revolutionary sites.\" (Google)",
     "latitude": 39.952584,
     "longitude": -75.165222
 }, {
+    "name": "Washington D.C.",
+    "image": "images/DC.jpg",
+    "region": "Northeast",
+    "sports": ["Football", "Baseball"],
+    "cuisine": ["Vegan", "Italian"],
+    "entertainment": ["Landmarks", "Museums"],
+    "counter": 0,
+    "description": "\"Washington, DC, the U.S. capital, is a compact city on the Potomac River, bordering the states of Maryland and Virginia. It’s defined by imposing neoclassical monuments and buildings – including the iconic ones that house the federal government’s 3 branches: the Capitol, White House and Supreme Court. It's also home to iconic museums and performing-arts venues such as the Kennedy Center.\" (Google)",
+    "latitude": 38.907192,
+    "longitude": -77.036871
+  }, {
     "name": "Miami",
     "image": "images/Miami.jpg",
     "region": "South",
@@ -72,7 +83,7 @@
     "cuisine": ["Italian"],
     "entertainment": ["Beaches", "Landmarks"],
     "counter": 0,
-    "description": "'Miami is an international city at Florida's southeastern tip. Its Cuban influence is reflected in the cafes and cigar shops that line Calle Ocho in Little Havana. On barrier islands across the turquoise waters of Biscayne Bay is Miami beaches, home to South beaches. This glamorous neighborhood is famed for its colorful art deco buildings, white sand, surfside hotels and trendsetting nightclubs.' (Google)",
+    "description": "\"Miami is an international city at Florida's southeastern tip. Its Cuban influence is reflected in the cafes and cigar shops that line Calle Ocho in Little Havana. On barrier islands across the turquoise waters of Biscayne Bay is Miami beaches, home to South beaches. This glamorous neighborhood is famed for its colorful art deco buildings, white sand, surfside hotels and trendsetting nightclubs.\" (Google)",
     "latitude": 25.761680,
     "longitude": -80.191790
 }, {
@@ -83,7 +94,7 @@
     "cuisine": ["Vegan"],
     "entertainment": ["Museums", "Landmarks"],
     "counter": 0,
-    "description": "'New Orleans is a Louisiana city on the Mississippi River, near the Gulf of Mexico. Nicknamed the 'Big Easy,' it's known for its round-the-clock nightlife, vibrant live-music scene and spicy, singular cuisine reflecting its history as a melting pot of French, African and American cultures. Embodying its festive spirit is Mardi Gras, the late-winter carnival famed for raucous costumed parades and street parties.' (Google)",
+    "description": "\"New Orleans is a Louisiana city on the Mississippi River, near the Gulf of Mexico. Nicknamed the 'Big Easy,' it's known for its round-the-clock nightlife, vibrant live-music scene and spicy, singular cuisine reflecting its history as a melting pot of French, African and American cultures. Embodying its festive spirit is Mardi Gras, the late-winter carnival famed for raucous costumed parades and street parties.\" (Google)",
     "latitude": 29.951066,
     "longitude": -90.071532
 }, {
@@ -94,10 +105,21 @@
     "cuisine": ["Vegan"],
     "entertainment": ["Museums", "Landmarks"],
     "counter": 0,
-    "description": "'Atlanta is the capital of the U.S. state of Georgia. It played an important part in both the Civil War and the 1960s Civil Rights Movement. Atlanta History Center chronicles the city's past, and the Martin Luther King Jr. National Historic Site is dedicated to the African-American leader’s life and times. Downtown, Centennial Olympic Park, built for the 1996 Olympics, encompasses the massive Georgia Aquarium.' (Google)",
+    "description": "\"Atlanta is the capital of the U.S. state of Georgia. It played an important part in both the Civil War and the 1960s Civil Rights Movement. Atlanta History Center chronicles the city's past, and the Martin Luther King Jr. National Historic Site is dedicated to the African-American leader’s life and times. Downtown, Centennial Olympic Park, built for the 1996 Olympics, encompasses the massive Georgia Aquarium.\" (Google)",
     "latitude": 33.748995,
     "longitude": -84.387982
 }, {
+    "name": "Dallas",
+    "image": "images/Dallas.jpg",
+    "region": "South",
+    "sports": ["Football"],
+    "cuisine": ["Mexican"],
+    "entertainment": ["Parks", "Landmarks"],
+    "counter": 0,
+    "description": "\"Dallas, a modern metropolis in north Texas, is a commercial and cultural hub of the region. Downtown’s Sixth Floor Museum at Dealey Plaza commemorates the site of President John F. Kennedy’s assassination in 1963. In the Arts District, the Dallas Museum of Art and the Crow Collection of Asian Art cover thousands of years of art. The sleek Nasher Sculpture Center showcases contemporary sculpture.\" (Google)",
+    "latitude": 32.779091,
+    "longitude": -96.800270
+  }, {
     "name": "Los Angeles",
     "image": "images/LosAngeles.jpg",
     "region": "West Coast",
@@ -105,7 +127,7 @@
     "cuisine": ["Mexican", "Italian"],
     "entertainment": ["Beaches", "Parks"],
     "counter": 0,
-    "description": "'Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.' (Google)",
+    "description": "\"Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.\" (Google)",
     "latitude": 34.052234,
     "longitude": -118.243685
 }, {
@@ -116,7 +138,7 @@
     "cuisine": ["Mexican", "Italian"],
     "entertainment": ["Beaches", "Parks"],
     "counter": 0,
-    "description": "'San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.' (Google)",
+    "description": "\"San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.\" (Google)",
     "latitude": 37.774929,
     "longitude": -122.419416
 }, {
@@ -127,8 +149,19 @@
     "cuisine": ["Mexican", "Italian"],
     "entertainment": ["Beaches", "Parks"],
     "counter": 0,
-    "description": "'San Diego is a city on the Pacific coast of California known for its beaches, parks and warm climate. Immense Balboa Park is the site of the renowned San Diego Zoo, as well as numerous art galleries, artist studios, museums and gardens. A deep harbor is home to a large active naval fleet, with the USS Midway, an aircraft-carrier-turned-museum, open to the public.' (Google)",
+    "description": "\"San Diego is a city on the Pacific coast of California known for its beaches, parks and warm climate. Immense Balboa Park is the site of the renowned San Diego Zoo, as well as numerous art galleries, artist studios, museums and gardens. A deep harbor is home to a large active naval fleet, with the USS Midway, an aircraft-carrier-turned-museum, open to the public.\" (Google)",
     "latitude": 32.715738,
     "longitude": -117.161084
+}, {
+    "name": "Las Vegas",
+    "image": "images/Vegas.jpg",
+    "region": "West Coast",
+    "sports": ["Hockey", "Football"],
+    "cuisine": ["Mexican", "Chinese"],
+    "entertainment": ["Landmarks", "Museums"],
+    "counter": 0,
+    "description": "\"Las Vegas, in Nevada’s Mojave Desert, is a resort city famed for its vibrant nightlife, centered around 24-hour casinos and other entertainment options. Its main street and focal point is the Strip, just over 4 miles long. This boulevard is home to themed hotels with elaborate displays such as fountains synchronized to music as well as replicas of an Egyptian pyramid, the Venetian Grand Canal, and the Eiffel Tower.\" (Google)",
+    "latitude": 36.167059,
+    "longitude": -115.135555
 }
 ]
